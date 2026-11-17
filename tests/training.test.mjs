@@ -31,3 +31,23 @@ test('Rejette les questions dupliquées, inconnues, réponses inexistantes et fo
  for(const change of [{id:'wrong'},{mode:'fake'},{duration:-1},{duration:0.2},{duration:86401},{mode:'Examen blanc'}])assert.throws(()=>validateAttempt(questions,{...base,...change}));
 });
 test('Un examen complet est validé et noté sur trente',()=>{const entries=selectQuestions(questions,'Examen blanc').map(q=>({questionId:q.id,answer:q.correctAnswer}));assert.equal(validateAttempt(questions,{id:'12345678-1234-1234-1234-123456789abc',mode:'Examen blanc',duration:1800,entries}).score,30)});
+
+test('Le catalogue v3 contient 250 questions publiées par domaine',()=>{
+ assert.equal(questions.length,500);
+ for(const track of ['Organisation','Trésorerie']){
+  assert.equal(questions.filter(q=>q.track===track&&q.status==='verified').length,250);
+ }
+});
+test('Un examen diversifie les fiches et une session ciblée privilégie des familles distinctes',()=>{
+ for(let i=0;i<30;i++){
+  const exam=selectQuestions(questions,'Examen blanc');
+  for(const track of ['Organisation','Trésorerie']){
+   const ids=exam.filter(q=>q.track===track).map(q=>q.articleId);
+   assert.equal(new Set(ids).size,15);
+  }
+  const cases=questions.filter(q=>q.articleId==='cutoff'&&q.family);
+  const picked=selectQuestions(cases,'Par thème','Trésorerie','cutoff');
+  const distinct=new Set(cases.map(q=>q.family));
+  assert.equal(new Set(picked.slice(0,distinct.size).map(q=>q.family)).size,distinct.size);
+ }
+});

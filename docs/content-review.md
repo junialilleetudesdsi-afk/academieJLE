@@ -1,7 +1,16 @@
 # Revue éditoriale — 17 novembre 2026
 
-## Lot publié
+## Extension à 500 questions · catalogue v3
 
+Le catalogue passe de 78 à **500 questions publiées**, dont 250 en organisation et 250 en trésorerie, et de 12 à **35 fiches**. Les 422 ajouts comprennent **110 questions de cours** et **312 exercices**, dont des variantes chiffrées et des mises en situation réparties en **39 familles**. Un exercice peut travailler la même compétence avec des données différentes. Ce ne sont pas 500 règles distinctes ni des sujets d’examen CNJE.
+
+- Organisation : gouvernance, convocations, quorum et majorité, dirigeants, discipline, RGPD, archivage, convention d’étude, commandes, sélection et mission des intervenants, recette et sous-traitance.
+- Trésorerie : journaux et états comptables, lettrage, créances, notes de frais, facturation, TVA, cut-off, calcul d’assiette, BRC, TR, RCI et DAS2.
+- Provenance : anciens quiz et support « WEFA Organisationnel » de 2023, utilisés comme points de départ ; réponses et explications rédigées à partir des fiches Kiwi Légal et du corpus Kiwi daté du 28 octobre 2026 lorsqu’une fiche n’était pas accessible en direct. Les sources précises sont indiquées sur les fiches et les corrigés.
+- Arbitrages : pas de calendriers RCI recopiés d’un millésime à l’autre ; seuil DAS2 strictement supérieur à 2 400 € pour les revenus 2025 ; TR non systématique selon la fiche ; garantie des rapports révisée depuis le support de 2023 ; procédure de facturation alignée sur la mise à jour de septembre 2026. Les exercices chiffrés fictifs ne fixent aucun SMIC ni taux de cotisations réel.
+- Les identifiants, les choix et le corrigé des 78 questions déjà publiées restent stables pour ne pas fausser l’historique des membres. Le test blanc privilégie 15 fiches distinctes dans chacun des deux domaines, et les autres sessions privilégient des familles de cas différentes lorsqu’il y a assez de questions.
+
+## Premier lot (catalogue v2)
 78 questions à réponse unique, 12 fiches de synthèse originales, 38 questions organisationnelles et 40 questions de trésorerie. Les questions sont adaptées des thèmes des PDF ou créées à partir des fiches Kiwi lues. Chaque question indique son origine et renvoie à une fiche portant le lien Kiwi, sa date de mise à jour et la date de vérification.
 
 Ce lot est une sélection vérifiée, **pas une transcription exhaustive des 11 PDF**, ni une banque officielle de sujets CNJE. Les anciennes réponses des PDF ne constituent pas un corrigé fiable. Les pages ont été extraites en texte ; la disposition des choix sur deux colonnes a également été contrôlée visuellement sur un échantillon.

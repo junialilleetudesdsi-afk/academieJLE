@@ -4,10 +4,10 @@ Académie de Junia Lille Études : Next.js / React, Better Auth et PostgreSQL, c
 
 ## Fonctionnalités
 
-- 12 fiches consultables, recherche dans les textes et filtres organisation/trésorerie.
-- 78 questions vérifiées, une bonne réponse, une explication et un lien Kiwi par question.
+- 35 fiches consultables, recherche dans les textes et filtres organisation/trésorerie.
+- 500 questions, dont 250 en organisation et 250 en trésorerie, une bonne réponse, une explication et un lien Kiwi par question.
 - Quiz express, entraînement par domaine ou fiche, révision des dernières erreurs.
-- Test blanc pédagogique : 30 questions équilibrées, 30 minutes, correction finale. Format JLE non officiel CNJE.
+- Test blanc pédagogique : 30 questions équilibrées, 30 minutes, correction finale ; les fiches sont diversifiées dans chaque domaine. Format JLE non officiel CNJE.
 - Résultats calculés côté serveur, historique privé par compte, statistiques par domaine.
 - Mode invité avec correction, explicitement sans sauvegarde.
 - Identité JLE et affichage mobile ; inscription et connexion Better Auth existantes conservées.
@@ -36,7 +36,7 @@ Pour une nouvelle installation, appliquer également le schéma Better Auth corr
 
 Le catalogue versionné est `content/catalog.json`. Les questions référencent une fiche par `articleId`, laquelle fournit la source Kiwi, sa date de mise à jour et la date de vérification. Les identifiants de questions doivent rester stables ; pour changer le sens d’une question, créer un nouvel identifiant. Seul le statut `verified` entre dans les parcours. Le site contient des synthèses, pas les PDF complets.
 
-La [revue éditoriale](docs/content-review.md) documente le traitement des 11 PDF, les doublons, les corrections et les sujets laissés en attente de vérification. Ce lot n’est pas une conversion exhaustive des PDF. La veille Kiwi n’est pas automatisée : les montants annuels et nouveautés doivent être révisés régulièrement.
+La [revue éditoriale](docs/content-review.md) documente les 11 PDF, le support WEFAH 2023 et les critères de vérification. Les 422 ajouts comprennent 110 questions de cours et 312 exercices répartis en 39 familles de cas. Chaque variante comporte une situation ou des données à analyser. La veille Kiwi n’est pas automatisée : les montants annuels et nouveautés doivent être révisés régulièrement.
 
 Les comptes et résultats sont dans PostgreSQL, jamais dans GitHub. Le catalogue est public dans le dépôt et dans le code navigateur. Il ne doit contenir aucune donnée interne ou personnelle. La création de compte reste ouverte : un compte n’atteste pas l’appartenance à JLE. Les invitations, rôles administrateur, récupération de mot de passe et validation d’e-mail ne sont pas ajoutés dans ce lot.
 
