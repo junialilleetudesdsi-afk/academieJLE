@@ -1,4 +1,4 @@
-# Knowledge JLE
+# Académie JLE
 
 Académie de Junia Lille Études : Next.js / React, Better Auth et PostgreSQL, compatible Neon et Vercel.
 
