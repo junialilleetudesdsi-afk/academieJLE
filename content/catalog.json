@@ -1,1 +1,2583 @@
-{"version":1,"articles":[],"questions":[]}
+{
+  "version": 2,
+  "checkedAt": "2026-11-17",
+  "notice": "Ressource pédagogique JLE, non officielle. Les simulations ne reproduisent pas un barème CNJE garanti. Sources vérifiées le 17/11/2026 ; les règles datées doivent être revues lors des prochaines mises à jour.",
+  "articles": [
+    {
+      "id": "deontologie",
+      "title": "Déontologie et valeur pédagogique",
+      "track": "Organisation",
+      "summary": "Les conditions qui donnent son sens au modèle Junior-Entreprise.",
+      "sections": [
+        {
+          "title": "Relier l’étude à la formation",
+          "body": "Une étude doit mobiliser des enseignements effectivement dispensés et évalués dans l’établissement. Sa valeur pédagogique repose sur un travail intellectuel et une analyse. Une phase sans valeur pédagogique propre doit être nécessaire aux phases qui en apportent."
+        },
+        {
+          "title": "Préserver l’autonomie",
+          "body": "Ni le client ni la Junior ne doivent placer l’intervenant dans une relation de subordination. L’accompagnement et le suivi ne doivent pas devenir un contrôle imposé des horaires, du lieu ou des méthodes de travail."
+        },
+        {
+          "title": "Rester cohérent",
+          "body": "Les documents client et intervenant doivent décrire des missions, délais et JEH cohérents. La communication doit présenter clairement la dimension étudiante et pédagogique de la Junior."
+        }
+      ],
+      "source": {
+        "title": "Déontologie et valeur pédagogique",
+        "url": "https://legal.junior-entreprises.com/a/code-de-la-deontologie",
+        "updated": "2026-03-16",
+        "checkedAt": "2026-11-17"
+      }
+    },
+    {
+      "id": "statuts",
+      "title": "Statuts et règlement intérieur",
+      "track": "Organisation",
+      "summary": "Distinguer le cadre de l’association de ses règles de fonctionnement.",
+      "sections": [
+        {
+          "title": "Les statuts",
+          "body": "Ils définissent notamment l’objet, le siège, les instances et leurs pouvoirs. L’objet pédagogique doit rester le cœur de l’activité. La modification suit la procédure prévue par les statuts eux-mêmes."
+        },
+        {
+          "title": "Le règlement intérieur",
+          "body": "Il précise les modalités pratiques et ne peut contredire les statuts. La CNJE demande un RI, même si toutes les associations ne sont pas soumises à une obligation légale générale d’en avoir un."
+        },
+        {
+          "title": "Adhésion et calendriers",
+          "body": "L’adhérent doit pouvoir consulter statuts et RI avant de signer son bulletin. L’exercice comptable et le mandat ne désignent pas nécessairement la même période."
+        }
+      ],
+      "source": {
+        "title": "Statuts et règlement intérieur",
+        "url": "https://legal.junior-entreprises.com/a/statuts-et-reglement-interieur",
+        "updated": "2026-10-23",
+        "checkedAt": "2026-11-17"
+      }
+    },
+    {
+      "id": "adhesion",
+      "title": "Adhésion et dossier des membres",
+      "track": "Organisation",
+      "summary": "Constituer, actualiser et suivre les dossiers sans confondre les statuts de membre.",
+      "sections": [
+        {
+          "title": "Une procédure traçable",
+          "body": "Respecter les étapes des statuts et du RI, recueillir un bulletin signé et conserver les preuves de validation. Un membre actif peut également être intervenant, avec les procédures correspondantes."
+        },
+        {
+          "title": "Actualiser les justificatifs",
+          "body": "Les membres actifs et intervenants doivent justifier leur scolarité dans l’établissement pour chaque année concernée. Lors d’une sélection pour une étude, compléter le dossier avec les justificatifs d’identité et de sécurité sociale nécessaires."
+        },
+        {
+          "title": "Cotisation et rétribution",
+          "body": "Si une cotisation est prévue, conserver une preuve de paiement. Ne jamais la déduire du BV. Un intervenant ne peut être rétribué sans le numéro de sécurité sociale requis ; les situations étrangères relèvent des procédures spécifiques détaillées dans Kiwi."
+        }
+      ],
+      "source": {
+        "title": "Adhésion et dossier des membres",
+        "url": "https://legal.junior-entreprises.com/a/membres-et-modalites-dadhesion",
+        "updated": "2026-09-14",
+        "checkedAt": "2026-11-17"
+      }
+    },
+    {
+      "id": "avenants",
+      "title": "Modifier une étude avec un avenant",
+      "track": "Organisation",
+      "summary": "Faire évoluer les engagements sans perdre leur cohérence.",
+      "sections": [
+        {
+          "title": "Des modifications cumulatives",
+          "body": "Un nouvel avenant n’annule pas automatiquement les précédents. Il faut identifier exactement les clauses modifiées et conserver l’ensemble de la chaîne contractuelle."
+        },
+        {
+          "title": "Le cas de l’e-mail",
+          "body": "Certains ajustements limités peuvent être validés par e-mail si les CGE le prévoient et que le consentement explicite est recueilli selon les modalités prévues. Ce procédé ne convient pas aux modifications méthodologiques ni aux ruptures."
+        },
+        {
+          "title": "Répercuter et archiver",
+          "body": "Vérifier les impacts sur les documents intervenants et archiver les échanges dans un espace partagé de la Junior. Pour une rupture, utiliser le formalisme adapté plutôt qu’un PVR final fictif."
+        }
+      ],
+      "source": {
+        "title": "Modifier une étude avec un avenant",
+        "url": "https://legal.junior-entreprises.com/a/avenant-a-la-convention-detude-ce-cote-client",
+        "updated": "2026-05-19",
+        "checkedAt": "2026-11-17"
+      }
+    },
+    {
+      "id": "signature",
+      "title": "Signatures et pouvoirs",
+      "track": "Organisation",
+      "summary": "Vérifier qui engage chaque partie et conserver une preuve exploitable.",
+      "sections": [
+        {
+          "title": "Pouvoir engager",
+          "body": "Identifier le représentant légal ou vérifier une délégation valable. Une délégation précise les personnes, son objet, sa portée et sa durée ; elle n’efface pas la responsabilité du délégant. Le président doit prendre connaissance et valider le document avant la signature déléguée."
+        },
+        {
+          "title": "Les marques accessoires",
+          "body": "Le tampon, les paraphes et la mention « lu et approuvé » ne remplacent pas une signature valable. Leur absence n’a pas automatiquement le même effet que l’absence de signature."
+        },
+        {
+          "title": "Préserver les originaux",
+          "body": "Conserver le document dans son format original : papier pour une signature manuscrite, fichier original pour une signature électronique. Vérifier aussi les pouvoirs du signataire client."
+        }
+      ],
+      "source": {
+        "title": "Signatures et pouvoirs",
+        "url": "https://legal.junior-entreprises.com/a/signatures-et-marques-dengagement",
+        "updated": "2026-07-29",
+        "checkedAt": "2026-11-17"
+      }
+    },
+    {
+      "id": "esign",
+      "title": "Choisir une signature électronique",
+      "track": "Organisation",
+      "summary": "Adapter le niveau de preuve à la sensibilité du document.",
+      "sections": [
+        {
+          "title": "Image et signature",
+          "body": "Une image de signature collée dans un PDF n’apporte pas les propriétés d’une véritable signature électronique. Vérifier le mécanisme, pas seulement l’apparence du document."
+        },
+        {
+          "title": "Documents sensibles",
+          "body": "Kiwi demande pour les documents sensibles, tels qu’une convention d’étude ou une note de frais, une signature qualifiée ou une signature avancée reposant sur un certificat qualifié. Le niveau dépend de la configuration utilisée, pas seulement du nom du logiciel."
+        },
+        {
+          "title": "Contrôler le niveau",
+          "body": "Vérifier les preuves et le niveau avec un outil approprié, notamment DSS. Une solution de signature simple telle qu’Odoo Sign ne suffit pas pour les documents sensibles visés par cette fiche."
+        }
+      ],
+      "source": {
+        "title": "Choisir une signature électronique",
+        "url": "https://legal.junior-entreprises.com/a/signature-electronique-2",
+        "updated": "2026-02-25",
+        "checkedAt": "2026-11-17"
+      }
+    },
+    {
+      "id": "licences",
+      "title": "Licences et usage commercial",
+      "track": "Organisation",
+      "summary": "S’assurer que les logiciels utilisés autorisent les activités de la Junior.",
+      "sections": [
+        {
+          "title": "Vérifier les droits",
+          "body": "Un logiciel gratuit, éducatif ou en version d’essai n’est pas automatiquement autorisé pour une étude. Lire les conditions d’utilisation et les droits d’usage commercial."
+        },
+        {
+          "title": "Suivi des outils",
+          "body": "Recenser les logiciels employés, les licences associées et les preuves. La mise à disposition par un client exige aussi de vérifier les droits et de formaliser le prêt."
+        },
+        {
+          "title": "Exceptions encadrées",
+          "body": "La fiche précise des possibilités pour les licences éducatives Microsoft et Adobe. Ne pas étendre automatiquement cette exception à tous les produits : Azure en est notamment exclu."
+        }
+      ],
+      "source": {
+        "title": "Licences et usage commercial",
+        "url": "https://legal.junior-entreprises.com/a/licences-logicielles-version-crp26",
+        "updated": "2026-07-20",
+        "checkedAt": "2026-11-17"
+      }
+    },
+    {
+      "id": "bv",
+      "title": "Bulletin de versement et rétribution",
+      "track": "Trésorerie",
+      "summary": "Comprendre les conditions de rétribution et la base sociale.",
+      "sections": [
+        {
+          "title": "Avant le versement",
+          "body": "Dans le cas habituel, vérifier le dossier intervenant complet, le PVR signé et la facture correspondante émise et réglée. Une rétribution avant paiement client relève d’un traitement exceptionnel à valider avec le Pôle Conseil."
+        },
+        {
+          "title": "Nature et assiette",
+          "body": "La rétribution relève des BNC. Les cotisations sont calculées à partir d’une assiette forfaitaire de quatre fois le SMIC horaire du 1er janvier de l’année d’émission du BV, par JEH, et non directement sur la rétribution brute."
+        },
+        {
+          "title": "Suivre et conserver",
+          "body": "La date d’émission du BV détermine le rattachement social. Conserver les BV à vie. La fiche fixe à 320 € brut par JEH le plafond de rétribution applicable en 2026 : ne pas le confondre avec le prix facturé au client, et le revérifier pour une autre année."
+        }
+      ],
+      "source": {
+        "title": "Bulletin de versement et rétribution",
+        "url": "https://legal.junior-entreprises.com/a/bulletin-de-versement-bv",
+        "updated": "2026-08-03",
+        "checkedAt": "2026-11-17"
+      }
+    },
+    {
+      "id": "tva",
+      "title": "TVA : calcul et contrôles",
+      "track": "Trésorerie",
+      "summary": "Distinguer taxe collectée, taxe déductible et résultat.",
+      "sections": [
+        {
+          "title": "Mécanisme",
+          "body": "Pour une prestation française au taux normal, la TVA est de 20 %. Dans le régime sur les encaissements décrit par Kiwi, la TVA collectée devient exigible au paiement du client. Les cas internationaux nécessitent une analyse spécifique."
+        },
+        {
+          "title": "Déduire avec discernement",
+          "body": "La dépense doit servir l’intérêt de la Junior et avoir un justificatif conforme. La TVA sur le transport de personnes et les nuitées d’hôtel des membres est notamment exclue de la déduction. Une TVA non déductible reste dans le coût de la dépense."
+        },
+        {
+          "title": "Contrôler",
+          "body": "Calculer la TVA à payer en tenant compte de la taxe collectée, de la taxe déductible et des crédits antérieurs. Kiwi préconise deux outils et deux acteurs pour le double contrôle, avec les grands livres archivés comme preuve. Les produits sont présentés hors TVA ; la TVA récupérable ne constitue pas une charge."
+        }
+      ],
+      "source": {
+        "title": "TVA : calcul et contrôles",
+        "url": "https://legal.junior-entreprises.com/a/taxe-sur-la-valeur-ajoutee-tva",
+        "updated": "2026-09-08",
+        "checkedAt": "2026-11-17"
+      }
+    },
+    {
+      "id": "cutoff",
+      "title": "Clôture : les cut-off",
+      "track": "Trésorerie",
+      "summary": "Rattacher produits et charges au bon exercice.",
+      "sections": [
+        {
+          "title": "Le principe",
+          "body": "L’indépendance des exercices conduit à rattacher produits et charges à la période qui les concerne, même si la facturation ou le paiement se situe ailleurs."
+        },
+        {
+          "title": "Quatre familles",
+          "body": "Une charge constatée d’avance (486) ou un produit constaté d’avance (487) concerne une période future. Une facture à établir (418) correspond à un produit acquis non encore facturé ; une facture non parvenue (408) à une charge à rattacher non encore facturée."
+        },
+        {
+          "title": "Justifier les écritures",
+          "body": "Documenter l’avancement réel des études et les calculs. L’extourne consiste à passer l’écriture inverse au début de l’exercice suivant. Les comptes de bilan appartiennent aux classes 1 à 5 ; les charges et produits aux classes 6 et 7."
+        }
+      ],
+      "source": {
+        "title": "Clôture : les cut-off",
+        "url": "https://legal.junior-entreprises.com/a/cut-off",
+        "updated": "2026-06-16",
+        "checkedAt": "2026-11-17"
+      }
+    },
+    {
+      "id": "erb",
+      "title": "Rapprochement bancaire",
+      "track": "Trésorerie",
+      "summary": "Expliquer les écarts entre le relevé bancaire et la comptabilité.",
+      "sections": [
+        {
+          "title": "Deux lectures à rapprocher",
+          "body": "L’ERB compare les mouvements du relevé bancaire avec ceux du compte 512. Un écart peut venir d’un décalage de date ; il ne prouve pas à lui seul une erreur."
+        },
+        {
+          "title": "Une procédure régulière",
+          "body": "Kiwi recommande un rapprochement mensuel. Reprendre les opérations non pointées précédentes, pointer les mouvements communs et rechercher les anomalies."
+        },
+        {
+          "title": "Une preuve contrôlée",
+          "body": "Justifier les écarts persistants et corriger les erreurs identifiées. La fiche prévoit la signature du président et du trésorier pour matérialiser le contrôle."
+        }
+      ],
+      "source": {
+        "title": "Rapprochement bancaire",
+        "url": "https://legal.junior-entreprises.com/a/erb",
+        "updated": "2023-05-18",
+        "checkedAt": "2026-11-17"
+      }
+    },
+    {
+      "id": "facturation",
+      "title": "Facturation : mise à jour de septembre 2026",
+      "track": "Trésorerie",
+      "summary": "Deux changements à distinguer des conditions de rétribution.",
+      "sections": [
+        {
+          "title": "Émettre sans attendre la signature du PVR",
+          "body": "L’actualité du 12 septembre 2026 indique que la facture doit être émise au moment de l’émission du PVR et non après sa signature. Continuer néanmoins à obtenir sa signature au plus vite."
+        },
+        {
+          "title": "Un solde même nul",
+          "body": "Une facture de solde reste nécessaire à la remise du livrable final, même si le montant encore dû est nul. Cela assure la traçabilité de la clôture financière."
+        },
+        {
+          "title": "Ne pas confondre les étapes",
+          "body": "Le changement de date d’émission de facture ne supprime pas les conditions de rétribution du BV. Consulter séparément la fiche BV avant de payer l’intervenant."
+        }
+      ],
+      "source": {
+        "title": "Facturation : mise à jour de septembre 2026",
+        "url": "https://legal.junior-entreprises.com/a/changements-legaux-du-12-09-2026",
+        "updated": "2026-09-12",
+        "checkedAt": "2026-11-17"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Une nouvelle prestation entre dans l’offre de la Junior. Quel lien pédagogique faut-il vérifier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle mobilise des enseignements dispensés et évalués dans l’établissement."
+        },
+        {
+          "id": "b",
+          "text": "Elle figure dans l’offre d’un cabinet concurrent."
+        },
+        {
+          "id": "c",
+          "text": "Un membre s’y intéresse personnellement."
+        },
+        {
+          "id": "d",
+          "text": "Le client accepte un tarif réduit."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Le rattachement aux enseignements et le travail intellectuel fondent la valeur pédagogique. La demande commerciale ne suffit pas.",
+      "origin": "quizz tac 9.pdf · Q3 ; quizz tac 10.pdf · Q3",
+      "status": "verified"
+    },
+    {
+      "id": "q002",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Une phase sans valeur pédagogique propre peut-elle être intégrée à une étude ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, sans autre condition."
+        },
+        {
+          "id": "b",
+          "text": "Oui, si elle est nécessaire aux phases apportant une valeur pédagogique."
+        },
+        {
+          "id": "c",
+          "text": "Non, même si elle est indispensable à l’analyse."
+        },
+        {
+          "id": "d",
+          "text": "Oui, uniquement pour augmenter le nombre de JEH."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La dérogation porte sur une phase nécessaire à la réalisation des phases pédagogiques ; elle ne permet pas une simple mise à disposition de main-d’œuvre.",
+      "origin": "quizz tac 5.pdf · Q26",
+      "status": "verified"
+    },
+    {
+      "id": "q003",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle pratique présente un risque de subordination ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le client précise le livrable attendu."
+        },
+        {
+          "id": "b",
+          "text": "La Junior explique les exigences de qualité."
+        },
+        {
+          "id": "c",
+          "text": "Le client impose et contrôle quotidiennement les horaires de l’intervenant."
+        },
+        {
+          "id": "d",
+          "text": "Les parties conviennent d’une date de livraison."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le contrôle des conditions de travail est différent d’une obligation de résultat et du suivi d’un livrable.",
+      "origin": "quizz tac 5.pdf · Q27 ; quizz tac 11.pdf · Q12",
+      "status": "verified"
+    },
+    {
+      "id": "q004",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "L’absence de subordination concerne les relations de l’intervenant avec…",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le client uniquement."
+        },
+        {
+          "id": "b",
+          "text": "La Junior uniquement."
+        },
+        {
+          "id": "c",
+          "text": "La banque de la Junior uniquement."
+        },
+        {
+          "id": "d",
+          "text": "Le client et la Junior."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "La Junior ne doit pas davantage se comporter comme un employeur dans l’organisation du travail de l’intervenant.",
+      "origin": "quizz tac 8.pdf · Q9",
+      "status": "verified"
+    },
+    {
+      "id": "q005",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Pourquoi comparer les documents client et intervenant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour vérifier la cohérence des missions, délais et JEH."
+        },
+        {
+          "id": "b",
+          "text": "Pour leur donner systématiquement le même prix."
+        },
+        {
+          "id": "c",
+          "text": "Pour supprimer le récapitulatif de mission."
+        },
+        {
+          "id": "d",
+          "text": "Pour remplacer les signatures par un accord oral."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Les engagements doivent être compatibles tout au long de l’étude. Le prix client et la rétribution ne se confondent pas.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q006",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel message respecte le positionnement d’une Junior ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un cabinet professionnel qui garantit les prix les plus bas."
+        },
+        {
+          "id": "b",
+          "text": "Une association étudiante réalisant des études à vocation pédagogique."
+        },
+        {
+          "id": "c",
+          "text": "Une agence fournissant des salariés temporaires."
+        },
+        {
+          "id": "d",
+          "text": "Un prestataire qui dissimule le statut étudiant de ses intervenants."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La transparence sur la nature étudiante et pédagogique fait partie de la déontologie.",
+      "origin": "quizz tac1 - 1.pdf · communication",
+      "status": "verified"
+    },
+    {
+      "id": "q007",
+      "articleId": "statuts",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "En cas de contradiction entre statuts et règlement intérieur, quel texte prévaut ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le règlement intérieur, car il est plus détaillé."
+        },
+        {
+          "id": "b",
+          "text": "Le texte le plus récent, quel qu’il soit."
+        },
+        {
+          "id": "c",
+          "text": "Les statuts."
+        },
+        {
+          "id": "d",
+          "text": "Le choix oral du trésorier."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le RI précise les statuts ; il ne peut déroger à leurs dispositions.",
+      "origin": "quizz tac 6.pdf · Q1",
+      "status": "verified"
+    },
+    {
+      "id": "q008",
+      "articleId": "statuts",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Où trouve-t-on normalement les instances de l’association et leurs pouvoirs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement dans le budget."
+        },
+        {
+          "id": "b",
+          "text": "Uniquement dans la convention d’étude."
+        },
+        {
+          "id": "c",
+          "text": "Dans chaque bulletin de versement."
+        },
+        {
+          "id": "d",
+          "text": "Dans les statuts."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Les statuts structurent la gouvernance et définissent les compétences des organes.",
+      "origin": "quizz tac 10.pdf · Q8",
+      "status": "verified"
+    },
+    {
+      "id": "q009",
+      "articleId": "statuts",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quand un futur adhérent doit-il avoir accès aux statuts et au RI ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avant de signer son bulletin d’adhésion."
+        },
+        {
+          "id": "b",
+          "text": "Uniquement après son premier BV."
+        },
+        {
+          "id": "c",
+          "text": "Seulement en cas de litige."
+        },
+        {
+          "id": "d",
+          "text": "Lors de la fin de son adhésion."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Il doit pouvoir connaître les règles auxquelles son adhésion l’engage.",
+      "origin": "quizz tac 10.pdf · Q2",
+      "status": "verified"
+    },
+    {
+      "id": "q010",
+      "articleId": "statuts",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Comment déterminer la procédure de modification des statuts ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En organisant toujours un vote du trésorier seul."
+        },
+        {
+          "id": "b",
+          "text": "En appliquant les dispositions des statuts en vigueur."
+        },
+        {
+          "id": "c",
+          "text": "En modifiant directement le fichier sans décision."
+        },
+        {
+          "id": "d",
+          "text": "En demandant l’accord de chaque client."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Le type d’assemblée, les majorités et les formalités internes dépendent du texte applicable ; on ne doit pas inventer une règle universelle.",
+      "origin": "quizz tac 10.pdf · Q25",
+      "status": "verified"
+    },
+    {
+      "id": "q011",
+      "articleId": "statuts",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle affirmation sur le RI est correcte pour une Junior membre du mouvement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il remplace entièrement les statuts."
+        },
+        {
+          "id": "b",
+          "text": "Il ne concerne que le bureau."
+        },
+        {
+          "id": "c",
+          "text": "Il est demandé par la CNJE, sans être une obligation légale universelle de toute association."
+        },
+        {
+          "id": "d",
+          "text": "Il s’impose automatiquement à tous les clients."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Il faut distinguer exigence du mouvement et obligation légale générale. Le RI règle le fonctionnement interne.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q012",
+      "articleId": "statuts",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "L’exercice comptable correspond-il obligatoirement au mandat ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, dans toute association."
+        },
+        {
+          "id": "b",
+          "text": "Oui, uniquement si le président change."
+        },
+        {
+          "id": "c",
+          "text": "Non, car un exercice comptable dure toujours trois ans."
+        },
+        {
+          "id": "d",
+          "text": "Non, ces deux périodes peuvent être différentes."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le mandat est une période de gouvernance ; l’exercice comptable sert à établir les comptes annuels.",
+      "origin": "quizz tac 5.pdf · Q11, reformulée",
+      "status": "verified"
+    },
+    {
+      "id": "q013",
+      "articleId": "adhesion",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un membre actif peut-il aussi être intervenant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, en respectant les procédures applicables à ces deux statuts."
+        },
+        {
+          "id": "b",
+          "text": "Non, ces deux statuts sont toujours incompatibles."
+        },
+        {
+          "id": "c",
+          "text": "Oui, sans dossier d’adhésion."
+        },
+        {
+          "id": "d",
+          "text": "Oui, mais seulement après son départ de l’école."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Kiwi autorise le cumul, tout en distinguant les modalités et les conditions de chaque statut.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q014",
+      "articleId": "adhesion",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "La carte étudiante du dossier doit être actualisée…",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une seule fois dans la vie de la Junior."
+        },
+        {
+          "id": "b",
+          "text": "Pour chaque nouvelle année scolaire couverte par l’adhésion."
+        },
+        {
+          "id": "c",
+          "text": "Seulement au premier audit."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement si le membre change de poste."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La preuve doit établir que le membre étudie bien dans l’établissement pour l’année en cours.",
+      "origin": "quizz tac 10.pdf · dossier intervenant",
+      "status": "verified"
+    },
+    {
+      "id": "q015",
+      "articleId": "adhesion",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Peut-on prélever la cotisation d’adhésion sur le BV ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, systématiquement."
+        },
+        {
+          "id": "b",
+          "text": "Oui, si le président préfère."
+        },
+        {
+          "id": "c",
+          "text": "Non, la cotisation ne doit pas être déduite du BV."
+        },
+        {
+          "id": "d",
+          "text": "Oui, pour éviter toute preuve de paiement."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Kiwi interdit cette déduction : l’adhésion et la rétribution doivent être traitées séparément.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q016",
+      "articleId": "adhesion",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel document formalise l’engagement du membre à respecter statuts et RI ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le devis adressé au client."
+        },
+        {
+          "id": "b",
+          "text": "Le relevé bancaire de la Junior."
+        },
+        {
+          "id": "c",
+          "text": "Le procès-verbal de recette client."
+        },
+        {
+          "id": "d",
+          "text": "Le bulletin d’adhésion signé."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le bulletin matérialise l’adhésion ; les autres étapes prévues par les statuts restent également nécessaires.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q017",
+      "articleId": "adhesion",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un intervenant n’a fourni aucun justificatif permettant d’obtenir son numéro de sécurité sociale. Peut-on le rétribuer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non, il faut d’abord compléter les justificatifs nécessaires au BV."
+        },
+        {
+          "id": "b",
+          "text": "Oui, en inventant un numéro."
+        },
+        {
+          "id": "c",
+          "text": "Oui, en utilisant le numéro du président."
+        },
+        {
+          "id": "d",
+          "text": "Oui, sans mention sur le BV."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Le numéro requis doit figurer sur le BV. Les cas étrangers doivent suivre une procédure spécifique, jamais un numéro inventé.",
+      "origin": "quizz tac1 - 1.pdf · dossier étranger, corrigé",
+      "status": "verified"
+    },
+    {
+      "id": "q018",
+      "articleId": "adhesion",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Pourquoi conserver la preuve de validation de chaque adhésion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour dispenser le membre de signer son bulletin."
+        },
+        {
+          "id": "b",
+          "text": "Pour démontrer le respect de la procédure des statuts et du RI."
+        },
+        {
+          "id": "c",
+          "text": "Pour garantir automatiquement une étude au membre."
+        },
+        {
+          "id": "d",
+          "text": "Pour remplacer la preuve de scolarité."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Une signature seule ne remplace pas les autres étapes de validation prévues par les textes de l’association.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q019",
+      "articleId": "avenants",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un deuxième avenant annule-t-il automatiquement le premier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, toujours."
+        },
+        {
+          "id": "b",
+          "text": "Oui, seulement si le budget augmente."
+        },
+        {
+          "id": "c",
+          "text": "Non, les avenants se cumulent sauf disposition contraire explicite."
+        },
+        {
+          "id": "d",
+          "text": "Oui, dès qu’un nouvel intervenant arrive."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Chaque avenant modifie les points qu’il vise. Il faut lire ensemble le contrat et ses modifications.",
+      "origin": "quizz tac1 - 1.pdf ; quizz tac - 3.pdf · avenants, corrigé",
+      "status": "verified"
+    },
+    {
+      "id": "q020",
+      "articleId": "avenants",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un report de délai peut-il être validé par e-mail ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, un message unilatéral suffit toujours."
+        },
+        {
+          "id": "b",
+          "text": "Non, jamais."
+        },
+        {
+          "id": "c",
+          "text": "Oui, même si les CGE excluent cette possibilité."
+        },
+        {
+          "id": "d",
+          "text": "Oui, sous les conditions prévues par les CGE et avec un consentement explicite."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "La fiche autorise certains avenants par e-mail mais exige un cadre contractuel et un accord traçable.",
+      "origin": "quizz tac 8.pdf · Q10 et Q17",
+      "status": "verified"
+    },
+    {
+      "id": "q021",
+      "articleId": "avenants",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle modification ne peut pas utiliser le simple dispositif d’avenant par e-mail décrit par Kiwi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une modification de la méthodologie."
+        },
+        {
+          "id": "b",
+          "text": "Un report de délai répondant aux conditions prévues."
+        },
+        {
+          "id": "c",
+          "text": "Une correction limitée du cahier des charges admissible selon les CGE."
+        },
+        {
+          "id": "d",
+          "text": "Un ajustement de budget sans changement de JEH admissible selon les CGE."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Les modifications méthodologiques, comme les ruptures, nécessitent le formalisme d’avenant approprié.",
+      "origin": "quizz tac 8.pdf · Q5",
+      "status": "verified"
+    },
+    {
+      "id": "q022",
+      "articleId": "avenants",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Après un avenant client modifiant les délais de mission, quel contrôle est essentiel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Supprimer tous les RM."
+        },
+        {
+          "id": "b",
+          "text": "Vérifier et adapter les engagements correspondants avec les intervenants."
+        },
+        {
+          "id": "c",
+          "text": "Émettre automatiquement un BV."
+        },
+        {
+          "id": "d",
+          "text": "Effacer la convention initiale."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La cohérence documentaire doit rester assurée des deux côtés de l’étude.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q023",
+      "articleId": "avenants",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Où conserver un accord de modification reçu par e-mail ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement dans la messagerie personnelle du chef de projet."
+        },
+        {
+          "id": "b",
+          "text": "Nulle part après lecture."
+        },
+        {
+          "id": "c",
+          "text": "Dans les archives partagées de la Junior avec les références de l’étude."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement sur le téléphone du client."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "L’accord doit rester accessible après la passation et pouvoir être rattaché à l’étude.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q024",
+      "articleId": "avenants",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel document utiliser pour formaliser une rupture anticipée selon son cas ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un PVR final affirmant fictivement que tout a été livré."
+        },
+        {
+          "id": "b",
+          "text": "Un simple changement de nom du dossier."
+        },
+        {
+          "id": "c",
+          "text": "Un BV adressé au client."
+        },
+        {
+          "id": "d",
+          "text": "Un avenant de rupture adapté."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "La rupture doit être formalisée comme telle ; elle ne constitue pas la recette d’un livrable final non réalisé.",
+      "origin": "quizz tac 8.pdf · Q7, reformulée",
+      "status": "verified"
+    },
+    {
+      "id": "q025",
+      "articleId": "signature",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Le tampon de l’entreprise suffit-il à engager le client ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non, il ne remplace pas une signature par une personne habilitée."
+        },
+        {
+          "id": "b",
+          "text": "Oui, même sans nom de signataire."
+        },
+        {
+          "id": "c",
+          "text": "Oui, seulement en couleur."
+        },
+        {
+          "id": "d",
+          "text": "Oui, dès qu’il contient un SIRET."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La marque commerciale n’établit pas à elle seule le consentement d’un représentant habilité.",
+      "origin": "quizz tac - 3.pdf · signatures",
+      "status": "verified"
+    },
+    {
+      "id": "q026",
+      "articleId": "signature",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel élément faut-il vérifier chez le signataire client ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sa présence sur un réseau social."
+        },
+        {
+          "id": "b",
+          "text": "Son pouvoir de représenter l’entreprise ou une délégation valable."
+        },
+        {
+          "id": "c",
+          "text": "Son ancienneté exacte dans l’entreprise."
+        },
+        {
+          "id": "d",
+          "text": "La couleur de son stylo uniquement."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "L’enjeu est sa capacité à engager la personne morale, à vérifier notamment avec les éléments officiels et délégations.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q027",
+      "articleId": "signature",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Une délégation de signature rend-elle le délégant irresponsable des engagements pris ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, automatiquement."
+        },
+        {
+          "id": "b",
+          "text": "Oui, si elle est envoyée par e-mail."
+        },
+        {
+          "id": "c",
+          "text": "Non, elle ne supprime pas sa responsabilité."
+        },
+        {
+          "id": "d",
+          "text": "Oui, si le délégataire est trésorier."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La délégation encadre la faculté de signer ; elle ne transfère pas simplement toute responsabilité.",
+      "origin": "quizz tac 10.pdf · Q10",
+      "status": "verified"
+    },
+    {
+      "id": "q028",
+      "articleId": "signature",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel ensemble décrit utilement une délégation de signature ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement un prénom sur un tableau."
+        },
+        {
+          "id": "b",
+          "text": "Une autorisation sans objet ni durée."
+        },
+        {
+          "id": "c",
+          "text": "Un mot de passe transmis au délégataire."
+        },
+        {
+          "id": "d",
+          "text": "Identité des parties, périmètre et durée, avec leur engagement formalisé."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Un périmètre explicite permet de vérifier que le document signé entre dans les pouvoirs délégués.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q029",
+      "articleId": "signature",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Comment conserver un document signé électroniquement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conserver le fichier électronique original et ses éléments de preuve."
+        },
+        {
+          "id": "b",
+          "text": "Conserver seulement une impression papier."
+        },
+        {
+          "id": "c",
+          "text": "Garder uniquement une photographie de l’écran."
+        },
+        {
+          "id": "d",
+          "text": "Supprimer le fichier après sa signature."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "L’impression ne conserve pas les propriétés de vérification de la signature électronique.",
+      "origin": "quizz tac 10.pdf · Q5",
+      "status": "verified"
+    },
+    {
+      "id": "q030",
+      "articleId": "signature",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "La mention « lu et approuvé » est-elle à elle seule une signature ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, même tapée par un tiers."
+        },
+        {
+          "id": "b",
+          "text": "Non, elle ne remplace pas la signature."
+        },
+        {
+          "id": "c",
+          "text": "Oui, sans identifier le signataire."
+        },
+        {
+          "id": "d",
+          "text": "Oui, si elle est écrite en majuscules."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Les marques d’engagement accessoires ne doivent pas être confondues avec l’identification et le consentement portés par la signature.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q031",
+      "articleId": "esign",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Coller une image de sa signature dans un PDF crée-t-il une signature électronique sécurisée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, si l’image est en haute résolution."
+        },
+        {
+          "id": "b",
+          "text": "Oui, si le PDF est renommé « signé »."
+        },
+        {
+          "id": "c",
+          "text": "Non, l’image seule ne fournit pas les garanties attendues."
+        },
+        {
+          "id": "d",
+          "text": "Oui, si l’image est bleue."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Il faut un mécanisme de signature et des preuves vérifiables, pas uniquement un dessin.",
+      "origin": "quizz tac 8.pdf · Q4",
+      "status": "verified"
+    },
+    {
+      "id": "q032",
+      "articleId": "esign",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Selon Kiwi, quel niveau convient à une convention d’étude sensible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une signature simple sans autre contrôle."
+        },
+        {
+          "id": "b",
+          "text": "Une image collée dans le PDF."
+        },
+        {
+          "id": "c",
+          "text": "Un nom tapé sans mécanisme de preuve."
+        },
+        {
+          "id": "d",
+          "text": "Qualifiée ou avancée reposant sur un certificat qualifié."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "La fiche distingue les documents sensibles et impose un niveau supérieur à une signature simple.",
+      "origin": "quizz tac 9.pdf · Q17, actualisée",
+      "status": "verified"
+    },
+    {
+      "id": "q033",
+      "articleId": "esign",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Connaître le nom commercial d’un outil suffit-il à valider ses signatures ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non, il faut contrôler le niveau et la configuration réellement utilisés."
+        },
+        {
+          "id": "b",
+          "text": "Oui, tous ses forfaits sont identiques."
+        },
+        {
+          "id": "c",
+          "text": "Oui, si son logo est connu."
+        },
+        {
+          "id": "d",
+          "text": "Oui, si l’abonnement est payant."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Une même solution peut proposer plusieurs niveaux de signature. Le prix ou la marque ne prouve pas le niveau.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q034",
+      "articleId": "esign",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel contrôle permet d’aller au-delà de l’apparence visuelle d’un PDF signé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vérifier seulement la taille du fichier."
+        },
+        {
+          "id": "b",
+          "text": "Vérifier la signature et son niveau avec un outil adapté tel que DSS."
+        },
+        {
+          "id": "c",
+          "text": "Imprimer le PDF."
+        },
+        {
+          "id": "d",
+          "text": "Ajouter un tampon par-dessus."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Le contrôle porte sur les propriétés techniques et les preuves, pas sur la présence d’un dessin de signature.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q035",
+      "articleId": "licences",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un logiciel gratuit peut-il être utilisé automatiquement dans une étude facturée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, la gratuité suffit."
+        },
+        {
+          "id": "b",
+          "text": "Oui, si le client ne le sait pas."
+        },
+        {
+          "id": "c",
+          "text": "Non, il faut vérifier que sa licence autorise cet usage."
+        },
+        {
+          "id": "d",
+          "text": "Oui, si un étudiant le télécharge."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Gratuit décrit le prix ; la licence détermine les usages autorisés.",
+      "origin": "quizz tac 10.pdf · Q20",
+      "status": "verified"
+    },
+    {
+      "id": "q036",
+      "articleId": "licences",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Une version d’essai payante à terme est utilisable commercialement pendant l’essai…",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toujours."
+        },
+        {
+          "id": "b",
+          "text": "Jamais, quelle que soit sa licence."
+        },
+        {
+          "id": "c",
+          "text": "Seulement en supprimant le logo du logiciel."
+        },
+        {
+          "id": "d",
+          "text": "Seulement si ses conditions l’autorisent."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le droit d’usage doit être vérifié dans les conditions de la version concernée.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q037",
+      "articleId": "licences",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Que faut-il faire lorsqu’un client prête une licence pour son étude ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vérifier les droits et formaliser la mise à disposition."
+        },
+        {
+          "id": "b",
+          "text": "Supposer que tous les prêts sont autorisés."
+        },
+        {
+          "id": "c",
+          "text": "Partager librement le compte avec tous les membres."
+        },
+        {
+          "id": "d",
+          "text": "Conserver la licence pour toutes les études futures."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Le client ne peut pas accorder des droits qu’il ne possède pas ; le prêt doit être encadré et prouvé.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q038",
+      "articleId": "licences",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "L’exception concernant certaines licences éducatives Microsoft couvre-t-elle automatiquement Azure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, tous les produits Microsoft sans restriction."
+        },
+        {
+          "id": "b",
+          "text": "Non, Azure est exclu de cette exception dans la fiche Kiwi."
+        },
+        {
+          "id": "c",
+          "text": "Oui, si l’étude dure moins d’un mois."
+        },
+        {
+          "id": "d",
+          "text": "Oui, si le client est une association."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La fiche précise explicitement cette limite ; les exceptions ne doivent pas être généralisées.",
+      "origin": "quizz tac 8.pdf · Q1",
+      "status": "verified"
+    },
+    {
+      "id": "q039",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Dans quelle catégorie fiscale se situent les honoraires de l’intervenant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les traitements et salaires."
+        },
+        {
+          "id": "b",
+          "text": "Les bénéfices industriels et commerciaux uniquement."
+        },
+        {
+          "id": "c",
+          "text": "Les bénéfices non commerciaux (BNC)."
+        },
+        {
+          "id": "d",
+          "text": "Ils sont toujours exonérés et non déclarables."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La rétribution des études est constituée d’honoraires relevant des BNC, et non d’un salaire.",
+      "origin": "quizz tac 5.pdf · Q18 ; quizz tac 10.pdf · Q27",
+      "status": "verified"
+    },
+    {
+      "id": "q040",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quelle formule décrit l’assiette forfaitaire pour n JEH ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rétribution nette × n."
+        },
+        {
+          "id": "b",
+          "text": "Prix HT client × 20 %."
+        },
+        {
+          "id": "c",
+          "text": "Rétribution brute ÷ n."
+        },
+        {
+          "id": "d",
+          "text": "4 × SMIC horaire de référence × n."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "La base sociale est forfaitaire et dépend du nombre de JEH et du SMIC de référence.",
+      "origin": "quizz tac 5.pdf · Q22 ; quizz tac 10.pdf · Q23",
+      "status": "verified"
+    },
+    {
+      "id": "q041",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quel SMIC horaire retenir pour un BV émis pendant l’année N ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Celui du 1er janvier de l’année N."
+        },
+        {
+          "id": "b",
+          "text": "Celui de la signature de la convention, même l’année précédente."
+        },
+        {
+          "id": "c",
+          "text": "Celui du 31 décembre précédent sans autre vérification."
+        },
+        {
+          "id": "d",
+          "text": "Celui choisi par le client."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La référence est le 1er janvier de l’année d’émission du BV. Une hausse en cours d’année ne change pas cette référence.",
+      "origin": "quizz tac 5.pdf · Q29, reformulée",
+      "status": "verified"
+    },
+    {
+      "id": "q042",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Une hausse du SMIC intervient en juillet. Change-t-elle l’assiette de référence des BV de cette année ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, pour tous les BV déjà émis."
+        },
+        {
+          "id": "b",
+          "text": "Non, la référence reste le SMIC du 1er janvier."
+        },
+        {
+          "id": "c",
+          "text": "Oui, uniquement si le client est étranger."
+        },
+        {
+          "id": "d",
+          "text": "Oui, selon le nombre de membres."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La règle de référence annuelle évite de recalculer l’assiette au fil des revalorisations.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q043",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quel événement rattache le BV à une période de déclaration sociale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement son paiement."
+        },
+        {
+          "id": "b",
+          "text": "La première réunion client."
+        },
+        {
+          "id": "c",
+          "text": "Son émission."
+        },
+        {
+          "id": "d",
+          "text": "La date d’adhésion du président."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Il ne faut pas confondre BV émis et BV payés dans le suivi social.",
+      "origin": "quizz tac 5.pdf · Q23",
+      "status": "verified"
+    },
+    {
+      "id": "q044",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quelle durée d’archivage Kiwi indique-t-il pour les BV ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un an."
+        },
+        {
+          "id": "b",
+          "text": "Cinq ans uniquement."
+        },
+        {
+          "id": "c",
+          "text": "Jusqu’au mandat suivant."
+        },
+        {
+          "id": "d",
+          "text": "À vie."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "La conservation longue protège notamment la traçabilité des droits des intervenants.",
+      "origin": "quizz tac 5.pdf · Q37",
+      "status": "verified"
+    },
+    {
+      "id": "q045",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Dans le cas habituel, quelle situation permet de poursuivre vers la rétribution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dossier complet, PVR signé et facture correspondante émise et réglée."
+        },
+        {
+          "id": "b",
+          "text": "Une promesse orale de paiement suffit."
+        },
+        {
+          "id": "c",
+          "text": "Le seul envoi du devis suffit."
+        },
+        {
+          "id": "d",
+          "text": "Le BV remplace le dossier d’adhésion."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Les conditions sont cumulatives dans le processus habituel. Les exceptions doivent être traitées selon le cadre CNJE.",
+      "origin": "quizz tac 7.pdf · Q3, clarifiée",
+      "status": "verified"
+    },
+    {
+      "id": "q046",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Le client n’a pas payé ; peut-on décider seul de rétribuer exceptionnellement l’intervenant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, sans condition."
+        },
+        {
+          "id": "b",
+          "text": "Non, il faut faire valider le cas exceptionnel par le Pôle Conseil."
+        },
+        {
+          "id": "c",
+          "text": "Oui, si le trésorier est d’accord oralement."
+        },
+        {
+          "id": "d",
+          "text": "Oui, en antidatant la facture."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La fiche prévoit un encadrement spécifique des exceptions, pas une liberté générale d’avance.",
+      "origin": "quizz tac 5.pdf · Q24–25",
+      "status": "verified"
+    },
+    {
+      "id": "q047",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quel plafond brut de rétribution par JEH la fiche BV indique-t-elle pour 2026 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "280 €."
+        },
+        {
+          "id": "b",
+          "text": "80 €."
+        },
+        {
+          "id": "c",
+          "text": "320 €."
+        },
+        {
+          "id": "d",
+          "text": "450 €."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le plafond 2026 porte sur la rétribution brute de l’intervenant. Il ne doit pas être confondu avec le prix client.",
+      "origin": "quizz tac 9.pdf · Q14, actualisée",
+      "status": "verified"
+    },
+    {
+      "id": "q048",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "La signature de l’intervenant sur le BV est-elle nécessaire selon la fiche ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, elle remplace le PVR."
+        },
+        {
+          "id": "b",
+          "text": "Oui, elle remplace le RM."
+        },
+        {
+          "id": "c",
+          "text": "Oui, elle vaut paiement du client."
+        },
+        {
+          "id": "d",
+          "text": "Non, le BV n’a pas à être signé par l’intervenant."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "La fiche BV distingue ce document des engagements contractuels signés en amont.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q049",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Pour un exercice pédagogique, le SMIC de référence est fixé à 12 € et le BV porte sur 5 JEH. Quelle assiette obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "240 €."
+        },
+        {
+          "id": "b",
+          "text": "60 €."
+        },
+        {
+          "id": "c",
+          "text": "300 €."
+        },
+        {
+          "id": "d",
+          "text": "1 200 €."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "4 × 12 × 5 = 240 €. Les 12 € sont une hypothèse de calcul, pas l’affirmation du SMIC légal actuel.",
+      "origin": "Complément Kiwi · cas chiffré",
+      "status": "verified"
+    },
+    {
+      "id": "q050",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "L’assiette de cotisations est-elle nécessairement égale à la rétribution brute ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, toujours."
+        },
+        {
+          "id": "b",
+          "text": "Non, elle résulte d’une formule forfaitaire distincte."
+        },
+        {
+          "id": "c",
+          "text": "Oui, si l’étude dure un mois."
+        },
+        {
+          "id": "d",
+          "text": "Non, car elle est égale au montant TTC client."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La base sociale, le brut intervenant et le montant facturé sont trois grandeurs différentes.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q051",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Pour une prestation française soumise au taux normal, quel taux de TVA appliquer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,5 %."
+        },
+        {
+          "id": "b",
+          "text": "10 %."
+        },
+        {
+          "id": "c",
+          "text": "20 %."
+        },
+        {
+          "id": "d",
+          "text": "0 % dans toute association."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La fiche indique le taux normal de 20 %. La question exclut volontairement les cas internationaux ou particuliers.",
+      "origin": "quizz tac 7.pdf · Q4",
+      "status": "verified"
+    },
+    {
+      "id": "q052",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Sous le régime sur les encaissements décrit par Kiwi, quand la TVA collectée devient-elle exigible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À la seule signature du devis."
+        },
+        {
+          "id": "b",
+          "text": "À l’adhésion de l’intervenant."
+        },
+        {
+          "id": "c",
+          "text": "À la passation du trésorier."
+        },
+        {
+          "id": "d",
+          "text": "Lors de l’encaissement du paiement client."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "L’exigibilité est liée au paiement, ce qui évite d’avancer au fisc une taxe encore non encaissée.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q053",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Une prestation de 1 000 € HT soumise à 20 % donne quel montant TTC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 200 €."
+        },
+        {
+          "id": "b",
+          "text": "1 020 €."
+        },
+        {
+          "id": "c",
+          "text": "800 €."
+        },
+        {
+          "id": "d",
+          "text": "1 250 €."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "TVA = 1 000 × 20 % = 200 € ; TTC = HT + TVA.",
+      "origin": "Complément Kiwi · cas chiffré",
+      "status": "verified"
+    },
+    {
+      "id": "q054",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Une période comporte 600 € de TVA collectée et 250 € de TVA déductible, sans crédit antérieur. Quelle TVA payer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "850 €."
+        },
+        {
+          "id": "b",
+          "text": "350 €."
+        },
+        {
+          "id": "c",
+          "text": "600 €."
+        },
+        {
+          "id": "d",
+          "text": "250 €."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Le solde est 600 − 250 = 350 €.",
+      "origin": "Complément Kiwi · cas chiffré",
+      "status": "verified"
+    },
+    {
+      "id": "q055",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Avec 200 € collectés et 350 € déductibles, sans crédit antérieur, que constate-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une taxe à payer de 550 €."
+        },
+        {
+          "id": "b",
+          "text": "Une taxe à payer de 150 €."
+        },
+        {
+          "id": "c",
+          "text": "Un crédit de TVA de 150 €."
+        },
+        {
+          "id": "d",
+          "text": "Un bénéfice comptable de 150 €."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Une TVA déductible supérieure à la collectée crée un crédit, et non un bénéfice.",
+      "origin": "Complément Kiwi · cas chiffré",
+      "status": "verified"
+    },
+    {
+      "id": "q056",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Selon la fiche, la TVA sur un billet de train transportant un membre est-elle déductible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, toujours."
+        },
+        {
+          "id": "b",
+          "text": "Oui, seulement en première classe."
+        },
+        {
+          "id": "c",
+          "text": "Oui, si le président a réservé."
+        },
+        {
+          "id": "d",
+          "text": "Non, le transport de personnes fait partie des exclusions."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "L’intérêt professionnel du déplacement ne supprime pas cette exclusion.",
+      "origin": "quizz tac 10.pdf · Q22",
+      "status": "verified"
+    },
+    {
+      "id": "q057",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "La TVA sur une nuitée d’hôtel d’un membre de la Junior est-elle en principe déductible selon Kiwi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non."
+        },
+        {
+          "id": "b",
+          "text": "Oui, systématiquement."
+        },
+        {
+          "id": "c",
+          "text": "Oui, si la nuitée est chère."
+        },
+        {
+          "id": "d",
+          "text": "Oui, si le membre est intervenant."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La fiche exclut l’hébergement des membres ; elle distingue d’autres situations et les repas facturés séparément.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q058",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quel dispositif correspond au double contrôle de TVA recommandé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux clics successifs de la même personne dans le même tableau."
+        },
+        {
+          "id": "b",
+          "text": "Deux outils et deux acteurs différents."
+        },
+        {
+          "id": "c",
+          "text": "Un contrôle oral sans justificatif."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement vérifier le solde bancaire."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Confronter le suivi à la comptabilité avec une autre personne rend le contrôle plus indépendant.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q059",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Pourquoi archiver les grands livres des comptes de TVA avec la déclaration ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour remplacer toutes les factures."
+        },
+        {
+          "id": "b",
+          "text": "Pour augmenter le crédit de TVA."
+        },
+        {
+          "id": "c",
+          "text": "Pour conserver une preuve du contrôle réalisé."
+        },
+        {
+          "id": "d",
+          "text": "Pour annuler la déclaration."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Ils permettent de justifier les rapprochements entre le suivi et la comptabilité.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q060",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Une cotisation sans contrepartie directe est-elle soumise à TVA selon la fiche ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, toujours à 20 %."
+        },
+        {
+          "id": "b",
+          "text": "Oui, toujours à 10 %."
+        },
+        {
+          "id": "c",
+          "text": "Oui, seulement si payée par virement."
+        },
+        {
+          "id": "d",
+          "text": "Non, en principe."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "La présence ou l’absence de contrepartie est déterminante ; le moyen de paiement n’est pas ce critère.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q061",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "La TVA récupérable sur un achat est-elle une charge définitive de la Junior ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non, elle est distincte de la charge hors taxe."
+        },
+        {
+          "id": "b",
+          "text": "Oui, dans tous les cas."
+        },
+        {
+          "id": "c",
+          "text": "Oui, elle constitue une charge sociale."
+        },
+        {
+          "id": "d",
+          "text": "Oui, elle constitue une rétribution."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Il faut distinguer TVA récupérable et TVA non déductible, cette dernière restant dans le coût de la dépense.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q062",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Un crédit antérieur de 100 € s’ajoute à 300 € de TVA déductible, face à 700 € collectés. Quel solde payer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "400 €."
+        },
+        {
+          "id": "b",
+          "text": "300 €."
+        },
+        {
+          "id": "c",
+          "text": "500 €."
+        },
+        {
+          "id": "d",
+          "text": "1 100 €."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "700 − 300 − 100 = 300 €. Le crédit reporté doit être pris en compte.",
+      "origin": "Complément Kiwi · cas chiffré",
+      "status": "verified"
+    },
+    {
+      "id": "q063",
+      "articleId": "cutoff",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quel principe justifie les cut-off ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La disparition des justificatifs."
+        },
+        {
+          "id": "b",
+          "text": "L’égalité du CA et du solde bancaire."
+        },
+        {
+          "id": "c",
+          "text": "L’indépendance des exercices."
+        },
+        {
+          "id": "d",
+          "text": "La clôture automatique au changement de président."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Chaque exercice doit supporter les charges et produits qui lui correspondent.",
+      "origin": "quizz tac 5.pdf · Q2",
+      "status": "verified"
+    },
+    {
+      "id": "q064",
+      "articleId": "cutoff",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quelles classes de comptes composent le bilan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement 6 et 7."
+        },
+        {
+          "id": "b",
+          "text": "Toutes les classes 1 à 7."
+        },
+        {
+          "id": "c",
+          "text": "Uniquement la classe 7."
+        },
+        {
+          "id": "d",
+          "text": "Les classes 1 à 5."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Les classes 6 et 7 composent le compte de résultat.",
+      "origin": "quizz tac 5.pdf · Q3",
+      "status": "verified"
+    },
+    {
+      "id": "q065",
+      "articleId": "cutoff",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Une dépense enregistrée cette année concerne entièrement l’année prochaine. Quel cut-off envisager ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une charge constatée d’avance."
+        },
+        {
+          "id": "b",
+          "text": "Une facture à établir."
+        },
+        {
+          "id": "c",
+          "text": "Un produit constaté d’avance."
+        },
+        {
+          "id": "d",
+          "text": "Une augmentation du CA."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La charge est transférée à l’exercice auquel elle se rapporte.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q066",
+      "articleId": "cutoff",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Une prestation est acquise à la clôture mais pas encore facturée au client. Quel cut-off envisager ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une charge constatée d’avance."
+        },
+        {
+          "id": "b",
+          "text": "Une facture à établir."
+        },
+        {
+          "id": "c",
+          "text": "Une facture non parvenue fournisseur."
+        },
+        {
+          "id": "d",
+          "text": "Une suppression du produit."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La facture à établir rattache au bon exercice le produit déjà acquis.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q067",
+      "articleId": "cutoff",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quel compte correspond aux charges constatées d’avance ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "487."
+        },
+        {
+          "id": "b",
+          "text": "418."
+        },
+        {
+          "id": "c",
+          "text": "486."
+        },
+        {
+          "id": "d",
+          "text": "408."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le compte 486 porte les CCA ; 487 correspond aux produits constatés d’avance.",
+      "origin": "quizz tac 5.pdf · Q41, reformulée",
+      "status": "verified"
+    },
+    {
+      "id": "q068",
+      "articleId": "cutoff",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quel compte correspond aux produits constatés d’avance ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "486."
+        },
+        {
+          "id": "b",
+          "text": "408."
+        },
+        {
+          "id": "c",
+          "text": "512."
+        },
+        {
+          "id": "d",
+          "text": "487."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le produit enregistré doit être rattaché à une période future.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q069",
+      "articleId": "cutoff",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Que signifie extourner une écriture de cut-off ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Passer son écriture inverse au début de l’exercice suivant."
+        },
+        {
+          "id": "b",
+          "text": "Effacer les justificatifs de l’exercice."
+        },
+        {
+          "id": "c",
+          "text": "Modifier le prix du contrat."
+        },
+        {
+          "id": "d",
+          "text": "Annuler toutes les factures clients."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "L’extourne évite le double rattachement lorsque les opérations se poursuivent sur l’exercice suivant.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q070",
+      "articleId": "cutoff",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Un abonnement annuel de 1 200 € HT commence le 1er octobre N. À la clôture du 31 décembre N, quelle CCA retenir, par mois entiers ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "300 €."
+        },
+        {
+          "id": "b",
+          "text": "900 €."
+        },
+        {
+          "id": "c",
+          "text": "1 200 €."
+        },
+        {
+          "id": "d",
+          "text": "100 €."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Trois mois concernent N et neuf concernent N+1 : 1 200 × 9/12 = 900 €.",
+      "origin": "Complément Kiwi · cas chiffré",
+      "status": "verified"
+    },
+    {
+      "id": "q071",
+      "articleId": "cutoff",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Une charge de l’exercice est certaine mais sa facture fournisseur manque à la clôture. Quel cut-off correspond ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un produit constaté d’avance."
+        },
+        {
+          "id": "b",
+          "text": "Une facture à établir client."
+        },
+        {
+          "id": "c",
+          "text": "Une facture non parvenue."
+        },
+        {
+          "id": "d",
+          "text": "Une charge constatée d’avance."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La FNP permet de rattacher une charge déjà engagée à l’exercice concerné.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q072",
+      "articleId": "cutoff",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Pourquoi documenter l’avancement réel d’une étude à la clôture ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour choisir arbitrairement le résultat souhaité."
+        },
+        {
+          "id": "b",
+          "text": "Pour supprimer les JEH de l’étude."
+        },
+        {
+          "id": "c",
+          "text": "Pour éviter toute pièce justificative."
+        },
+        {
+          "id": "d",
+          "text": "Pour justifier la part de produit et de charge rattachée à l’exercice."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Les cut-off doivent traduire l’activité effective et rester vérifiables.",
+      "origin": "quizz tac 10.pdf · Q24",
+      "status": "verified"
+    },
+    {
+      "id": "q073",
+      "articleId": "erb",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Que rapproche principalement un ERB ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le relevé bancaire et le compte comptable 512."
+        },
+        {
+          "id": "b",
+          "text": "Les statuts et le RI."
+        },
+        {
+          "id": "c",
+          "text": "Les BV et les cartes étudiantes."
+        },
+        {
+          "id": "d",
+          "text": "Le devis et le logo de la Junior."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Il confronte la banque à son enregistrement comptable.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q074",
+      "articleId": "erb",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Un écart entre banque et comptabilité prouve-t-il toujours une erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, nécessairement une fraude."
+        },
+        {
+          "id": "b",
+          "text": "Non, il peut résulter d’un décalage de date."
+        },
+        {
+          "id": "c",
+          "text": "Oui, nécessairement une facture manquante."
+        },
+        {
+          "id": "d",
+          "text": "Non, il faut donc toujours l’ignorer."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Il faut expliquer l’écart : une opération enregistrée peut ne pas encore apparaître à la banque.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q075",
+      "articleId": "erb",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quelle fréquence Kiwi recommande-t-il pour le rapprochement bancaire courant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tous les dix ans."
+        },
+        {
+          "id": "b",
+          "text": "Seulement lors d’un litige."
+        },
+        {
+          "id": "c",
+          "text": "Mensuelle."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement à la création de la Junior."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Il s’agit d’une recommandation de contrôle régulier, et non de la formulation d’une fréquence légale universelle.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q076",
+      "articleId": "erb",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Que faire d’un chèque émis encore non débité par la banque ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le supprimer systématiquement de la comptabilité."
+        },
+        {
+          "id": "b",
+          "text": "Doubler son montant."
+        },
+        {
+          "id": "c",
+          "text": "L’enregistrer comme une recette."
+        },
+        {
+          "id": "d",
+          "text": "Le conserver parmi les opérations expliquant l’écart jusqu’à son dénouement."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le décalage doit être suivi et justifié, pas effacé artificiellement.",
+      "origin": "Complément Kiwi",
+      "status": "verified"
+    },
+    {
+      "id": "q077",
+      "articleId": "facturation",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Depuis la mise à jour Kiwi du 12 septembre 2026, quand émettre la facture liée au PVR ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au moment de l’émission du PVR."
+        },
+        {
+          "id": "b",
+          "text": "Seulement après la signature du PVR."
+        },
+        {
+          "id": "c",
+          "text": "Au mandat suivant."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement quand le client la réclame."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La mise à jour corrige l’ancien processus d’attente de signature, pour respecter les délais de facturation.",
+      "origin": "Complément Kiwi · actualité 2026",
+      "status": "verified"
+    },
+    {
+      "id": "q078",
+      "articleId": "facturation",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Le solde restant dû à la remise du livrable final est nul. Faut-il une facture de solde ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non, elle est toujours inutile."
+        },
+        {
+          "id": "b",
+          "text": "Oui, même lorsque le montant restant à payer est nul."
+        },
+        {
+          "id": "c",
+          "text": "Non, le BV la remplace."
+        },
+        {
+          "id": "d",
+          "text": "Seulement en cas d’audit."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "L’actualité de septembre 2026 précise explicitement cette obligation de clôture documentaire.",
+      "origin": "Complément Kiwi · actualité 2026",
+      "status": "verified"
+    }
+  ]
+}

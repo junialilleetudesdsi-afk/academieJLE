@@ -1,6 +1,16 @@
 # Knowledge JLE
 
-Académie de Junia Lille Études. Next.js / React, Better Auth et PostgreSQL (Neon compatible).
+Académie de Junia Lille Études : Next.js / React, Better Auth et PostgreSQL, compatible Neon et Vercel.
+
+## Fonctionnalités
+
+- 12 fiches consultables, recherche dans les textes et filtres organisation/trésorerie.
+- 78 questions vérifiées, une bonne réponse, une explication et un lien Kiwi par question.
+- Quiz express, entraînement par domaine ou fiche, révision des dernières erreurs.
+- Test blanc pédagogique : 30 questions équilibrées, 30 minutes, correction finale. Format JLE non officiel CNJE.
+- Résultats calculés côté serveur, historique privé par compte, statistiques par domaine.
+- Mode invité avec correction, explicitement sans sauvegarde.
+- Identité JLE et affichage mobile ; inscription et connexion Better Auth existantes conservées.
 
 ## Démarrage
 
@@ -10,38 +20,38 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Sans configuration PostgreSQL, le site reste explorable mais les comptes sont explicitement désactivés. Aucun faux compte ni mot de passe n'est enregistré dans le navigateur.
+Sous PowerShell, utiliser `Copy-Item .env.example .env.local`. Sans PostgreSQL configuré, les contenus et les entraînements invités fonctionnent ; les comptes sont désactivés.
 
-## Mise en production Vercel + Neon
+## Vercel et Neon déjà configurés
 
-1. Importer ce dépôt GitHub dans Vercel (framework Next.js).
-2. Créer une base PostgreSQL Neon, idéalement en région UE, et configurer `DATABASE_URL` dans Vercel.
-3. Générer un secret aléatoire de 32 caractères minimum pour `BETTER_AUTH_SECRET`.
-4. Configurer `BETTER_AUTH_URL` avec l'URL HTTPS définitive du site.
-5. Appliquer le schéma Better Auth avant d'ouvrir les comptes : avec les mêmes variables exportées dans le terminal, exécuter `npm run auth:migrate -- --config lib/auth.ts`. Le CLI peut demander confirmation. Ne jamais committer les secrets.
-6. Redéployer Vercel puis vérifier inscription, connexion et déconnexion avec un compte de test.
+Aucune nouvelle variable d’environnement n’est nécessaire pour cette version. Conserver `DATABASE_URL`, `BETTER_AUTH_SECRET` et `BETTER_AUTH_URL` (l’URL HTTPS finale). Le déploiement suit la branche configurée dans Vercel, généralement `main`.
 
-La création de compte est ouverte. Un compte n'atteste pas l'appartenance à JLE. Avant publication de contenus internes, ajouter une validation membre/invitation et protéger leur accès côté serveur. Les contenus JSON du dépôt doivent rester non confidentiels : ils sont publics dans le code livré au navigateur.
+La table `jle_attempts` est créée automatiquement au premier accès authentifié à l’historique ou à sa sauvegarde, avec `CREATE TABLE IF NOT EXISTS`. Le rôle PostgreSQL utilisé par l’application doit pouvoir créer cette table dans son schéma. Les tables et comptes Better Auth existants ne sont ni effacés ni recréés. Si le rôle est restreint, un administrateur peut appliquer le même schéma défini dans `lib/db.ts` avant le déploiement.
 
-## Contenus
+Après déploiement, réaliser un quiz connecté, vérifier le message « Résultat enregistré dans votre compte », puis consulter Ma progression depuis une nouvelle session. Un échec d’enregistrement laisse la correction visible avec un bouton pour réessayer ; aucune réussite de sauvegarde n’est simulée.
 
-`content/catalog.json` est le catalogue versionné, vide volontairement. Les compteurs sont lus depuis ce fichier. Les parcours et la bibliothèque présentent des états vides honnêtes. L'affichage des futures fiches, le moteur de questions et l'enregistrement des résultats sont la prochaine étape ; ajouter des objets au JSON seul ne les activera pas encore.
+Pour une nouvelle installation, appliquer également le schéma Better Auth correspondant à la version installée avant d’ouvrir les comptes. Ne jamais committer `.env.local` ni un secret.
 
-Prévoir pour les fiches : id, titre, thème, corps, URL source, date de vérification, statut de validation. Pour les questions : id, thème, niveau, énoncé, choix, réponse, explication, source et statut.
+## Contenus et maintenance
 
-Les comptes/sessions sont dans PostgreSQL, jamais dans GitHub. Les futurs résultats devront suivre le même principe. Aucun score fictif. Aucun contenu CNJE reproduit.
+Le catalogue versionné est `content/catalog.json`. Les questions référencent une fiche par `articleId`, laquelle fournit la source Kiwi, sa date de mise à jour et la date de vérification. Les identifiants de questions doivent rester stables ; pour changer le sens d’une question, créer un nouvel identifiant. Seul le statut `verified` entre dans les parcours. Le site contient des synthèses, pas les PDF complets.
 
-## Périmètre livré
+La [revue éditoriale](docs/content-review.md) documente le traitement des 11 PDF, les doublons, les corrections et les sujets laissés en attente de vérification. Ce lot n’est pas une conversion exhaustive des PDF. La veille Kiwi n’est pas automatisée : les montants annuels et nouveautés doivent être révisés régulièrement.
 
-- Tableau de bord responsive, identité JLE, logo officiel téléchargé depuis le site JLE.
-- Bibliothèque : recherche et filtres, état vide.
-- Trois entrées d'entraînement avec présentation (pas de questions pour l'instant).
-- Espace progression avec état vide.
-- Formulaires connexion/inscription et API Better Auth ; mot de passe 12 caractères minimum, limitation des requêtes via PostgreSQL.
-- Pas encore de récupération de mot de passe, vérification e-mail, rôles administrateur ni historique des entraînements : prévoir avant ouverture large.
+Les comptes et résultats sont dans PostgreSQL, jamais dans GitHub. Le catalogue est public dans le dépôt et dans le code navigateur. Il ne doit contenir aucune donnée interne ou personnelle. La création de compte reste ouverte : un compte n’atteste pas l’appartenance à JLE. Les invitations, rôles administrateur, récupération de mot de passe et validation d’e-mail ne sont pas ajoutés dans ce lot.
+
+## Historique et notation
+
+Les API utilisent exclusivement l’identité de la session serveur, jamais un identifiant utilisateur soumis par le navigateur. Le score est recalculé à partir du catalogue. Un identifiant de tentative rend les nouvelles soumissions idempotentes pour un compte. Les requêtes étrangères sont rejetées et les réponses d’API ne sont pas mises en cache.
+
+Les statistiques portent sur les 200 dernières tentatives. Les résultats conservent la version du catalogue et le verdict initial ; les explications affichées sont celles du catalogue courant. La révision d’erreurs choisit les questions dont la dernière réponse enregistrée est incorrecte. Une session en cours n’est pas conservée après rechargement : un avertissement navigateur est déclenché. En test blanc, l’échéance utilise une heure absolue pour gérer les onglets en arrière-plan ; un score d’entraînement ne constitue pas une attestation d’examen surveillé.
 
 ## Vérification
 
-`npm run build` et `npm run typecheck`.
+```sh
+npm test
+npm run typecheck
+npm run build
+```
 
-Le déploiement et la base appartiennent à JLE : prévoir une passation des accès et un budget hébergement, puis une politique de sauvegarde et de conservation des données.
+Les tests couvrent les invariants du catalogue, la notation, les filtres, la sélection équilibrée et le rejet des soumissions invalides. La vérification interactive Chromium n’a pas pu être exécutée dans cet environnement (création de socket refusée) ; prévoir un contrôle visuel desktop et mobile après déploiement. La connexion à la base Neon de production doit être contrôlée après déploiement avec un compte de test ; aucun accès à cette base n’est requis pour compiler.

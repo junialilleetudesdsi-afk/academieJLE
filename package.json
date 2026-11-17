@@ -1,1 +1,27 @@
-{"name":"knowledge-jle","version":"0.1.0","private":true,"scripts":{"dev":"next dev --hostname 0.0.0.0","build":"next build","start":"next start","typecheck":"tsc --noEmit","auth:migrate":"npx @better-auth/cli migrate"},"dependencies":{"next":"latest","react":"latest","react-dom":"latest","better-auth":"latest","pg":"latest","lucide-react":"latest"},"devDependencies":{"typescript":"latest","@types/node":"latest","@types/react":"latest","@types/pg":"latest"}}
+{
+  "name": "knowledge-jle",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "auth:migrate": "npx @better-auth/cli migrate",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "better-auth": "latest",
+    "pg": "latest",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/pg": "latest"
+  }
+}
