@@ -12,18 +12,19 @@
     "formations:import": "node scripts/import-formations.mjs"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
     "better-auth": "latest",
+    "lucide-react": "latest",
+    "next": "latest",
+    "pdf-lib": "^1.17.1",
     "pg": "latest",
-    "lucide-react": "latest"
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "typescript": "latest",
     "@types/node": "latest",
+    "@types/pg": "latest",
     "@types/react": "latest",
-    "@types/pg": "latest"
+    "typescript": "latest"
   },
   "engines": {
     "node": ">=22.13.0"

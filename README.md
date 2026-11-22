@@ -66,23 +66,22 @@ Les 500 questions alimentent un mode flashcards (domaine/fiche/volume, retournem
 
 Les routes `/api/materials/[id]` servent les PDF et les transcriptions depuis la table privée `jle_materials` dans Neon uniquement après contrôle de session, avec interdiction de cache partagé. **Aucun PDF ni transcription intégrale n’est versionné dans GitHub.** Le dépôt ne contient que les descriptifs, les repères et le manifeste des documents. Un compte créé librement ne constitue pas une validation d’appartenance à JLE.
 
-### Importer les sept formations dans Neon
+### Importer les PDF depuis le site (sans terminal)
 
-Le lot « Academie_JLE_Formations_Import_Neon.zip » fourni avec la livraison contient les sept PDF, leurs transcriptions et le mode d’emploi. Extraire ce ZIP sur votre ordinateur, à l’extérieur du dépôt. Depuis votre dossier local du projet, avec un `.env.local` qui contient le `DATABASE_URL` Neon, lancer sous PowerShell :
+Une fois connecté avec un compte présent dans `ADMIN_USER_IDS`, ouvrir **Administration → Formations**.
 
-```powershell
-git pull
-npm ci
-npm run formations:import -- "C:\Users\VotreNom\Downloads\Academie_JLE_Formations_Import_Neon"
-```
+- **Supports JLE préparés** : extraire le ZIP `Academie_JLE_Formations_Import_Neon.zip` avec l’explorateur Windows, puis sélectionner les sept `.pdf` et les sept `.json` en une seule fois. Cliquer sur **Importer les supports**. Chaque document est traité séparément ; les erreurs éventuelles sont indiquées fichier par fichier et les réussites restent enregistrées. Relancer un import ne crée pas de doublons.
+- **Nouvelle formation** : sélectionner un PDF, indiquer son titre, son thème et sa description, puis cliquer sur **Ajouter la formation**. La formation apparaît immédiatement dans Formations et sa présentation dans Connaissances, sans changement GitHub ni redéploiement. La lecture texte n’est proposée que lorsqu’une transcription a été importée ; aucun texte ni question n’est inventé à partir du titre.
 
-Adapter le chemin au dossier qui contient directement `ga.pdf`, `ga.json`, etc. Le script vérifie les empreintes des PDF, le nombre de pages et le format des données avant de créer/remplir `jle_materials`. L’import est transactionnel et peut être relancé sans doublons. Il ne modifie aucun compte ni résultat. Ne jamais partager ni committer `.env.local`, et ne pas ajouter les supports au dépôt. Aucun redéploiement n’est nécessaire après cet import ; le site lira les supports immédiatement depuis Neon.
+Limite applicative : **4 000 000 octets par PDF**, pour rester compatible avec les limites Vercel de requête et de réponse du projet. Réduire les fichiers plus volumineux avant l’import ; les sept PDF du ZIP fourni respectent déjà la limite. Les transcriptions JSON facultatives sont limitées à 250 000 octets et doivent correspondre au nombre de pages du PDF. Les PDF nouveaux sont analysés pour refuser les fichiers illisibles, protégés et de plus de 500 pages. Le lot préparé est reconnu par ses empreintes SHA-256.
 
-Avant l’import, la route retourne une indisponibilité explicite plutôt qu’un faux PDF. Les modes de flashcards, les process, les quiz et l’administration fonctionnent indépendamment de l’import.
+L’API d’import vérifie la session et l’identifiant administrateur côté serveur, ainsi que l’origine de la requête avant de lire le document. Les PDF et les transcriptions sont stockés dans Neon, jamais dans GitHub. La colonne JSONB `metadata` est ajoutée automatiquement à `jle_materials`, y compris sur une base déjà initialisée. Le script `npm run formations:import -- "chemin/du/dossier/extrait"` reste disponible en option, pour le lot initial uniquement.
+
+Avant l’import, le lecteur indique que le support n’est pas disponible. Aucun compte ni résultat de test n’est modifié par un import. Les importations et la consultation en conditions réelles nécessitent la configuration Neon et un compte autorisé.
 
 ### Ajouter manuellement un administrateur
 
-1. Le membre crée son compte, se connecte et copie « Mon identifiant de compte », en bas de page. Le gestionnaire peut aussi retrouver `id`, `name` et `email` dans la table Better Auth `user` de Neon, en vérifiant l’identité du membre.
+1. Le membre crée son compte, se connecte et copie « Mon identifiant de compte », dans l’onglet **Mon compte** uniquement. Le gestionnaire peut aussi retrouver `id`, `name` et `email` dans la table Better Auth `user` de Neon, en vérifiant l’identité du membre.
 2. Dans Vercel → projet → Settings → Environment Variables, ajouter **`ADMIN_USER_IDS`** avec cet identifiant exact. Pour plusieurs comptes : `identifiant1,identifiant2`. Sélectionner l’environnement Production (et Preview seulement si souhaité).
 3. Redéployer la version courante. Le membre recharge le site ; l’onglet Administration apparaît. Pour retirer un accès, supprimer l’identifiant de la variable et redéployer.
 
@@ -90,4 +89,4 @@ Aucun compte n’est automatiquement administrateur. Il n’y a pas de règle «
 
 L’administrateur consulte les comptes (y compris sans résultat), les dates d’inscription, les e-mails et leur état de vérification, puis les résultats paginés de chaque compte, leurs modes, dates, durées et réponses. Aucun mot de passe, hash ni token de session n’est transmis. Les autres membres ne peuvent pas accéder à ces données. Les vues statistiques et la pagination concernent les résultats de test enregistrés, pas les auto-évaluations des flashcards.
 
-Validation de cette version : 17 tests de contenu, de sélection, de notation et de contrôle des accès ; compilation Next.js. La prévisualisation navigateur locale a été bloquée par l’incompatibilité du lanceur de preview avec les arguments Next.js. À vérifier après déploiement : un quiz connecté, une formation après import et la consultation des résultats avec un ID administrateur autorisé.
+Validation : tests de contenu, de sélection, de notation, de contrôle des accès et d’import ; compilation Next.js. La prévisualisation navigateur locale a été bloquée par l’incompatibilité du lanceur de preview avec les arguments Next.js. À vérifier après déploiement : un quiz connecté, une formation après import et la consultation des résultats avec un ID administrateur autorisé.

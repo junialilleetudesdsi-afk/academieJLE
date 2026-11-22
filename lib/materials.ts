@@ -8,6 +8,6 @@ export async function ensureMaterials(){
  transcript JSONB NOT NULL,
  sha256 TEXT NOT NULL,
  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
- )`).catch(error=>{initialized=undefined;throw error});
+ ); ALTER TABLE jle_materials ADD COLUMN IF NOT EXISTS metadata JSONB`).catch(error=>{initialized=undefined;throw error});
  await initialized;
 }
