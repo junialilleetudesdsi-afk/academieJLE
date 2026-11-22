@@ -1,0 +1,415 @@
+{
+  "updated": "2026-11-22",
+  "source": "CartographieProcess_JLE.pdf",
+  "quickLinks": [
+    {
+      "title": "Cartographie interactive originale",
+      "url": "https://docs.google.com/presentation/d/1UhX_RWukmdjXQLTGJb-q2ROdzQZVcxbzfr0WSOGYUrw/edit"
+    },
+    {
+      "title": "Modèle de fiche process",
+      "url": "https://docs.google.com/presentation/d/1sA2GkVuMUqByJMrWyYtrQNke5B56F5mrSw8HEXSH4so/edit"
+    }
+  ],
+  "groups": [
+    {
+      "id": "qualite",
+      "branch": "Organisation",
+      "parent": "Stratégie & pilotage",
+      "title": "Qualité",
+      "color": "#5750bd"
+    },
+    {
+      "id": "marketing",
+      "branch": "Organisation",
+      "parent": "Activité commerciale",
+      "title": "Marketing",
+      "color": "#d55c35"
+    },
+    {
+      "id": "devco",
+      "branch": "Organisation",
+      "parent": "Activité commerciale",
+      "title": "DevCo",
+      "color": "#d55c35"
+    },
+    {
+      "id": "grh",
+      "branch": "Organisation",
+      "parent": "GRH",
+      "title": "Gestion des ressources humaines",
+      "color": "#128c89"
+    },
+    {
+      "id": "clr",
+      "branch": "Organisation",
+      "parent": "CLR",
+      "title": "Cadre légal et réglementaire",
+      "color": "#bd8b09"
+    },
+    {
+      "id": "sde",
+      "branch": "Organisation",
+      "parent": "SDE",
+      "title": "Suivi des études",
+      "color": "#8b449e"
+    },
+    {
+      "id": "transversal",
+      "branch": "Trésorerie",
+      "parent": "Transversal",
+      "title": "Transversal",
+      "color": "#2c8c60"
+    },
+    {
+      "id": "social",
+      "branch": "Trésorerie",
+      "parent": "Social",
+      "title": "Social",
+      "color": "#337cb4"
+    },
+    {
+      "id": "fiscal",
+      "branch": "Trésorerie",
+      "parent": "Fiscal",
+      "title": "Fiscal",
+      "color": "#ac4240"
+    },
+    {
+      "id": "achats-ventes",
+      "branch": "Trésorerie",
+      "parent": "Achats & ventes",
+      "title": "Achats & ventes",
+      "color": "#7d8b2b"
+    },
+    {
+      "id": "presidence",
+      "branch": "Organisation",
+      "parent": "Stratégie & pilotage",
+      "title": "Présidence",
+      "color": "#5750bd"
+    }
+  ],
+  "processes": [
+    {
+      "id": "qualite-1",
+      "branch": "Organisation",
+      "parent": "Stratégie & pilotage",
+      "group": "qualite",
+      "title": "SMQ",
+      "url": "https://docs.google.com/presentation/d/1GJ7PM_6syjvEB-Y_xdsbxnyQIDsaSK_3HtQb6zKx51U/edit"
+    },
+    {
+      "id": "qualite-2",
+      "branch": "Organisation",
+      "parent": "Stratégie & pilotage",
+      "group": "qualite",
+      "title": "Correction de document",
+      "url": "https://docs.google.com/presentation/d/1EWq3Ph0YwP635pZrD8ayGO-Jb13NUVe55XMDlXyHz2o/edit"
+    },
+    {
+      "id": "marketing-1",
+      "branch": "Organisation",
+      "parent": "Activité commerciale",
+      "group": "marketing",
+      "title": "Communiquer sur un évènement",
+      "url": "https://docs.google.com/presentation/d/1xmB9-3zmYIVsE_on2qnrk4uCwoW1IOKTpp8lEDPa4Dw/edit"
+    },
+    {
+      "id": "marketing-2",
+      "branch": "Organisation",
+      "parent": "Activité commerciale",
+      "group": "marketing",
+      "title": "Créer une affiche",
+      "url": "https://docs.google.com/presentation/d/1JR3Kc1j6MMSUM6Dbn1okDtFb0OeCgaHvl67tSp-7e6M/edit"
+    },
+    {
+      "id": "marketing-3",
+      "branch": "Organisation",
+      "parent": "Activité commerciale",
+      "group": "marketing",
+      "title": "Rédaction d’une newsletter",
+      "url": "https://docs.google.com/presentation/d/17DRjWivNvnF3AxzVg-rkTl5gsek4MNgcF462_IblVGc/edit"
+    },
+    {
+      "id": "devco-1",
+      "branch": "Organisation",
+      "parent": "Activité commerciale",
+      "group": "devco",
+      "title": "Préparer un appel de prospection",
+      "url": "https://docs.google.com/presentation/d/11gMUDF_4rahJAEHc0wRkNU0amdw2Rh19w6zltppTgo4/edit"
+    },
+    {
+      "id": "devco-2",
+      "branch": "Organisation",
+      "parent": "Activité commerciale",
+      "group": "devco",
+      "title": "Transmission de contact",
+      "url": "https://docs.google.com/presentation/d/18N3CgOpnHHgPI5ulNph_3sPkgELVU0OxazGYBKLMO5w/edit"
+    },
+    {
+      "id": "devco-3",
+      "branch": "Organisation",
+      "parent": "Activité commerciale",
+      "group": "devco",
+      "title": "Passer un appel de prospection",
+      "url": "https://docs.google.com/presentation/d/1p0d_xgN7U8N1dRT6NY4CfT1ymLZt-Qe3wHT0mNNZYi8/edit"
+    },
+    {
+      "id": "grh-1",
+      "branch": "Organisation",
+      "parent": "GRH",
+      "group": "grh",
+      "title": "Gestion des intervenants",
+      "url": "https://docs.google.com/presentation/d/1G4OxCSJfoCwHCmmKRa1xvOW-SnFOKITaUFqVZmCbIOs/edit"
+    },
+    {
+      "id": "grh-2",
+      "branch": "Organisation",
+      "parent": "GRH",
+      "group": "grh",
+      "title": "Recrutement du COS",
+      "url": "https://docs.google.com/presentation/d/1UUT3G5Nqp8DWla54g1yF46XTVgvfvRMFMHoB3xwGrlI/edit"
+    },
+    {
+      "id": "grh-3",
+      "branch": "Organisation",
+      "parent": "GRH",
+      "group": "grh",
+      "title": "Valorisation des intervenants",
+      "url": "https://docs.google.com/presentation/d/1A3jIomWjVgzQ6Orz1dKnf5-M0cX8UOlJ-uolebBWsUw/edit"
+    },
+    {
+      "id": "grh-4",
+      "branch": "Organisation",
+      "parent": "GRH",
+      "group": "grh",
+      "title": "RFP Bureau et CA",
+      "url": "https://docs.google.com/presentation/d/1qGm6NnGgrAm7b1AXKWRUalN9WAPS9EXDfh2vY-oHUyc/edit"
+    },
+    {
+      "id": "grh-5",
+      "branch": "Organisation",
+      "parent": "GRH",
+      "group": "grh",
+      "title": "RFP Membres actifs",
+      "url": "https://docs.google.com/presentation/d/1WkmKWToZJvIY_9SrZzjdkVW6qa_aTquCbyRP9OFs7D0/edit"
+    },
+    {
+      "id": "clr-1",
+      "branch": "Organisation",
+      "parent": "CLR",
+      "group": "clr",
+      "title": "Déclaration d’un nouveau membre",
+      "url": "https://docs.google.com/presentation/d/1KfFosVYb0HnG-rHHz0DH6_eqX6V7_xaJlb6vzwevEno/edit"
+    },
+    {
+      "id": "clr-2",
+      "branch": "Organisation",
+      "parent": "CLR",
+      "group": "clr",
+      "title": "Droit d’accès RGPD",
+      "url": "https://docs.google.com/presentation/d/14shnYumO3wQYyrUK6H03BvxQ5YDsPVYLhkrIFXhZQi0/edit"
+    },
+    {
+      "id": "clr-3",
+      "branch": "Organisation",
+      "parent": "CLR",
+      "group": "clr",
+      "title": "Prise de poste bureau",
+      "url": "https://docs.google.com/presentation/d/16cORZx6LOFjK9k48KPp_VsqVHfICCUCbaglKIPsuiW8/edit"
+    },
+    {
+      "id": "clr-4",
+      "branch": "Organisation",
+      "parent": "CLR",
+      "group": "clr",
+      "title": "Suivi des licences",
+      "url": "https://docs.google.com/presentation/d/1ZUq20R-iriLtvboTpENNg8IGVLtUhGLjVQIrZAFZHLY/edit"
+    },
+    {
+      "id": "clr-5",
+      "branch": "Organisation",
+      "parent": "CLR",
+      "group": "clr",
+      "title": "Assemblée Générale",
+      "url": "https://docs.google.com/presentation/d/15S1iUbJSopc6ado7b87pMX3iKfxRX5JvFn7zPVjvYhI/edit"
+    },
+    {
+      "id": "clr-6",
+      "branch": "Organisation",
+      "parent": "CLR",
+      "group": "clr",
+      "title": "Conseil d’Administration",
+      "url": "https://docs.google.com/presentation/d/1FoXbroj7IY3Yobmlt5XezTdYim1qvLMQXVkn9SVOVJg/edit"
+    },
+    {
+      "id": "clr-7",
+      "branch": "Organisation",
+      "parent": "CLR",
+      "group": "clr",
+      "title": "Réunion d’Équipe",
+      "url": "https://docs.google.com/presentation/d/1lEBZgSF70Img11Lvjqpbg9vascO0EoPdIu77Br2zOcg/edit"
+    },
+    {
+      "id": "sde-1",
+      "branch": "Organisation",
+      "parent": "SDE",
+      "group": "sde",
+      "title": "Déroulement d’une étude",
+      "url": "https://docs.google.com/presentation/d/1m3tyH6uNxlZ3O8xJz8xW_En0jHFgMlAxQcYalpniTY0/edit"
+    },
+    {
+      "id": "sde-2",
+      "branch": "Organisation",
+      "parent": "SDE",
+      "group": "sde",
+      "title": "Rédaction d’un document d’étude",
+      "url": "https://docs.google.com/presentation/d/16vk-0ZTqJ0Jz0Q9i5Cey6CEqYau_UJbhJH6dPe8G6ko/edit"
+    },
+    {
+      "id": "sde-3",
+      "branch": "Organisation",
+      "parent": "SDE",
+      "group": "sde",
+      "title": "Sélection des intervenants",
+      "url": "https://docs.google.com/presentation/d/1YQXj8PBK0IeDQdigTJvZe8R063Zk49STMouzaouNrrg/edit"
+    },
+    {
+      "id": "sde-4",
+      "branch": "Organisation",
+      "parent": "SDE",
+      "group": "sde",
+      "title": "Suivi d’une étude",
+      "url": "https://docs.google.com/presentation/d/1jOHed3YbCHuka1xrcAY8hGR2bI0cYfPbu-RDd5KxIsA/edit"
+    },
+    {
+      "id": "sde-5",
+      "branch": "Organisation",
+      "parent": "SDE",
+      "group": "sde",
+      "title": "Réponse à un appel d’offre",
+      "url": "https://docs.google.com/presentation/d/1o8x5-h1LJa-6Sz8AVp3jkKQzt6RNBYVq8OSFaECfC6Q/edit"
+    },
+    {
+      "id": "sde-6",
+      "branch": "Organisation",
+      "parent": "SDE",
+      "group": "sde",
+      "title": "Archivage d’une étude",
+      "url": "https://docs.google.com/presentation/d/1F0GMGe04MInmCNt7jSE15FPrUV50QA9uzapDBiX-hjE/edit"
+    },
+    {
+      "id": "transversal-1",
+      "branch": "Trésorerie",
+      "parent": "Transversal",
+      "group": "transversal",
+      "title": "Création et suivi de budget",
+      "url": "https://docs.google.com/presentation/d/1Tt3EflrvmGyjX9rDLtp7MRTXDAEniwhZICprjGfVhVw/edit"
+    },
+    {
+      "id": "transversal-2",
+      "branch": "Trésorerie",
+      "parent": "Transversal",
+      "group": "transversal",
+      "title": "Note de frais",
+      "url": "https://docs.google.com/presentation/d/17D8rUjfFVTqAq56udnt9v7Lwld23CTbiYFTaL36NVVs/edit"
+    },
+    {
+      "id": "transversal-3",
+      "branch": "Trésorerie",
+      "parent": "Transversal",
+      "group": "transversal",
+      "title": "Relance client",
+      "url": "https://docs.google.com/presentation/d/1Mt6M64Tsg2hMkp46HOj3Uny0rU8eRzTKHZ43TvNS0Rs/edit"
+    },
+    {
+      "id": "transversal-4",
+      "branch": "Trésorerie",
+      "parent": "Transversal",
+      "group": "transversal",
+      "title": "Archivage de la Trésorerie",
+      "url": "https://docs.google.com/presentation/d/1GMaveBK9CB7TCDSyW5LN5vwntl641pWDt7TpJRGOia4/edit"
+    },
+    {
+      "id": "social-1",
+      "branch": "Trésorerie",
+      "parent": "Social",
+      "group": "social",
+      "title": "BRC",
+      "url": "https://docs.google.com/presentation/d/1J9c8F0_jGZNI1obz63SiGs2yLrW6ItlCnOpfBq800go/edit"
+    },
+    {
+      "id": "social-2",
+      "branch": "Trésorerie",
+      "parent": "Social",
+      "group": "social",
+      "title": "TR",
+      "url": "https://docs.google.com/presentation/d/1OK0QIe5W7MMvNv2aoGVvXTaPGdRdXM4FpCCTRDwveyY/edit"
+    },
+    {
+      "id": "social-3",
+      "branch": "Trésorerie",
+      "parent": "Social",
+      "group": "social",
+      "title": "DADS DAS2",
+      "url": "https://docs.google.com/presentation/d/1OeHT1EYttpN4ZtqIy0f0cZC2rb4D84hMw4sUXDxyyMo/edit"
+    },
+    {
+      "id": "fiscal-1",
+      "branch": "Trésorerie",
+      "parent": "Fiscal",
+      "group": "fiscal",
+      "title": "Clôture comptable",
+      "url": "https://docs.google.com/presentation/d/1-NF6nB8S9IYpxBkOuue9L_5Kqcowv85UMhU7B7zM1iM/edit"
+    },
+    {
+      "id": "fiscal-2",
+      "branch": "Trésorerie",
+      "parent": "Fiscal",
+      "group": "fiscal",
+      "title": "IS",
+      "url": "https://docs.google.com/presentation/d/1dQFziSyigY3D188fKtquDyjPo44Fe6-ALm6H4cR2GXo/edit"
+    },
+    {
+      "id": "fiscal-3",
+      "branch": "Trésorerie",
+      "parent": "Fiscal",
+      "group": "fiscal",
+      "title": "TVA",
+      "url": "https://docs.google.com/presentation/d/1nMFRBJep-sXwVcpNVU_wf4YFceIqKyYFmbyZD3o-Q6w/edit"
+    },
+    {
+      "id": "fiscal-4",
+      "branch": "Trésorerie",
+      "parent": "Fiscal",
+      "group": "fiscal",
+      "title": "BV",
+      "url": "https://docs.google.com/presentation/d/11GwvjYlA2ojrKvKgpQHiDQk_0NgqtipGkqGSaK2Kr1A/edit"
+    },
+    {
+      "id": "achats",
+      "branch": "Trésorerie",
+      "parent": "Achats & ventes",
+      "group": "achats-ventes",
+      "title": "Achats",
+      "url": "https://docs.google.com/presentation/d/1m72z198f0ycGlD_9DwgzPVmYaf6jVVIhiWtahsN0yt0/edit"
+    },
+    {
+      "id": "ventes",
+      "branch": "Trésorerie",
+      "parent": "Achats & ventes",
+      "group": "achats-ventes",
+      "title": "Ventes",
+      "url": "https://docs.google.com/presentation/d/1hXEsEClgfgHcngqKRX6vBUp2zqq3-jkzSRIzYJY5Guc/edit"
+    },
+    {
+      "id": "presidence",
+      "branch": "Organisation",
+      "parent": "Stratégie & pilotage",
+      "group": "presidence",
+      "title": "Présidence",
+      "url": null
+    }
+  ]
+}

@@ -15,6 +15,6 @@ export async function ensureAttempts() {
  catalog_version INTEGER NOT NULL,
  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
  PRIMARY KEY(user_id,id)
- )`).catch(error=>{initialized=undefined;throw error;});
+ ); CREATE INDEX IF NOT EXISTS jle_attempts_user_date_idx ON jle_attempts(user_id,created_at DESC)`).catch(error=>{initialized=undefined;throw error;});
  await initialized;
 }

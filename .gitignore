@@ -3,3 +3,6 @@ node_modules/
 .env*
 !.env.example
 *.tsbuildinfo
+# Supports internes : import dans Neon, jamais dans le dépôt source.
+/private/materials/
+*.zip

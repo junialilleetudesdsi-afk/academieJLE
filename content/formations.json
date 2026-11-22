@@ -1,0 +1,209 @@
+[
+  {
+    "id": "mouvement",
+    "title": "Le Mouvement",
+    "track": "Organisation",
+    "description": "Le modèle Junior-Entreprise, les réseaux, les événements et la place de JLE.",
+    "pages": 21,
+    "originalName": "Formation Mouvement.pdf",
+    "related": [
+      "deontologie",
+      "statuts",
+      "dirigeants-2"
+    ],
+    "notice": "Chiffres du Mouvement, partenaires, équipe, sanctions et calendrier d’audit : données historiques à vérifier. Les personnes et outils cités ne décrivent pas nécessairement le mandat actuel.",
+    "year": null,
+    "sections": [
+      {
+        "title": "Repères du support",
+        "body": "Le modèle Junior-Entreprise, les réseaux, les événements et la place de JLE."
+      },
+      {
+        "title": "À vérifier avant application",
+        "body": "Chiffres du Mouvement, partenaires, équipe, sanctions et calendrier d’audit : données historiques à vérifier. Les personnes et outils cités ne décrivent pas nécessairement le mandat actuel."
+      }
+    ],
+    "originalSha256": "e165b49332d23f4e5ccee585db4b672b0fa7e4d4ee4f47b03a2143bfb4a4efb2",
+    "sha256": "e165b49332d23f4e5ccee585db4b672b0fa7e4d4ee4f47b03a2143bfb4a4efb2",
+    "optimizedForWeb": false
+  },
+  {
+    "id": "poles",
+    "title": "Les pôles de JLE",
+    "track": "Organisation",
+    "description": "ActiCo, Marketing, Qualité et DSI : missions et interactions.",
+    "pages": 19,
+    "originalName": "Formation Présentation des pôles.pdf",
+    "related": [
+      "deontologie",
+      "convention-detude-ce",
+      "selection-des-intervenants"
+    ],
+    "notice": "L’organisation et les partenaires présentés correspondent au support transmis. Les pouvoirs de signature dépendent des statuts et des délégations, pas du seul intitulé de poste.",
+    "year": null,
+    "sections": [
+      {
+        "title": "Repères du support",
+        "body": "ActiCo, Marketing, Qualité et DSI : missions et interactions."
+      },
+      {
+        "title": "À vérifier avant application",
+        "body": "L’organisation et les partenaires présentés correspondent au support transmis. Les pouvoirs de signature dépendent des statuts et des délégations, pas du seul intitulé de poste."
+      }
+    ],
+    "originalSha256": "6040f442610eb957b6ee31dd6663b62f9274e83f1bd89c088b1e54cf791341c9",
+    "sha256": "6040f442610eb957b6ee31dd6663b62f9274e83f1bd89c088b1e54cf791341c9",
+    "optimizedForWeb": false
+  },
+  {
+    "id": "sde",
+    "title": "Suivi d’études",
+    "track": "Organisation",
+    "description": "Du premier rendez-vous au livrable : besoin, proposition commerciale et suivi.",
+    "pages": 15,
+    "originalName": "Formation SDE.pdf",
+    "related": [
+      "convention-detude-ce",
+      "recapitulatif-de-mission-rm",
+      "signature",
+      "esign",
+      "facturation"
+    ],
+    "notice": "Ne pas reprendre comme règle actuelle l’obligation de signer le même jour ni l’absence totale de valeur d’un scan. Vérifier les signatures, les originaux et la facturation dans les fiches Kiwi liées. L’acompte n’est pas systématiquement obligatoire.",
+    "year": null,
+    "sections": [
+      {
+        "title": "Repères du support",
+        "body": "Du premier rendez-vous au livrable : besoin, proposition commerciale et suivi."
+      },
+      {
+        "title": "À vérifier avant application",
+        "body": "Ne pas reprendre comme règle actuelle l’obligation de signer le même jour ni l’absence totale de valeur d’un scan. Vérifier les signatures, les originaux et la facturation dans les fiches Kiwi liées. L’acompte n’est pas systématiquement obligatoire."
+      }
+    ],
+    "originalSha256": "c432c10c605a12c22fb24ed6113dc0578cbc1252e76cb59f1318fc068a5fbf8e",
+    "sha256": "c432c10c605a12c22fb24ed6113dc0578cbc1252e76cb59f1318fc068a5fbf8e",
+    "optimizedForWeb": false
+  },
+  {
+    "id": "ga",
+    "title": "Gestion associative",
+    "track": "Organisation",
+    "description": "Documents administratifs, instances, RGPD et transmission des décisions.",
+    "pages": 14,
+    "originalName": "Formation GA.pdf",
+    "related": [
+      "statuts",
+      "reunions-2",
+      "archivage-version-cnh25",
+      "respecter-le-rgpd-en-cinq-etapes"
+    ],
+    "notice": "Le tableau d’archivage est ancien : notamment les BV se conservent à vie selon Kiwi. Les modalités et fréquences de réunion suivent les statuts. Une déclaration n’est pas requise après toute AG sans distinction.",
+    "year": null,
+    "sections": [
+      {
+        "title": "Repères du support",
+        "body": "Documents administratifs, instances, RGPD et transmission des décisions."
+      },
+      {
+        "title": "À vérifier avant application",
+        "body": "Le tableau d’archivage est ancien : notamment les BV se conservent à vie selon Kiwi. Les modalités et fréquences de réunion suivent les statuts. Une déclaration n’est pas requise après toute AG sans distinction."
+      }
+    ],
+    "originalSha256": "1ff083b9ba7e88c0d003633646cf7bb7ae5a417320106b8fcaa5ccd99ac5dda7",
+    "sha256": "1ff083b9ba7e88c0d003633646cf7bb7ae5a417320106b8fcaa5ccd99ac5dda7",
+    "optimizedForWeb": false
+  },
+  {
+    "id": "legal",
+    "title": "Cadre légal",
+    "track": "Organisation",
+    "description": "Textes fondamentaux, statut dérogatoire, déontologie et communication.",
+    "pages": 23,
+    "originalName": "Formation Cadre légal.pdf",
+    "related": [
+      "deontologie",
+      "licences",
+      "signature",
+      "esign",
+      "bv",
+      "archivage-version-cnh25"
+    ],
+    "notice": "Anciennes formulations : taux d’ouverture, archivage, signatures, statut dérogatoire et licences. Ne pas les appliquer sans les rapprocher des fiches Kiwi actuelles ; l’exception éducative ne couvre pas automatiquement Azure.",
+    "year": null,
+    "sections": [
+      {
+        "title": "Repères du support",
+        "body": "Textes fondamentaux, statut dérogatoire, déontologie et communication."
+      },
+      {
+        "title": "À vérifier avant application",
+        "body": "Anciennes formulations : taux d’ouverture, archivage, signatures, statut dérogatoire et licences. Ne pas les appliquer sans les rapprocher des fiches Kiwi actuelles ; l’exception éducative ne couvre pas automatiquement Azure."
+      }
+    ],
+    "originalSha256": "7be2279b4767fdc05e7f83d4c425e1a9037fe8905702cd92ffce0e9ef6b0ef18",
+    "sha256": "7be2279b4767fdc05e7f83d4c425e1a9037fe8905702cd92ffce0e9ef6b0ef18",
+    "optimizedForWeb": false
+  },
+  {
+    "id": "tresorerie",
+    "title": "Trésorerie",
+    "track": "Trésorerie",
+    "description": "Rôles, comptabilité, études et déclaratifs fiscaux et sociaux.",
+    "pages": 33,
+    "originalName": "Formation Trésorerie.pdf",
+    "related": [
+      "bv",
+      "tva",
+      "cutoff",
+      "tableau-recapitulatif-tr",
+      "das2",
+      "declaration-annuelle-des-donnees-sociales-dads"
+    ],
+    "notice": "Taux, seuils, plafonds, échéances et appellations sociales du support sont à revérifier pour le millésime courant. Le TR n’est plus systématique dans la fiche actuelle ; DADS est désormais présenté sous le nom RCI.",
+    "year": null,
+    "sections": [
+      {
+        "title": "Repères du support",
+        "body": "Rôles, comptabilité, études et déclaratifs fiscaux et sociaux."
+      },
+      {
+        "title": "À vérifier avant application",
+        "body": "Taux, seuils, plafonds, échéances et appellations sociales du support sont à revérifier pour le millésime courant. Le TR n’est plus systématique dans la fiche actuelle ; DADS est désormais présenté sous le nom RCI."
+      }
+    ],
+    "originalSha256": "2abbd61158f7aee98b6911d13becf51a943ca97351b6a4f9a4fefcd6e807c00c",
+    "sha256": "2abbd61158f7aee98b6911d13becf51a943ca97351b6a4f9a4fefcd6e807c00c",
+    "optimizedForWeb": false
+  },
+  {
+    "id": "prog",
+    "title": "Les essentiels J.E. — ProG 2023",
+    "track": "Organisation",
+    "description": "Récapitulatif historique : mouvement, réglementation, événements, organisation et stratégie.",
+    "pages": 38,
+    "originalName": "Cours recap ProG.pdf",
+    "related": [
+      "deontologie",
+      "statuts",
+      "bv",
+      "tva",
+      "archivage-version-cnh25"
+    ],
+    "notice": "Support explicitement édité en 2023 : chiffres, partenaires, équipes, seuils sociaux et fiscaux, prix et procédures sont historiques. Les fiches liées donnent la référence plus récente utilisée dans l’académie.",
+    "year": 2023,
+    "sections": [
+      {
+        "title": "Repères du support",
+        "body": "Récapitulatif historique : mouvement, réglementation, événements, organisation et stratégie."
+      },
+      {
+        "title": "À vérifier avant application",
+        "body": "Support explicitement édité en 2023 : chiffres, partenaires, équipes, seuils sociaux et fiscaux, prix et procédures sont historiques. Les fiches liées donnent la référence plus récente utilisée dans l’académie."
+      }
+    ],
+    "originalSha256": "9e42cf8b87db39a9cdc0b5178e425fdbbbb4aac053291508db74145688b8330a",
+    "sha256": "7af7860856b160015247be406e9a2bd5c8ce679e791b3fb74a78d23c76345300",
+    "optimizedForWeb": true
+  }
+]
