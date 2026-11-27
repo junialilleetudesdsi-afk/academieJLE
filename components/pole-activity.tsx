@@ -1,5 +1,5 @@
 'use client';
-import {useEffect,useState} from 'react';
+import {useEffect,useState,useRef} from 'react';
 import {BarChart3,ChartNoAxesCombined,Grid2X2,Printer,RefreshCw} from 'lucide-react';
 import {poleColors,success,participation,perMember,summarize,weekEnd,lineSegments} from '../lib/reporting.mjs';
 type Row={pole:string;members:number;week:string;current:boolean;active:number;attempts:number;score:number;total:number;duration:number};
@@ -8,17 +8,19 @@ const range=(s:string)=>shortDate(s)+' – '+shortDate(weekEnd(s));
 const format=(n:number)=>n.toLocaleString('fr-FR',{maximumFractionDigits:1});
 const color=(pole:string)=>poleColors[pole]??'#71818d';
 function Trend({rows,weeks,poles,title,metric,percent=false}:{rows:Row[];weeks:string[];poles:string[];title:string;metric:(row:Row)=>number|null;percent?:boolean}){
- const [hover,setHover]=useState<number|null>(null);
- const width=760,height=265,left=48,right=22,top=18,bottom=40,innerW=width-left-right,innerH=height-top-bottom;
+ const [hover,setHover]=useState<number|null>(null),[width,setWidth]=useState(760);
+ const chart=useRef<HTMLElement>(null);
+ useEffect(()=>{if(!chart.current)return;const observer=new ResizeObserver(entries=>{const size=entries[0]?.contentRect.width;if(size)setWidth(Math.max(260,Math.round(size)))});observer.observe(chart.current);return()=>observer.disconnect()},[]);
+ const height=265,left=48,right=22,top=18,bottom=40,innerW=width-left-right,innerH=height-top-bottom;
  const values=rows.map(metric).filter(v=>v!==null) as number[],max=percent?100:Math.max(1,Math.ceil(Math.max(0,...values)/4)*4);
  const x=(i:number)=>left+i*innerW/Math.max(1,weeks.length-1),y=(v:number)=>top+innerH-(v/max)*innerH;
  const selected=hover===null?[]:rows.filter(r=>r.week===weeks[hover]);
- return <section className="report-chart"><h3>{title}</h3><svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label={title+' par semaine et par pôle'} onMouseLeave={()=>setHover(null)}>
+ return <section ref={chart} className="report-chart"><h3>{title}</h3><svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label={title+' par semaine et par pôle'} onMouseLeave={()=>setHover(null)}>
   {[0,.25,.5,.75,1].map(t=><g key={t}><line x1={left} x2={width-right} y1={y(t*max)} y2={y(t*max)} stroke="#e6ebef" strokeDasharray="3 5"/><text x={left-10} y={y(t*max)+4} textAnchor="end" className="chart-label">{format(t*max)}{percent?' %':''}</text></g>)}
-  {weeks.map((w,i)=>(i%Math.ceil(weeks.length/6)===0||i===weeks.length-1)&&<text key={w} x={x(i)} y={height-12} textAnchor="middle" className="chart-label">{shortDate(w)}</text>)}
+  {weeks.map((w,i)=>(i%Math.ceil(weeks.length/Math.max(2,Math.floor(innerW/95)))===0||i===weeks.length-1)&&<text key={w} x={x(i)} y={height-12} textAnchor="middle" className="chart-label">{shortDate(w)}</text>)}
   {poles.map(p=>{const points=weeks.map((week,i)=>{const row=rows.find(r=>r.pole===p&&r.week===week),v=row?metric(row):null;return v===null?null:{x:x(i),y:y(v),v,week}});return <g key={p}>{lineSegments(points).map((segment,i)=><polyline key={i} points={segment.map(pt=>pt.x+','+pt.y).join(' ')} fill="none" stroke={color(p)} strokeWidth="2.5" strokeLinejoin="round"/>)}{points.map(pt=>pt&&<circle key={pt.week} cx={pt.x} cy={pt.y} r={3.5} fill={color(p)} stroke="white" strokeWidth="1.5"><title>{p} · {range(pt.week)} : {format(pt.v)}{percent?' %':''}</title></circle>)}</g>})}
   {hover!==null&&<line x1={x(hover)} x2={x(hover)} y1={top} y2={height-bottom} stroke="#71818d" strokeDasharray="4 4"/>}
-  {weeks.map((w,i)=><rect key={w} x={x(i)-innerW/Math.max(1,weeks.length-1)/2} y={top} width={innerW/Math.max(1,weeks.length-1)} height={innerH} fill="transparent" tabIndex={0} aria-label={range(w)} onMouseEnter={()=>setHover(i)} onFocus={()=>setHover(i)} onBlur={()=>setHover(null)}><title>{range(w)+'\n'+rows.filter(r=>r.week===w).map(r=>r.pole+' : '+(metric(r)===null?'Aucun test':format(metric(r)!)+(percent?' %':''))).join('\n')}</title></rect>)}
+  {weeks.map((w,i)=><rect key={w} x={x(i)-innerW/Math.max(1,weeks.length-1)/2} y={top} width={innerW/Math.max(1,weeks.length-1)} height={innerH} fill="transparent" tabIndex={0} aria-label={range(w)} onMouseEnter={()=>setHover(i)} onClick={()=>setHover(i)} onFocus={()=>setHover(i)} onBlur={()=>setHover(null)}><title>{range(w)+'\n'+rows.filter(r=>r.week===w).map(r=>r.pole+' : '+(metric(r)===null?'Aucun test':format(metric(r)!)+(percent?' %':''))).join('\n')}</title></rect>)}
  </svg><div className="chart-readout" aria-live="polite">{hover!==null?<><b>{range(weeks[hover])}</b>{selected.map(r=><span key={r.pole}><i style={{background:color(r.pole)}}/>{r.pole} <strong>{metric(r)===null?'—':format(metric(r)!)+(percent?' %':'')}</strong></span>)}</>:<span className="chart-empty-label">{percent&&!rows.some(r=>r.total)?'Aucun résultat sur cet historique.':'Du '+shortDate(weeks[0])+' au '+shortDate(weekEnd(weeks.at(-1)!))}</span>}</div></section>
 }
 function Bars({rows,title,metric,percent=false}:{rows:Row[];title:string;metric:(row:Row)=>number|null;percent?:boolean}){

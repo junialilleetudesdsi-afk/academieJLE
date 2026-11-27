@@ -117,3 +117,8 @@ Le tableau de bord présente une bannière d’accueil, quatre raccourcis (Quiz 
 La carte des process conserve les 40 process, 39 liens et les deux accès rapides. Son contenu est ajusté aux dimensions disponibles avec zoom, recentrage et plein écran ; une vue liste reste disponible. Les liens sont des ancres accessibles au clavier. Les recherches et filtres n'altèrent pas le catalogue.
 
 Les membres voient uniquement des agrégats par pôle. Les résultats individuels restent accessibles à leur propriétaire et aux administrateurs. Aucun annuaire nominatif ni mot de passe initial n'est inclus dans le code source.
+
+
+## Affichage mobile
+
+Le menu est un panneau déroulant avec bouton de fermeture, fond de fermeture, fermeture par Échap et retour au bouton d'ouverture. Il maintient le focus clavier et bloque le défilement de la page en arrière-plan. Le bandeau de navigation reste accessible en haut de l'écran. L'ordre des onglets est identique sur ordinateur et téléphone. Les commandes tactiles principales mesurent au moins 44 px. Les graphiques adaptent leur largeur et le nombre de dates affichées ; la matrice et les tableaux larges défilent dans leur propre cadre. Sur téléphone, les process s'ouvrent en liste, avec la carte toujours disponible.

@@ -9,6 +9,7 @@ export default function Processes(){
  const viewport=useRef<HTMLDivElement>(null),board=useRef<HTMLDivElement>(null);
  const list=data.processes.filter(p=>(branch==='Tous'||p.branch===branch)&&(!selected||p.group===selected)&&norm(p.title+' '+p.parent+' '+p.group).includes(norm(query)));
  const groups=data.groups.filter(g=>list.some(p=>p.group===g.id));
+ useEffect(()=>{if(window.matchMedia('(max-width:760px)').matches)setView('Liste')},[]);
  useEffect(()=>{if(view!=='Carte'||!viewport.current||!board.current)return;const outer=viewport.current,inner=board.current;const measure=()=>{if(!full)setAvailableHeight(Math.max(280,window.innerHeight-Math.max(16,outer.getBoundingClientRect().top)-24));const h=inner.offsetHeight;setHeight(h);setFit(Math.min(1,(outer.clientWidth-32)/1440,(outer.clientHeight-32)/Math.max(1,h)))};const observer=new ResizeObserver(measure);observer.observe(outer);observer.observe(inner);measure();return()=>observer.disconnect()},[view,list.length,full]);
  useEffect(()=>{if(!full)return;const previous=document.body.style.overflow;document.body.style.overflow='hidden';const esc=(e:KeyboardEvent)=>{if(e.key==='Escape')setFull(false)};window.addEventListener('keydown',esc);return()=>{document.body.style.overflow=previous;window.removeEventListener('keydown',esc)}},[full]);
  const scale=zoom??fit;
