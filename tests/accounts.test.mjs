@@ -42,7 +42,7 @@ test('Un administrateur ne peut pas retirer son propre accès',async()=>{
 test('Suivi des pôles : authentification et filtres validés ; seuls les agrégats sont retournés',async()=>{
  let touched=0;const extra={currentMember:async()=>null,pool:{query:async()=>{touched++;return {rows:[]}}}};const url=(q='')=>({headers:new Headers(),nextUrl:new URL('https://example.org/api/activity'+q)});
  assert.equal((await load('app/api/activity/route.ts',extra).GET(url())).status,401);assert.equal(touched,0);
- extra.currentMember=async()=>({id:'m',siteRole:'member'});const route=load('app/api/activity/route.ts',extra);assert.equal((await route.GET(url('?days=-3'))).status,400);assert.equal(touched,0);
- extra.pool.query=async(sql,params)=>{assert.match(sql,/GROUP BY m.pole/);assert.doesNotMatch(sql,/email|password|SELECT.*name/i);assert.equal(params[0],30);return {rows:[{pole:'Bureau',members:5,attempts:0}]}};
- const r=await route.GET(url());assert.equal(r.status,200);assert.equal((await r.json()).poles[0].members,5);assert.equal(r.headers.get('cache-control'),'private, no-store');
+ extra.currentMember=async()=>({id:'m',siteRole:'member'});const route=load('app/api/activity/route.ts',extra);assert.equal((await route.GET(url('?weeks=-3'))).status,400);assert.equal(touched,0);
+ extra.pool.query=async(sql,params)=>{assert.match(sql,/GROUP BY m.pole/);assert.match(sql,/generate_series/);assert.match(sql,/Europe\/Paris/);assert.match(sql,/count\(DISTINCT a.user_id\)/);assert.doesNotMatch(sql,/mode\s*=/);assert.doesNotMatch(sql,/email|password|SELECT.*name/i);assert.equal(params[0],12);return {rows:[{pole:'Bureau',members:5,attempts:0}]}};
+ const r=await route.GET(url());assert.equal(r.status,200);assert.equal((await r.json()).rows[0].members,5);assert.equal(r.headers.get('cache-control'),'private, no-store');
 });
