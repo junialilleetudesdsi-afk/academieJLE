@@ -1,7 +1,7 @@
 {
-  "version": 3,
+  "version": 4,
   "checkedAt": "2026-11-17",
-  "notice": "Entraînement pédagogique JLE non officiel. Le test blanc suit un format JLE, sans barème CNJE garanti. La banque combine des questions de cours et des variantes de cas pratiques ; les hypothèses chiffrées fictives sont signalées.",
+  "notice": "Entraînement pédagogique JLE non officiel. La banque combine des questions de cours, des variantes de cas pratiques et des questions issues des formations internes. Les hypothèses chiffrées fictives sont signalées. Le test blanc utilise les notions générales et les questions réglementaires vérifiées, sans les repères propres aux pôles ou à un ancien mandat.",
   "articles": [
     {
       "id": "deontologie",
@@ -15634,6 +15634,2316 @@
       "origin": "Mise en situation · complément Kiwi",
       "status": "verified",
       "family": "ndf-controle"
+    },
+    {
+      "id": "formation-mouvement-01",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel projet correspond au modèle présenté dans la formation Mouvement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une simple mise à disposition de personnel sous les ordres du client."
+        },
+        {
+          "id": "b",
+          "text": "La revente automatique de corrigés scolaires."
+        },
+        {
+          "id": "c",
+          "text": "Une activité sans lien avec les enseignements de l’établissement."
+        },
+        {
+          "id": "d",
+          "text": "Une étude mobilisant les enseignements des étudiants pour répondre à un besoin concret."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le support relie les projets concrets à l’enseignement supérieur. Kiwi précise le lien avec des enseignements suivis et évalués et la valeur pédagogique attendue.",
+      "origin": "Formation Mouvement.pdf · page 4",
+      "status": "verified",
+      "formationId": "mouvement",
+      "formationPage": 4,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-mouvement-02",
+      "articleId": "statuts",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Comment la formation Mouvement décrit-elle la gestion de la Junior ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une association administrée et gérée par des bénévoles."
+        },
+        {
+          "id": "b",
+          "text": "Une filiale administrée par chacun de ses clients."
+        },
+        {
+          "id": "c",
+          "text": "Un service qui remplace la direction de l’école."
+        },
+        {
+          "id": "d",
+          "text": "Un cabinet dirigé uniquement par ses intervenants rémunérés."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Le support présente une structure associative animée par des bénévoles. Cette organisation permet l’engagement des étudiants dans sa gestion.",
+      "origin": "Formation Mouvement.pdf · page 5",
+      "status": "verified",
+      "formationId": "mouvement",
+      "formationPage": 5,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-mouvement-03",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel rôle de la CNJE est mis en avant dans la formation Mouvement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Signer systématiquement tous les contrats clients des Juniors."
+        },
+        {
+          "id": "b",
+          "text": "Accompagner les structures et favoriser leurs échanges."
+        },
+        {
+          "id": "c",
+          "text": "Effectuer toutes les études à la place des Juniors."
+        },
+        {
+          "id": "d",
+          "text": "Fixer le planning personnel de chaque intervenant."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Le support cite le conseil, l’accompagnement, la défense des marques et les échanges entre structures parmi les missions de la CNJE.",
+      "origin": "Formation Mouvement.pdf · page 9",
+      "status": "verified",
+      "formationId": "mouvement",
+      "formationPage": 9,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-mouvement-04",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel bénéfice d’un regroupement régional est illustré dans le support Mouvement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dispenser chaque Junior de suivre ses études."
+        },
+        {
+          "id": "b",
+          "text": "Remplacer les dossiers de passation par des échanges informels uniquement."
+        },
+        {
+          "id": "c",
+          "text": "Partager des formations et des bonnes pratiques entre structures."
+        },
+        {
+          "id": "d",
+          "text": "Supprimer toute autonomie des associations participantes."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Les rencontres régionales sont présentées comme des occasions de formation et d’échanges. Aucun nombre historique de structures n’est nécessaire pour comprendre cet intérêt.",
+      "origin": "Formation Mouvement.pdf · page 12",
+      "status": "verified",
+      "formationId": "mouvement",
+      "formationPage": 12,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-mouvement-05",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un prospect sollicite JLE dans un domaine figurant sur une ancienne présentation. Que faut-il encore vérifier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement la présence du domaine dans un ancien diaporama."
+        },
+        {
+          "id": "b",
+          "text": "Uniquement l’existence d’un concurrent sur ce marché."
+        },
+        {
+          "id": "c",
+          "text": "Uniquement le budget disponible chez le prospect."
+        },
+        {
+          "id": "d",
+          "text": "Le lien de la mission avec les enseignements évalués de l’intervenant et l’absence de domaine interdit."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Une liste commerciale de compétences ne valide pas à elle seule la déontologie. Le lien pédagogique et les restrictions sur les domaines restent à vérifier pour la mission.",
+      "origin": "Formation Mouvement.pdf · page 15",
+      "status": "verified",
+      "formationId": "mouvement",
+      "formationPage": 15,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-mouvement-06",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel objectif professionnel de la Junia Business Week est décrit dans le support ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Concentrer un effort de prospection pour développer les contacts commerciaux."
+        },
+        {
+          "id": "b",
+          "text": "Établir à elle seule la conformité de toutes les études."
+        },
+        {
+          "id": "c",
+          "text": "Distribuer automatiquement des missions à tous les participants."
+        },
+        {
+          "id": "d",
+          "text": "Remplacer la prise de besoin par un concours de prix."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La JBW est présentée comme une semaine de prospection intense organisée en groupes. Elle vise le développement commercial, sans remplacer le cadrage des études.",
+      "origin": "Formation Mouvement.pdf · page 17",
+      "status": "verified",
+      "formationId": "mouvement",
+      "formationPage": 17,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-mouvement-07",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Dans la formation Mouvement, à quoi servent les entretiens de suivi des membres ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Attribuer une sanction automatique à chaque absence."
+        },
+        {
+          "id": "b",
+          "text": "Comprendre leur engagement, leurs difficultés et leurs besoins d’accompagnement."
+        },
+        {
+          "id": "c",
+          "text": "Garantir un chiffre d’affaires personnel pour chaque membre."
+        },
+        {
+          "id": "d",
+          "text": "Remplacer toutes les réunions de pôle."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Le suivi RH présenté associe entretiens, retours sur la motivation et actions collectives. L’objectif est l’accompagnement de l’équipe.",
+      "origin": "Formation Mouvement.pdf · page 20",
+      "status": "verified",
+      "formationId": "mouvement",
+      "formationPage": 20,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-mouvement-08",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle action correspond à l’objectif de cohésion décrit dans la formation Mouvement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Éviter les contacts entre nouveaux et anciens membres."
+        },
+        {
+          "id": "b",
+          "text": "Limiter la passation aux seuls mots de passe."
+        },
+        {
+          "id": "c",
+          "text": "Organiser un moment collectif qui facilite les échanges entre membres."
+        },
+        {
+          "id": "d",
+          "text": "Conserver les informations exclusivement dans un pôle."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Les actions de team building font partie des leviers cités pour créer du lien et faire vivre l’équipe, en complément du suivi individuel.",
+      "origin": "Formation Mouvement.pdf · page 20",
+      "status": "verified",
+      "formationId": "mouvement",
+      "formationPage": 20,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-mouvement-09",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle finalité de l’audit est mise en avant à la fin de la formation Mouvement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Écrire à la place du bureau son prochain plan d’action."
+        },
+        {
+          "id": "b",
+          "text": "Garantir automatiquement l’obtention de nouvelles études."
+        },
+        {
+          "id": "c",
+          "text": "Remplacer le contrôle interne de la Junior durant tout le mandat."
+        },
+        {
+          "id": "d",
+          "text": "Analyser l’activité passée et conseiller la Junior pour améliorer ses processus."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le support décrit une analyse de l’activité et un accompagnement pour pérenniser les processus. Les anciennes listes de sanctions ne sont pas reprises ici comme référentiel actuel.",
+      "origin": "Formation Mouvement.pdf · page 21",
+      "status": "verified",
+      "formationId": "mouvement",
+      "formationPage": 21,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-mouvement-10",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Pour préparer l’analyse de son mandat, quelle démarche découle de la formation Mouvement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conserver des traces de l’activité et expliquer les améliorations apportées."
+        },
+        {
+          "id": "b",
+          "text": "Ne présenter que des objectifs sans aucune réalisation."
+        },
+        {
+          "id": "c",
+          "text": "Effacer les difficultés rencontrées des documents de suivi."
+        },
+        {
+          "id": "d",
+          "text": "Assimiler tous les outils installés à des résultats déjà obtenus."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Analyser un mandat demande des éléments observables : activité, fonctionnement et actions correctives. Une intention seule ne démontre pas une amélioration réalisée.",
+      "origin": "Formation Mouvement.pdf · page 21",
+      "status": "verified",
+      "formationId": "mouvement",
+      "formationPage": 21,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-poles-01",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un prospect souhaite exposer un besoin à JLE. Quel rôle du pôle ActiCo est illustré dans la formation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Garantir une signature sans vérifier le besoin."
+        },
+        {
+          "id": "b",
+          "text": "Créer le contact commercial puis accompagner le déroulement de l’étude."
+        },
+        {
+          "id": "c",
+          "text": "Se limiter à publier des photos d’événements."
+        },
+        {
+          "id": "d",
+          "text": "Clôturer les comptes à la place de la trésorerie."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La formation décrit la prospection, la relation client et intervenant et le suivi de l’étude parmi les missions ActiCo. Le pouvoir juridique de signature reste une question distincte.",
+      "origin": "Formation Présentation des pôles.pdf · page 4",
+      "status": "verified",
+      "formationId": "poles",
+      "formationPage": 4,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-poles-02",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel équilibre commercial le support Présentation des pôles recommande-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consacrer toute l’activité à un seul prospect sans suivi."
+        },
+        {
+          "id": "b",
+          "text": "Remplacer la relation client par la seule baisse des prix."
+        },
+        {
+          "id": "c",
+          "text": "Développer la prospection tout en fidélisant les clients existants."
+        },
+        {
+          "id": "d",
+          "text": "Abandonner les anciens clients dès qu’une étude est terminée."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le développement commercial présenté associe une stratégie, des moyens et un équilibre entre conquête et fidélisation de la clientèle.",
+      "origin": "Formation Présentation des pôles.pdf · page 5",
+      "status": "verified",
+      "formationId": "poles",
+      "formationPage": 5,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-poles-03",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Avant de définir une action commerciale, quels éléments du schéma de la formation faut-il rapprocher ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement la couleur des supports de prospection."
+        },
+        {
+          "id": "b",
+          "text": "Uniquement le nombre de messages envoyés hier."
+        },
+        {
+          "id": "c",
+          "text": "Uniquement le prix le plus bas trouvé sur Internet."
+        },
+        {
+          "id": "d",
+          "text": "L’offre, la demande, les concurrents et l’environnement."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le schéma invite à analyser le marché et les parties prenantes pour construire une action commerciale adaptée, plutôt qu’un choix fondé sur un indicateur isolé.",
+      "origin": "Formation Présentation des pôles.pdf · page 5",
+      "status": "verified",
+      "formationId": "poles",
+      "formationPage": 5,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-poles-04",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Après un premier échange avec un client, quelle suite correspond au fonctionnement présenté ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clarifier le projet et formaliser les informations utiles avant la proposition."
+        },
+        {
+          "id": "b",
+          "text": "Démarrer immédiatement sans cahier des charges."
+        },
+        {
+          "id": "c",
+          "text": "Promettre un livrable sans consulter les compétences disponibles."
+        },
+        {
+          "id": "d",
+          "text": "Attendre la facture finale pour préciser les objectifs."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Le parcours décrit une clarification du besoin et une mise à l’écrit du projet. La proposition vient s’appuyer sur cette prise de besoin.",
+      "origin": "Formation Présentation des pôles.pdf · page 7",
+      "status": "verified",
+      "formationId": "poles",
+      "formationPage": 7,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-poles-05",
+      "articleId": "proces-verbal-de-recette-final-pvrf",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle action de fin de projet la formation Présentation des pôles met-elle en avant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confondre satisfaction et absence totale de suivi."
+        },
+        {
+          "id": "b",
+          "text": "Vérifier la satisfaction et maintenir une relation avec le client."
+        },
+        {
+          "id": "c",
+          "text": "Couper le contact dès le dernier envoi de fichier."
+        },
+        {
+          "id": "d",
+          "text": "Supprimer les échanges utiles du dossier."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Le support prévoit une étape de satisfaction et de fidélisation après la réalisation. L’objectif est de conserver une relation utile au-delà du livrable.",
+      "origin": "Formation Présentation des pôles.pdf · page 7",
+      "status": "verified",
+      "formationId": "poles",
+      "formationPage": 7,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-poles-06",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "À quoi sert l’analyse des processus et des KPI par le pôle Qualité dans cette formation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remplacer le travail des intervenants sur les livrables."
+        },
+        {
+          "id": "b",
+          "text": "Attribuer automatiquement les pouvoirs du président au pôle Qualité."
+        },
+        {
+          "id": "c",
+          "text": "Identifier des améliorations du fonctionnement et du service rendu."
+        },
+        {
+          "id": "d",
+          "text": "Produire des chiffres sans décision ni suivi."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La formation relie les indicateurs à l’amélioration continue et à une vision globale de la structure, au service des autres pôles.",
+      "origin": "Formation Présentation des pôles.pdf · page 12",
+      "status": "verified",
+      "formationId": "poles",
+      "formationPage": 12,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-poles-07",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Avec quels acteurs le pôle Qualité échange-t-il dans le schéma du support ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement les visiteurs anonymes du site."
+        },
+        {
+          "id": "b",
+          "text": "Uniquement l’hébergeur informatique."
+        },
+        {
+          "id": "c",
+          "text": "Aucun autre pôle, pour préserver son indépendance."
+        },
+        {
+          "id": "d",
+          "text": "Le bureau, le Marketing et l’ActiCo."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le schéma montre des interactions entre Qualité, bureau, Marketing et ActiCo. La qualité du fonctionnement s’appuie sur des échanges transversaux.",
+      "origin": "Formation Présentation des pôles.pdf · page 13",
+      "status": "verified",
+      "formationId": "poles",
+      "formationPage": 13,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-poles-08",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel périmètre de communication est attribué au Marketing dans la formation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La communication interne et externe de la Junior."
+        },
+        {
+          "id": "b",
+          "text": "Uniquement les déclarations sociales."
+        },
+        {
+          "id": "c",
+          "text": "Uniquement la signature des conventions d’étude."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement la saisie des journaux comptables."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Le support présente la stratégie de communication et les échanges auprès de l’école, des professionnels et du Mouvement comme missions du Marketing.",
+      "origin": "Formation Présentation des pôles.pdf · page 16",
+      "status": "verified",
+      "formationId": "poles",
+      "formationPage": 16,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-poles-09",
+      "articleId": "respecter-le-rgpd-en-cinq-etapes",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel exemple correspond à l’aide apportée par la DSI aux autres pôles dans le support ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Attribuer à tous les visiteurs des droits administrateur."
+        },
+        {
+          "id": "b",
+          "text": "Automatiser une tâche répétitive ou faciliter la production des documents."
+        },
+        {
+          "id": "c",
+          "text": "Se substituer au client dans la validation du livrable."
+        },
+        {
+          "id": "d",
+          "text": "Supprimer les justificatifs pour alléger les dossiers."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La DSI présentée aide les pôles à optimiser leurs processus informatiques, notamment par l’automatisation et le publipostage.",
+      "origin": "Formation Présentation des pôles.pdf · page 18",
+      "status": "verified",
+      "formationId": "poles",
+      "formationPage": 18,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-poles-10",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quels indicateurs de site le support propose-t-il de partager avec Marketing et Qualité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un nombre de clients inventé à partir des visites."
+        },
+        {
+          "id": "b",
+          "text": "Le montant des cotisations sociales de chaque visiteur."
+        },
+        {
+          "id": "c",
+          "text": "Les visites et les impressions, pour analyser la visibilité."
+        },
+        {
+          "id": "d",
+          "text": "Le mot de passe personnel de chaque visiteur."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le support cite le nombre de visiteurs et d’impressions. Ils servent à analyser la visibilité ; ils ne sont pas assimilés automatiquement à des ventes.",
+      "origin": "Formation Présentation des pôles.pdf · page 18",
+      "status": "verified",
+      "formationId": "poles",
+      "formationPage": 18,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-sde-01",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Pendant la première réunion client, quelle information est utile à la préparation de la proposition ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement le logo du client."
+        },
+        {
+          "id": "b",
+          "text": "Uniquement l’heure préférée du chef de projet."
+        },
+        {
+          "id": "c",
+          "text": "Uniquement le prix d’une ancienne étude sans lien avec le besoin."
+        },
+        {
+          "id": "d",
+          "text": "Le besoin, les délais, le budget et les contraintes du projet."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le support demande de recueillir les éléments utiles au cadrage puis d’en rédiger un compte rendu, afin de construire une proposition cohérente.",
+      "origin": "Formation SDE.pdf · page 4",
+      "status": "verified",
+      "formationId": "sde",
+      "formationPage": 4,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-sde-02",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Le besoin reste flou après une première réunion. Quelle action recommande le déroulement du support SDE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organiser un échange complémentaire avant de finaliser la proposition."
+        },
+        {
+          "id": "b",
+          "text": "Choisir seul des objectifs et les présenter comme validés."
+        },
+        {
+          "id": "c",
+          "text": "Facturer immédiatement toute l’étude."
+        },
+        {
+          "id": "d",
+          "text": "Confondre le premier contact avec une acceptation du cahier des charges."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Le support prévoit une deuxième réunion si nécessaire. Mieux comprendre le besoin permet d’éviter une proposition construite sur des hypothèses non partagées.",
+      "origin": "Formation SDE.pdf · page 4",
+      "status": "verified",
+      "formationId": "sde",
+      "formationPage": 4,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-sde-03",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un projet est rentable mais consiste seulement à exécuter des tâches sans réflexion pédagogique. Quel point bloque son acceptation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le nombre de réunions de présentation."
+        },
+        {
+          "id": "b",
+          "text": "L’absence de valeur pédagogique de l’étude."
+        },
+        {
+          "id": "c",
+          "text": "Le seul fait que le client soit une entreprise."
+        },
+        {
+          "id": "d",
+          "text": "Le seul fait que le budget soit important."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La valeur pédagogique et la réflexion intellectuelle sont des conditions du modèle. La rentabilité commerciale ne remplace pas ce contrôle déontologique.",
+      "origin": "Formation SDE.pdf · page 5",
+      "status": "verified",
+      "formationId": "sde",
+      "formationPage": 5,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-sde-04",
+      "articleId": "selection-des-intervenants",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel diagnostic de capacité doit précéder l’engagement sur une étude selon la formation SDE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Attendre la fin de l’étude pour rechercher les compétences."
+        },
+        {
+          "id": "b",
+          "text": "Choisir uniquement la personne la plus disponible sans examiner les compétences."
+        },
+        {
+          "id": "c",
+          "text": "Vérifier les ressources humaines et techniques et la complexité du projet."
+        },
+        {
+          "id": "d",
+          "text": "Supposer que tout projet est réalisable dès lors qu’il est financé."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La formation demande de vérifier les moyens nécessaires et d’évaluer la complexité avant signature, afin d’éviter des engagements irréalistes.",
+      "origin": "Formation SDE.pdf · page 5",
+      "status": "verified",
+      "formationId": "sde",
+      "formationPage": 5,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-sde-05",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Le client n’a aucun cahier des charges. Que propose la formation SDE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Considérer que toute demande orale vaut cahier des charges complet."
+        },
+        {
+          "id": "b",
+          "text": "Supprimer la définition des livrables."
+        },
+        {
+          "id": "c",
+          "text": "Réaliser le projet sans chercher à comprendre ses objectifs."
+        },
+        {
+          "id": "d",
+          "text": "L’aider à préciser son besoin pour rédiger un cadrage partagé."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le support distingue les clients déjà dotés d’un cahier des charges et ceux qui ont besoin d’aide. Les échanges doivent aboutir à un cadrage exploitable.",
+      "origin": "Formation SDE.pdf · page 6",
+      "status": "verified",
+      "formationId": "sde",
+      "formationPage": 6,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-sde-06",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle préparation renforce la qualité d’un rendez-vous client selon le support SDE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maîtriser le projet, la proposition et ses contraintes techniques et logistiques."
+        },
+        {
+          "id": "b",
+          "text": "Apprendre seulement une liste de prix."
+        },
+        {
+          "id": "c",
+          "text": "Découvrir la proposition pendant la réunion."
+        },
+        {
+          "id": "d",
+          "text": "Éviter toute question sur le domaine du client."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "S’approprier le projet et connaître ses contraintes permet d’être acteur du rendez-vous et de formuler des propositions adaptées.",
+      "origin": "Formation SDE.pdf · page 10",
+      "status": "verified",
+      "formationId": "sde",
+      "formationPage": 10,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-sde-07",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Que doit montrer une présentation de la méthodologie d’étude dans la propale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement la liste des études passées de la Junior."
+        },
+        {
+          "id": "b",
+          "text": "Les phases, les actions prévues et les livrables correspondants."
+        },
+        {
+          "id": "c",
+          "text": "Uniquement des noms de logiciels sans usage expliqué."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement un prix global sans démarche."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La formation associe la méthodologie aux grandes phases, aux actions et aux productions attendues pour expliquer la démarche et justifier le travail proposé.",
+      "origin": "Formation SDE.pdf · page 12",
+      "status": "verified",
+      "formationId": "sde",
+      "formationPage": 12,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-sde-08",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "À quoi sert la slide de contexte d’une proposition commerciale selon la formation SDE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Promettre un résultat chiffré sans analyse."
+        },
+        {
+          "id": "b",
+          "text": "Présenter uniquement l’histoire de la Junior."
+        },
+        {
+          "id": "c",
+          "text": "Montrer la compréhension de l’activité, du problème et des objectifs du prospect."
+        },
+        {
+          "id": "d",
+          "text": "Remplacer toutes les phases méthodologiques."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le contexte retrace la prise de besoin et permet de formuler une problématique globale et des objectifs précis pour guider la proposition.",
+      "origin": "Formation SDE.pdf · page 13",
+      "status": "verified",
+      "formationId": "sde",
+      "formationPage": 13,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-sde-09",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle présentation du budget d’étude est recommandée dans la formation SDE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Masquer les coûts nécessaires jusqu’à la facture finale."
+        },
+        {
+          "id": "b",
+          "text": "Omettre les besoins de sous-traitance connus."
+        },
+        {
+          "id": "c",
+          "text": "Appliquer un prix sans le rapprocher des moyens à mobiliser."
+        },
+        {
+          "id": "d",
+          "text": "Détailler de manière transparente les postes de dépenses."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le support insiste sur la transparence du budget et la prise en compte des dépenses, des intervenants et des besoins éventuels de sous-traitance.",
+      "origin": "Formation SDE.pdf · page 14",
+      "status": "verified",
+      "formationId": "sde",
+      "formationPage": 14,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-sde-10",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "En cours d’étude, un doute porte sur l’attente réelle du client. Quel réflexe recommande la formation SDE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recontacter le client pour clarifier le point avant de poursuivre sur une hypothèse."
+        },
+        {
+          "id": "b",
+          "text": "Cacher le doute jusqu’à la livraison finale."
+        },
+        {
+          "id": "c",
+          "text": "Modifier seul la demande en affirmant qu’elle était convenue."
+        },
+        {
+          "id": "d",
+          "text": "Supprimer le livrable concerné sans échange."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La formation recommande de solliciter le client en cas de doute ou de problème, en s’appuyant sur la méthodologie et les actions cadrées au départ.",
+      "origin": "Formation SDE.pdf · page 15",
+      "status": "verified",
+      "formationId": "sde",
+      "formationPage": 15,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-ga-01",
+      "articleId": "statuts",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un nouveau membre veut connaître la répartition des pouvoirs dans l’association. Quel document consulter en priorité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le budget d’une seule étude."
+        },
+        {
+          "id": "b",
+          "text": "Les statuts de la Junior."
+        },
+        {
+          "id": "c",
+          "text": "Une publication sur les réseaux sociaux."
+        },
+        {
+          "id": "d",
+          "text": "La signature électronique du dernier client."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Les statuts définissent l’objet, l’organisation et la répartition des pouvoirs de l’association. Le règlement intérieur en précise les modalités d’application.",
+      "origin": "Formation GA.pdf · page 4",
+      "status": "verified",
+      "formationId": "ga",
+      "formationPage": 4,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-ga-02",
+      "articleId": "statuts",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Les membres doivent pouvoir consulter le règlement intérieur. Quelle pratique est conforme à la fiche Kiwi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le communiquer seulement après un litige."
+        },
+        {
+          "id": "b",
+          "text": "Ne jamais le transmettre avant une adhésion."
+        },
+        {
+          "id": "c",
+          "text": "Le rendre accessible en permanence aux membres."
+        },
+        {
+          "id": "d",
+          "text": "Le réserver au seul président."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Kiwi demande un accès permanent aux statuts et au RI, ainsi que leur transmission avant la signature du bulletin d’adhésion. Un document inaccessible ne permet pas une adhésion éclairée.",
+      "origin": "Formation GA.pdf · page 4",
+      "status": "verified",
+      "formationId": "ga",
+      "formationPage": 4,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-ga-03",
+      "articleId": "archivage-version-cnh25",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "À quoi sert le classeur d’association présenté dans la formation GA ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remplacer les livrables à transmettre aux clients."
+        },
+        {
+          "id": "b",
+          "text": "Stocker uniquement des documents publicitaires."
+        },
+        {
+          "id": "c",
+          "text": "Éviter toute transmission entre mandats."
+        },
+        {
+          "id": "d",
+          "text": "Conserver les traces des événements et décisions de la vie associative."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le support cite les comptes rendus et procès-verbaux comme mémoire associative, utile au suivi de la structure et à la passation.",
+      "origin": "Formation GA.pdf · page 4",
+      "status": "verified",
+      "formationId": "ga",
+      "formationPage": 4,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-ga-04",
+      "articleId": "statuts",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel contenu correspond au dossier de suivi décrit dans la formation GA ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L’historique des statuts, des RI et des justificatifs officiels de déclaration."
+        },
+        {
+          "id": "b",
+          "text": "Uniquement des brouillons de visuels."
+        },
+        {
+          "id": "c",
+          "text": "Uniquement les réponses des quiz des membres."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement les coordonnées commerciales des prospects."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Ce dossier rassemble les versions des documents officiels et leurs récépissés pour conserver un historique chronologique de l’association.",
+      "origin": "Formation GA.pdf · page 4",
+      "status": "verified",
+      "formationId": "ga",
+      "formationPage": 4,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-ga-05",
+      "articleId": "respecter-le-rgpd-en-cinq-etapes",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel dispositif facilite le traitement des demandes relatives aux données personnelles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L’absence de toute documentation sur les traitements."
+        },
+        {
+          "id": "b",
+          "text": "Une procédure claire et un interlocuteur identifié."
+        },
+        {
+          "id": "c",
+          "text": "Une suppression automatique de toute demande reçue."
+        },
+        {
+          "id": "d",
+          "text": "Un accès public à tous les dossiers des membres."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Le RGPD implique des mesures concrètes et une documentation permettant de démontrer leur application. Les demandes de droits doivent pouvoir être traitées par une procédure définie.",
+      "origin": "Formation GA.pdf · page 8",
+      "status": "verified",
+      "formationId": "ga",
+      "formationPage": 8,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-ga-06",
+      "articleId": "respecter-le-rgpd-en-cinq-etapes",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un membre signale que ses données enregistrées comportent une erreur. Quel droit est principalement concerné ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le droit de signature du président."
+        },
+        {
+          "id": "b",
+          "text": "Le droit d’utiliser une marque commerciale."
+        },
+        {
+          "id": "c",
+          "text": "Le droit de rectification."
+        },
+        {
+          "id": "d",
+          "text": "Le droit de vote en AG."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le droit de rectification permet de demander la correction de données personnelles inexactes. Il figure parmi les droits à présenter aux personnes concernées.",
+      "origin": "Formation GA.pdf · page 9",
+      "status": "verified",
+      "formationId": "ga",
+      "formationPage": 9,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-ga-07",
+      "articleId": "respecter-le-rgpd-en-cinq-etapes",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un adhérent veut connaître les données personnelles que la Junior détient à son sujet. Quel droit mobilise-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un droit automatique d’administrer toute la base."
+        },
+        {
+          "id": "b",
+          "text": "Un droit d’accès aux dossiers de tous les autres membres."
+        },
+        {
+          "id": "c",
+          "text": "Un pouvoir de modifier les statuts sans vote."
+        },
+        {
+          "id": "d",
+          "text": "Le droit d’accès."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le droit d’accès porte sur les données de la personne concernée. Il ne donne pas un droit général à consulter les données des autres membres.",
+      "origin": "Formation GA.pdf · page 9",
+      "status": "verified",
+      "formationId": "ga",
+      "formationPage": 9,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-ga-08",
+      "articleId": "reunions-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Pour déterminer comment convoquer un CA de JLE, quel cadre doit être consulté ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les statuts et le RI applicables à cette instance."
+        },
+        {
+          "id": "b",
+          "text": "Uniquement la fréquence indiquée dans un ancien diaporama."
+        },
+        {
+          "id": "c",
+          "text": "Uniquement la disponibilité du président ce soir."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement un modèle trouvé sans l’adapter."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Les conditions de convocation et de tenue des réunions dépendent des statuts et du RI. Une habitude évoquée en formation ne remplace pas les règles applicables.",
+      "origin": "Formation GA.pdf · page 13",
+      "status": "verified",
+      "formationId": "ga",
+      "formationPage": 13,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-ga-09",
+      "articleId": "reunions-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Pourquoi relever les présences et les procurations au début d’une AG ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour éviter de conserver toute trace de la réunion."
+        },
+        {
+          "id": "b",
+          "text": "Pour vérifier le quorum selon les règles de l’instance."
+        },
+        {
+          "id": "c",
+          "text": "Pour remplacer le contenu de tous les votes."
+        },
+        {
+          "id": "d",
+          "text": "Pour considérer tous les absents comme favorables."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La feuille de présence distingue les membres présents, représentés et absents. Elle permet de contrôler le quorum avant les délibérations.",
+      "origin": "Formation GA.pdf · page 14",
+      "status": "verified",
+      "formationId": "ga",
+      "formationPage": 14,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-ga-10",
+      "articleId": "reunions-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel contenu rend un compte rendu de CA exploitable pour la passation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement l’heure de début sans les sujets abordés."
+        },
+        {
+          "id": "b",
+          "text": "Uniquement les objectifs sans mention des décisions prises."
+        },
+        {
+          "id": "c",
+          "text": "Les points traités, les décisions et les résultats des votes."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement une photo de groupe."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le compte rendu ou procès-verbal conserve une trace des échanges et décisions. Les résultats des votes permettent de documenter ce qui a effectivement été adopté.",
+      "origin": "Formation GA.pdf · page 14",
+      "status": "verified",
+      "formationId": "ga",
+      "formationPage": 14,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-legal-01",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Pourquoi la seule recherche de chiffre d’affaires ne suffit-elle pas à définir une mission de Junior ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toute prestation payante est automatiquement pédagogique."
+        },
+        {
+          "id": "b",
+          "text": "La plus-value pédagogique ne concerne que le client."
+        },
+        {
+          "id": "c",
+          "text": "La formation des intervenants n’a aucun lien avec la mission."
+        },
+        {
+          "id": "d",
+          "text": "La mission doit aussi permettre une montée en compétences liée aux enseignements."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le modèle repose sur des études à caractère pédagogique, en lien avec les enseignements. La dimension économique ne supprime pas ces conditions.",
+      "origin": "Formation Cadre légal.pdf · page 3",
+      "status": "verified",
+      "formationId": "legal",
+      "formationPage": 3,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-legal-02",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un client impose chaque jour les horaires et le lieu de travail de l’intervenant. Quel risque la formation invite-t-elle à identifier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un lien de subordination incompatible avec le modèle Junior."
+        },
+        {
+          "id": "b",
+          "text": "Une simple préférence graphique."
+        },
+        {
+          "id": "c",
+          "text": "Une exonération automatique de cotisations."
+        },
+        {
+          "id": "d",
+          "text": "Une preuve suffisante de valeur pédagogique."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Kiwi décrit le contrôle des horaires et du lieu de travail comme des indices de subordination. L’accompagnement ne doit pas devenir un pouvoir de direction sur l’intervenant.",
+      "origin": "Formation Cadre légal.pdf · page 4",
+      "status": "verified",
+      "formationId": "legal",
+      "formationPage": 4,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-legal-03",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel mode de suivi préserve le mieux l’autonomie de l’intervenant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le placer sous l’autorité hiérarchique permanente du client."
+        },
+        {
+          "id": "b",
+          "text": "Échanger sur les livrables et les difficultés sans lui imposer un fonctionnement salarié."
+        },
+        {
+          "id": "c",
+          "text": "Contrôler quotidiennement ses heures de présence comme un employeur."
+        },
+        {
+          "id": "d",
+          "text": "Lui donner des ordres directs sur chaque geste de travail."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La Junior doit accompagner la qualité de l’étude tout en évitant une subordination du client ou de la Junior envers l’intervenant.",
+      "origin": "Formation Cadre légal.pdf · page 4",
+      "status": "verified",
+      "formationId": "legal",
+      "formationPage": 4,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-legal-04",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Un alumni travaille dans un domaine absent des enseignements évalués de l’intervenant. Cela valide-t-il à lui seul la prestation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, si le client est un ancien élève."
+        },
+        {
+          "id": "b",
+          "text": "Oui, si le projet est court."
+        },
+        {
+          "id": "c",
+          "text": "Non, le métier d’un alumni ne remplace pas le lien avec les enseignements évalués."
+        },
+        {
+          "id": "d",
+          "text": "Oui, n’importe quel métier d’alumni étend automatiquement les compétences autorisées."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La formation signale cette confusion. La vérification porte sur les enseignements suivis et évalués de l’intervenant, pas seulement sur les parcours des diplômés.",
+      "origin": "Formation Cadre légal.pdf · page 5",
+      "status": "verified",
+      "formationId": "legal",
+      "formationPage": 5,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-legal-05",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel livrable répond à la dimension pédagogique rappelée dans la formation Cadre légal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un fichier standard vendu sans adaptation ni réflexion."
+        },
+        {
+          "id": "b",
+          "text": "Une simple présence dans les locaux du client."
+        },
+        {
+          "id": "c",
+          "text": "Une tâche mécanique indépendante de toute analyse."
+        },
+        {
+          "id": "d",
+          "text": "Un livrable personnalisé résultant d’un travail d’analyse de l’intervenant."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le caractère pédagogique suppose une réflexion intellectuelle et une étude personnalisée permettant la montée en compétences.",
+      "origin": "Formation Cadre légal.pdf · page 5",
+      "status": "verified",
+      "formationId": "legal",
+      "formationPage": 5,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-legal-06",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Une phase de collecte sans analyse propre est prévue avant une phase d’analyse. Quelle condition permet de la retenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle doit être nécessaire à la phase apportant l’analyse ou la réflexion."
+        },
+        {
+          "id": "b",
+          "text": "Elle suffit à constituer toute l’étude sans autre travail."
+        },
+        {
+          "id": "c",
+          "text": "Elle doit uniquement augmenter le nombre de JEH."
+        },
+        {
+          "id": "d",
+          "text": "Elle devient pédagogique parce qu’elle est facturée."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Kiwi autorise certaines phases sans plus-value propre lorsqu’elles sont nécessaires à une phase d’analyse ou de réflexion. La facturation seule ne suffit pas.",
+      "origin": "Formation Cadre légal.pdf · page 12",
+      "status": "verified",
+      "formationId": "legal",
+      "formationPage": 12,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-legal-07",
+      "articleId": "respecter-le-rgpd-en-cinq-etapes",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Le support Cadre légal utilise un moyen mnémotechnique sur les droits RGPD. Comment l’employer correctement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comme une autorisation générale de diffuser les données."
+        },
+        {
+          "id": "b",
+          "text": "Comme une aide mémoire, en consultant la liste complète des droits et leurs conditions."
+        },
+        {
+          "id": "c",
+          "text": "Comme la preuve que seuls cinq droits existent."
+        },
+        {
+          "id": "d",
+          "text": "Comme une dispense d’informer les personnes concernées."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Kiwi cite notamment accès, rectification, effacement, opposition, limitation et portabilité. Un moyen mnémotechnique ne constitue pas une liste exhaustive des obligations.",
+      "origin": "Formation Cadre légal.pdf · page 15",
+      "status": "verified",
+      "formationId": "legal",
+      "formationPage": 15,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-legal-08",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Deux documents d’une même étude décrivent des missions incompatibles. Quelle exigence est en cause ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La nécessité d’avoir le même nombre de pages."
+        },
+        {
+          "id": "b",
+          "text": "La règle qui permettrait de se dispenser de cahier des charges."
+        },
+        {
+          "id": "c",
+          "text": "La cohérence des documents client et intervenant."
+        },
+        {
+          "id": "d",
+          "text": "L’obligation d’utiliser la même couleur de couverture."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "La déontologie exige des documents complets et cohérents dans leur contenu et leur ordre. Les missions contractualisées ne doivent pas se contredire.",
+      "origin": "Formation Cadre légal.pdf · page 21",
+      "status": "verified",
+      "formationId": "legal",
+      "formationPage": 21,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-legal-09",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle présentation commerciale respecte la transparence attendue d’une Junior ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se présenter comme un cabinet de conseil sans évoquer les étudiants."
+        },
+        {
+          "id": "b",
+          "text": "Laisser croire que les intervenants sont des salariés du client."
+        },
+        {
+          "id": "c",
+          "text": "Masquer volontairement le statut de la structure."
+        },
+        {
+          "id": "d",
+          "text": "Indiquer clairement la dimension étudiante de la structure et de ses intervenants."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Kiwi demande une communication transparente sur le statut étudiant et les possibilités de la Junior, avec un vocabulaire qui ne déforme pas le modèle.",
+      "origin": "Formation Cadre légal.pdf · page 23",
+      "status": "verified",
+      "formationId": "legal",
+      "formationPage": 23,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-legal-10",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle publicité est conforme au principe de communication non agressive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Présenter ses compétences sans comparaison directe dénigrante avec une autre structure."
+        },
+        {
+          "id": "b",
+          "text": "Affirmer qu’une autre Junior est incompétente pour gagner un client."
+        },
+        {
+          "id": "c",
+          "text": "Assimiler une Junior concurrente à une entreprise frauduleuse sans preuve."
+        },
+        {
+          "id": "d",
+          "text": "Masquer les limites de son offre pour surpasser un concurrent."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La communication doit être transparente et non agressive. Kiwi exclut les comparaisons directes avec d’autres entreprises ou Juniors dans la prospection.",
+      "origin": "Formation Cadre légal.pdf · page 23",
+      "status": "verified",
+      "formationId": "legal",
+      "formationPage": 23,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-tresorerie-01",
+      "articleId": "bases-et-principes-dune-comptabilite",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quelle mission appartient au pôle Trésorerie dans la formation interne ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Supprimer le suivi des factures une fois envoyées."
+        },
+        {
+          "id": "b",
+          "text": "Tenir la comptabilité et suivre le budget prévisionnel."
+        },
+        {
+          "id": "c",
+          "text": "Remplacer tous les chefs de projet dans la réalisation technique."
+        },
+        {
+          "id": "d",
+          "text": "Définir seul toutes les compétences pédagogiques de l’école."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "La formation associe gestion des fonds, factures, BV, déclaratifs, comptabilité et budget aux missions de la trésorerie.",
+      "origin": "Formation Trésorerie.pdf · page 5",
+      "status": "verified",
+      "formationId": "tresorerie",
+      "formationPage": 5,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-tresorerie-02",
+      "articleId": "bases-et-principes-dune-comptabilite",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quel intérêt présente un budget prévisionnel suivi pendant le mandat ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remplacer l’enregistrement des opérations réelles."
+        },
+        {
+          "id": "b",
+          "text": "Confondre systématiquement prévision et résultat déjà réalisé."
+        },
+        {
+          "id": "c",
+          "text": "Anticiper les dépenses et comparer les réalisations aux prévisions."
+        },
+        {
+          "id": "d",
+          "text": "Garantir sans suivi qu’aucun écart ne surviendra."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le support décrit un outil de pilotage régulièrement mis à jour. Un budget permet d’anticiper et d’analyser des écarts ; il n’est pas une comptabilité des réalisations.",
+      "origin": "Formation Trésorerie.pdf · page 6",
+      "status": "verified",
+      "formationId": "tresorerie",
+      "formationPage": 6,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-tresorerie-03",
+      "articleId": "bases-et-principes-dune-comptabilite",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Pourquoi associer les autres pôles à la préparation du budget de la Junior ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour que chacun garantisse personnellement toutes les recettes."
+        },
+        {
+          "id": "b",
+          "text": "Pour remplacer l’analyse des besoins par un montant identique pour tous."
+        },
+        {
+          "id": "c",
+          "text": "Pour éviter toute révision du budget pendant le mandat."
+        },
+        {
+          "id": "d",
+          "text": "Pour intégrer leurs projets et leurs dépenses prévus."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Les besoins des pôles alimentent les prévisions. Leur participation aide à construire un budget cohérent avec les actions envisagées.",
+      "origin": "Formation Trésorerie.pdf · page 6",
+      "status": "verified",
+      "formationId": "tresorerie",
+      "formationPage": 6,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-tresorerie-04",
+      "articleId": "facturation-dune-etude",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Contrairement à un raccourci d’ancien support, demander un acompte est-il obligatoire pour toute étude ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non, il est fortement recommandé et dépend des modalités convenues."
+        },
+        {
+          "id": "b",
+          "text": "Oui, toujours exactement 50 %."
+        },
+        {
+          "id": "c",
+          "text": "Oui, toujours exactement 30 %."
+        },
+        {
+          "id": "d",
+          "text": "Oui, même si le client et la Junior n’ont prévu aucun acompte."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La fiche Kiwi indique que l’acompte n’est pas obligatoire mais fortement recommandé. Son montant doit être adapté au contexte et aux modalités de paiement.",
+      "origin": "Formation Trésorerie.pdf · page 15",
+      "status": "verified",
+      "formationId": "tresorerie",
+      "formationPage": 15,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-tresorerie-05",
+      "articleId": "facturation-dune-etude",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Cas fictif : une étude de 5 000 € HT a déjà fait l’objet de 1 500 € HT d’acompte et 1 000 € HT de facture intermédiaire. Quel solde HT reste à facturer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 500 € HT."
+        },
+        {
+          "id": "b",
+          "text": "2 500 € HT."
+        },
+        {
+          "id": "c",
+          "text": "5 000 € HT."
+        },
+        {
+          "id": "d",
+          "text": "3 500 € HT."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Le solde reprend le total puis déduit les montants déjà facturés : 5 000 − 1 500 − 1 000 = 2 500 € HT. Il s’agit d’un calcul fictif, hors frais et autres ajustements.",
+      "origin": "Formation Trésorerie.pdf · page 15",
+      "status": "verified",
+      "formationId": "tresorerie",
+      "formationPage": 15,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-tresorerie-06",
+      "articleId": "bv",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Le dossier de l’intervenant est complet mais la facture de solde n’est pas payée. Peut-on émettre son BV dans le processus normal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, dès qu’une propale a été envoyée."
+        },
+        {
+          "id": "b",
+          "text": "Oui, le BV est indépendant de l’étude."
+        },
+        {
+          "id": "c",
+          "text": "Non, il faut aussi le paiement client et le PVR signé."
+        },
+        {
+          "id": "d",
+          "text": "Oui, le dossier complet est la seule condition."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Kiwi demande un PVR signé, une facture intermédiaire ou de solde émise et payée, ainsi qu’un dossier intervenant complet et à jour avant émission du BV.",
+      "origin": "Formation Trésorerie.pdf · page 16",
+      "status": "verified",
+      "formationId": "tresorerie",
+      "formationPage": 16,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-tresorerie-07",
+      "articleId": "tva",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Dans un cas fictif, la TVA collectée exigible vaut 120 € et la TVA déductible admissible 200 €, sans autre ajustement. Quel résultat obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une TVA à payer de 80 €."
+        },
+        {
+          "id": "b",
+          "text": "Une TVA à payer de 320 €."
+        },
+        {
+          "id": "c",
+          "text": "Un bénéfice comptable de 80 €."
+        },
+        {
+          "id": "d",
+          "text": "Un crédit de TVA de 80 €."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "La différence collectée moins déductible vaut −80 €. On obtient un crédit de TVA. Le sens de l’inégalité présenté dans l’ancien support ne doit pas être repris à l’envers.",
+      "origin": "Formation Trésorerie.pdf · page 20",
+      "status": "verified",
+      "formationId": "tresorerie",
+      "formationPage": 20,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-tresorerie-08",
+      "articleId": "bases-et-principes-dune-comptabilite",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Pourquoi le résultat du mandat ne peut-il pas être lu simplement comme les entrées moins les sorties du compte bancaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le résultat compare les produits et charges de l’exercice, distincts des encaissements et décaissements."
+        },
+        {
+          "id": "b",
+          "text": "Tous les encaissements sont forcément des bénéfices."
+        },
+        {
+          "id": "c",
+          "text": "Une facture impayée ne peut jamais concerner l’exercice."
+        },
+        {
+          "id": "d",
+          "text": "Les charges sont toujours égales au solde bancaire."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "La comptabilité rattache les produits et charges aux exercices concernés. Les flux de trésorerie ne se confondent donc pas avec le résultat comptable.",
+      "origin": "Formation Trésorerie.pdf · page 21",
+      "status": "verified",
+      "formationId": "tresorerie",
+      "formationPage": 21,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-tresorerie-09",
+      "articleId": "bases-et-principes-dune-comptabilite",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quelle information permet de retrouver le justificatif d’une écriture comptable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le nombre total de membres de la Junior."
+        },
+        {
+          "id": "b",
+          "text": "La référence de la pièce comptable associée."
+        },
+        {
+          "id": "c",
+          "text": "Uniquement le prénom du dernier utilisateur du logiciel."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement la couleur du journal affiché."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Une ligne comptable comporte une référence de pièce, un libellé, un compte, une date et un débit ou crédit. La référence permet de relier l’écriture à sa source.",
+      "origin": "Formation Trésorerie.pdf · page 32",
+      "status": "verified",
+      "formationId": "tresorerie",
+      "formationPage": 32,
+      "kiwiVerified": true,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-tresorerie-10",
+      "articleId": "erb",
+      "track": "Trésorerie",
+      "level": "Intermédiaire",
+      "prompt": "Quel est l’objectif d’un rapprochement bancaire dans la formation Trésorerie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Supprimer toute écriture qui ne correspond pas au solde final."
+        },
+        {
+          "id": "b",
+          "text": "Calculer automatiquement les droits de vote des membres."
+        },
+        {
+          "id": "c",
+          "text": "Expliquer les écarts entre la comptabilité et le relevé bancaire."
+        },
+        {
+          "id": "d",
+          "text": "Modifier le relevé bancaire pour qu’il affiche le résultat souhaité."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "L’ERB vérifie la cohérence entre le compte bancaire et la comptabilité en identifiant les différences et leur explication, sans effacer arbitrairement les opérations.",
+      "origin": "Formation Trésorerie.pdf · page 33",
+      "status": "verified",
+      "formationId": "tresorerie",
+      "formationPage": 33,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-prog-01",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Dans le récapitulatif ProG, quel usage du processus qualité aide les futurs mandats ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conserver les méthodes uniquement dans la mémoire des responsables."
+        },
+        {
+          "id": "b",
+          "text": "Recommencer tous les outils à zéro sans bilan."
+        },
+        {
+          "id": "c",
+          "text": "Écarter systématiquement les retours des autres pôles."
+        },
+        {
+          "id": "d",
+          "text": "Tenir à jour les processus de chaque pôle."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le support historique présente la mise à jour des processus comme un levier de qualité. Le principe reste utile pour transmettre les façons de travailler.",
+      "origin": "Cours recap ProG.pdf · page 33",
+      "status": "verified",
+      "formationId": "prog",
+      "formationPage": 33,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-prog-02",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Le support ProG cite la récolte d’indicateurs. Quelle étape donne du sens aux données collectées ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les interpréter et les présenter pour orienter les décisions."
+        },
+        {
+          "id": "b",
+          "text": "Les stocker sans les consulter."
+        },
+        {
+          "id": "c",
+          "text": "Choisir uniquement ceux qui augmentent."
+        },
+        {
+          "id": "d",
+          "text": "Les transformer automatiquement en preuves de réussite."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Le rôle décrit ne s’arrête pas à la collecte : il comprend l’interprétation et la présentation des indicateurs pour comprendre le fonctionnement.",
+      "origin": "Cours recap ProG.pdf · page 33",
+      "status": "verified",
+      "formationId": "prog",
+      "formationPage": 33,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-prog-03",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel intérêt d’un audit blanc est présenté dans le récapitulatif ProG ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remplacer tous les justificatifs par un score unique."
+        },
+        {
+          "id": "b",
+          "text": "Repérer en amont des points à corriger dans les pôles."
+        },
+        {
+          "id": "c",
+          "text": "Certifier officiellement la Junior à la place de la CNJE."
+        },
+        {
+          "id": "d",
+          "text": "Supprimer l’obligation de suivre les actions correctives."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Un audit blanc sert à préparer la structure et à repérer ses écarts avant l’audit. Il ne vaut pas validation par la CNJE.",
+      "origin": "Cours recap ProG.pdf · page 33",
+      "status": "verified",
+      "formationId": "prog",
+      "formationPage": 33,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-prog-04",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Dans le support ProG, le chef de projet fait le lien entre quels acteurs pendant l’étude ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement l’hébergeur du site et la banque."
+        },
+        {
+          "id": "b",
+          "text": "Uniquement les auditeurs et les visiteurs du site."
+        },
+        {
+          "id": "c",
+          "text": "Le client et l’intervenant qui réalise le projet."
+        },
+        {
+          "id": "d",
+          "text": "Uniquement deux concurrents du client."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le suivi d’études relie les attentes du client au travail de l’intervenant, afin de guider le déroulement vers le résultat cadré.",
+      "origin": "Cours recap ProG.pdf · page 34",
+      "status": "verified",
+      "formationId": "prog",
+      "formationPage": 34,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-prog-05",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel objectif justifie le suivi du projet par la Junior selon le récapitulatif ProG ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Garantir un résultat sans définir le besoin."
+        },
+        {
+          "id": "b",
+          "text": "Retirer au client toute possibilité d’échanger."
+        },
+        {
+          "id": "c",
+          "text": "Attendre la livraison finale pour découvrir le projet."
+        },
+        {
+          "id": "d",
+          "text": "Accompagner le déroulement pour rapprocher le livrable du besoin convenu."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le suivi décrit dans le support vise un accompagnement du projet et de la relation client, plutôt qu’une simple mise en relation initiale.",
+      "origin": "Cours recap ProG.pdf · page 34",
+      "status": "verified",
+      "formationId": "prog",
+      "formationPage": 34,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-prog-06",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel exemple d’action du développement commercial est cité dans le support ProG ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rencontrer des prospects lors d’un salon puis assurer le suivi des contacts."
+        },
+        {
+          "id": "b",
+          "text": "Attendre uniquement les résultats du test TAC1."
+        },
+        {
+          "id": "c",
+          "text": "Saisir les bulletins de versement à la place de la trésorerie."
+        },
+        {
+          "id": "d",
+          "text": "Changer les statuts de chaque prospect rencontré."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Le support évoque les salons, événements, appels et mailings comme occasions de prospection et de développement de l’activité commerciale.",
+      "origin": "Cours recap ProG.pdf · page 35",
+      "status": "verified",
+      "formationId": "prog",
+      "formationPage": 35,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-prog-07",
+      "articleId": "convention-detude-ce",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Pourquoi soigner le premier contact commercial, selon le rôle décrit dans le support ProG ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il donne automatiquement un pouvoir de signature."
+        },
+        {
+          "id": "b",
+          "text": "Il contribue à l’image de la Junior auprès des prospects."
+        },
+        {
+          "id": "c",
+          "text": "Il dispense ensuite de comprendre le besoin."
+        },
+        {
+          "id": "d",
+          "text": "Il rend tous les prospects immédiatement solvables."
+        }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Le développement commercial est souvent le premier interlocuteur du prospect. La qualité de cet échange influence l’image et la relation professionnelle.",
+      "origin": "Cours recap ProG.pdf · page 35",
+      "status": "verified",
+      "formationId": "prog",
+      "formationPage": 35,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-prog-08",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle mission du Marketing contribue à la cohérence visuelle dans le support ProG ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approuver toutes les dépenses sans délégation."
+        },
+        {
+          "id": "b",
+          "text": "Attribuer les droits de vote à partir du logo."
+        },
+        {
+          "id": "c",
+          "text": "Gérer la charte graphique et les supports de communication."
+        },
+        {
+          "id": "d",
+          "text": "Modifier les échéances légales des déclaratifs."
+        }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Le support rattache la charte graphique, les réseaux et les supports au travail sur l’image de la Junior. Il ne s’agit pas d’une compétence juridique de décision.",
+      "origin": "Cours recap ProG.pdf · page 36",
+      "status": "verified",
+      "formationId": "prog",
+      "formationPage": 36,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-prog-09",
+      "articleId": "dirigeants-2",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quel intérêt de la capitalisation entre mandats est formulé dans le support ProG ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Supprimer les enseignements tirés des difficultés."
+        },
+        {
+          "id": "b",
+          "text": "Conserver seulement les objectifs sans aucun retour."
+        },
+        {
+          "id": "c",
+          "text": "Empêcher les nouveaux membres d’améliorer les outils."
+        },
+        {
+          "id": "d",
+          "text": "Transmettre les acquis pour progresser sans perdre l’expérience accumulée."
+        }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Le texte de stratégie du support relie la progression à la capitalisation et à la transmission des acquis des mandats successifs.",
+      "origin": "Cours recap ProG.pdf · page 38",
+      "status": "verified",
+      "formationId": "prog",
+      "formationPage": 38,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
+    },
+    {
+      "id": "formation-prog-10",
+      "articleId": "deontologie",
+      "track": "Organisation",
+      "level": "Intermédiaire",
+      "prompt": "Quelle combinaison correspond à la mission décrite dans le récapitulatif ProG ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faire monter les étudiants en compétences tout en accompagnant les professionnels."
+        },
+        {
+          "id": "b",
+          "text": "Rechercher uniquement un bénéfice sans objectif pédagogique."
+        },
+        {
+          "id": "c",
+          "text": "Limiter l’association à un rôle de réseau social."
+        },
+        {
+          "id": "d",
+          "text": "Promettre à tous les membres une étude sans tenir compte des besoins."
+        }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Le support associe la montée en compétences, l’accompagnement des professionnels et l’implication dans le Mouvement. Il s’agit d’une formulation historique de mission, pas d’un objectif chiffré actuel.",
+      "origin": "Cours recap ProG.pdf · page 38",
+      "status": "verified",
+      "formationId": "prog",
+      "formationPage": 38,
+      "kiwiVerified": false,
+      "formationCheckedAt": "2026-11-27"
     }
   ]
 }

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {grade,selectQuestions,validateAttempt} from '../lib/training.mjs';
+import {grade,selectQuestions,validateAttempt,filterQuestions} from '../lib/training.mjs';
 const catalog=JSON.parse(readFileSync(new URL('../content/catalog.json',import.meta.url),'utf8'));
 const questions=catalog.questions;
 test('Catalogue : identifiants uniques, quatre choix distincts, une réponse et une source pour chaque question',()=>{
@@ -32,11 +32,10 @@ test('Rejette les questions dupliquées, inconnues, réponses inexistantes et fo
 });
 test('Un examen complet est validé et noté sur trente',()=>{const entries=selectQuestions(questions,'Examen blanc').map(q=>({questionId:q.id,answer:q.correctAnswer}));assert.equal(validateAttempt(questions,{id:'12345678-1234-1234-1234-123456789abc',mode:'Examen blanc',duration:1800,entries}).score,30)});
 
-test('Le catalogue v3 contient 250 questions publiées par domaine',()=>{
- assert.equal(questions.length,500);
- for(const track of ['Organisation','Trésorerie']){
-  assert.equal(questions.filter(q=>q.track===track&&q.status==='verified').length,250);
- }
+test('Le catalogue v4 conserve les 500 questions initiales et ajoute 70 questions de formation',()=>{
+ assert.equal(catalog.version,4);assert.equal(questions.length,570);
+ const initial=questions.filter(q=>!q.formationId);assert.equal(initial.length,500);
+ for(const track of ['Organisation','Trésorerie'])assert.equal(initial.filter(q=>q.track===track&&q.status==='verified').length,250);
 });
 test('Un examen diversifie les fiches et une session ciblée privilégie des familles distinctes',()=>{
  for(let i=0;i<30;i++){
@@ -50,4 +49,20 @@ test('Un examen diversifie les fiches et une session ciblée privilégie des fam
   const distinct=new Set(cases.map(q=>q.family));
   assert.equal(new Set(picked.slice(0,distinct.size).map(q=>q.family)).size,distinct.size);
  }
+});
+
+test('Chaque formation dispose de dix questions avec une référence de page réelle',()=>{
+ const formations=JSON.parse(readFileSync(new URL('../content/formations.json',import.meta.url),'utf8'));
+ for(const formation of formations){
+  const selected=filterQuestions(questions,'Tous les thèmes','',formation.id);assert.equal(selected.length,10);
+  for(const q of selected){assert.equal(q.track,formation.track);assert.ok(Number.isInteger(q.formationPage)&&q.formationPage>=1&&q.formationPage<=formation.pages);assert.equal(typeof q.kiwiVerified,'boolean');assert.equal(q.formationCheckedAt,'2026-11-27');}
+  const quiz=selectQuestions(questions,'Par formation','Tous les thèmes','',[],formation.id);assert.equal(quiz.length,10);assert.ok(quiz.every(q=>q.formationId===formation.id));
+  const entries=quiz.map(q=>({questionId:q.id,answer:q.correctAnswer}));assert.equal(validateAttempt(questions,{id:'12345678-1234-1234-1234-123456789abc',mode:'Par formation',duration:120,entries}).score,10);
+ }
+ assert.deepEqual(filterQuestions(questions,'Trésorerie','','mouvement'),[]);
+ assert.deepEqual(selectQuestions(questions,'Par formation','Tous les thèmes','',[],'formation-inconnue'),[]);
+});
+test('Le test blanc exclut les repères internes et historiques des formations',()=>{
+ for(let i=0;i<30;i++)assert.ok(selectQuestions(questions,'Examen blanc').every(q=>!q.formationId||q.kiwiVerified===true));
+ const quiz=selectQuestions(questions,'Par formation');assert.ok(quiz.length>0&&quiz.every(q=>q.formationId));
 });

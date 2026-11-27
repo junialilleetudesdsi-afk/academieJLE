@@ -14,8 +14,9 @@ const auth=createAuthClient();
 const modes=[{title:'Quiz express',tag:'10 QUESTIONS MAX',text:'Un petit rendez-vous pour entretenir vos connaissances.',icon:Target},{title:'Par thème',tag:'À VOTRE RYTHME',text:'Organisation, trésorerie : concentrez-vous sur un sujet.',icon:Layers},{title:'Examen blanc',tag:'30 QUESTIONS · 30 MIN',text:'Préparez le TAC1 avec un parcours complet et chronométré.',icon:GraduationCap}];
 export default function Home(){
  const [tab,setTab]=useState('Tableau de bord'),[modal,setModal]=useState(''),[message,setMessage]=useState(''),[ready,setReady]=useState(false),[busy,setBusy]=useState(false),[mobile,setMobile]=useState(false);
- const [attempts,setAttempts]=useState<Attempt[]>([]),[historyError,setHistoryError]=useState(''),[requested,setRequested]=useState<{mode:string;articleId?:string;nonce:number}|null>(null);
+ const [attempts,setAttempts]=useState<Attempt[]>([]),[historyError,setHistoryError]=useState(''),[requested,setRequested]=useState<{mode:string;articleId?:string;formationId?:string;nonce:number}|null>(null);
  const [trainingPhase,setTrainingPhase]=useState('setup'),[admin,setAdmin]=useState(false),[formationId,setFormationId]=useState('');
+ const [flashRequest,setFlashRequest]=useState<{formationId:string;nonce:number}|null>(null);
  const [formations,setFormations]=useState<Formation[]>(initialFormations),[formationError,setFormationError]=useState('');
  const sessionState=auth.useSession();
  const session=sessionState.data as {user:{id:string;name:string}} | null;
@@ -27,7 +28,7 @@ export default function Home(){
  const reloadFormations=useCallback(async()=>{if(!userId)return;try{const r=await fetch('/api/materials',{cache:'no-store'});const d=await r.json();if(!r.ok)throw new Error();if(currentUser.current===userId){setFormations(d.formations);setFormationError('')}}catch{if(currentUser.current===userId)setFormationError('Impossible de charger les formations ajoutées.')}},[userId]);
  useEffect(()=>{setFormations(initialFormations);setFormationError('');void reloadFormations()},[reloadFormations]);
  const consume=useCallback(()=>setRequested(null),[]);
- function train(mode='Par thème',articleId=''){setRequested({mode,articleId,nonce:Date.now()});setTab('Entraînements');}
+ function train(mode='Par thème',articleId='',formationId=''){setRequested({mode,articleId,formationId,nonce:Date.now()});setTab('Entraînements');}
  useEffect(()=>{fetch('/api/status').then(r=>r.json()).then(d=>setReady(d.authenticationReady)).catch(()=>{});},[]);
  function open(value:string){setMessage('');setModal(value);}
  async function submit(e:React.FormEvent<HTMLFormElement>){e.preventDefault();if(!ready){setMessage('Les comptes seront ouverts prochainement. Vous pouvez déjà explorer la plateforme.');return;}setBusy(true);const f=new FormData(e.currentTarget);try{const input={email:String(f.get('email')),password:String(f.get('password'))};const result=modal==='Créer un compte'?await auth.signUp.email({...input,name:String(f.get('name'))}):await auth.signIn.email(input);if(result.error)setMessage('Connexion impossible. Vérifiez vos informations ou réessayez.');else setModal('');}catch{setMessage('Le service est momentanément indisponible.');}finally{setBusy(false);}}
@@ -38,9 +39,9 @@ export default function Home(){
  {(tab==='Tableau de bord'||(tab==='Entraînements'&&trainingPhase==='setup'))&&<><div className="section-title"><h2>Choisissez un entraînement</h2></div><div className="modes">{modes.map((mode,i)=><button className="mode" key={mode.title} onClick={()=>train(mode.title)}><div className={'mode-icon color'+i}><mode.icon size={24}/></div><small>{mode.tag}</small><h3>{mode.title}</h3><p>{mode.text}</p><div className="mode-footer"><span>Commencer le parcours</span><ArrowUpRight size={21}/></div></button>)}</div></>}
  {(tab==='Tableau de bord'||tab==='Connaissances')&&<><div className="section-title"><h2>La bibliothèque de votre Junior</h2>{tab==='Tableau de bord'?<button onClick={()=>setTab('Connaissances')}>Tout explorer <ArrowRight size={16}/></button>:null}</div><Knowledge formations={formations} compact={tab==='Tableau de bord'} onTrain={id=>train('Par thème',id)} onFormation={id=>{setFormationId(id);setTab('Formations')}}/></>}
  <div hidden={tab!=='Entraînements'}><Training userId={userId} attempts={attempts} onSaved={reload} requested={requested} onConsumed={consume} onLogin={()=>open('Connexion')} onPhase={setTrainingPhase}/></div>
- <div hidden={tab!=='Flashcards'}><Flashcards/></div>
+ <div hidden={tab!=='Flashcards'}><Flashcards requested={flashRequest} onConsumed={()=>setFlashRequest(null)}/></div>
  {tab==='Process'&&<Processes/>}
- {tab==='Formations'&&<>{formationError&&<div className="notice" role="alert">{formationError} <button className="text-button" onClick={reloadFormations}>Réessayer</button></div>}<Formations formations={formations} userId={userId} initialId={formationId} onLogin={()=>open('Connexion')}/></>}
+ {tab==='Formations'&&<>{formationError&&<div className="notice" role="alert">{formationError} <button className="text-button" onClick={reloadFormations}>Réessayer</button></div>}<Formations onTrain={id=>train('Par formation','',id)} onFlashcards={id=>{setFlashRequest({formationId:id,nonce:Date.now()});setTab('Flashcards')}} formations={formations} userId={userId} initialId={formationId} onLogin={()=>open('Connexion')}/></>}
  {tab==='Administration'&&(admin?<Administration key={userId} formations={formations} onImported={reloadFormations}/>:<section className="library empty"><h2>Accès réservé aux administrateurs</h2><p>Connectez-vous avec un compte autorisé.</p></section>)}
  {tab==='Mon compte'&&<Progress attempts={attempts} userId={userId} error={historyError} reload={reload} onMistakes={()=>train('Mes erreurs')} onLogin={()=>open('Connexion')}/>}
 

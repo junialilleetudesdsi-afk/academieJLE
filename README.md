@@ -90,3 +90,13 @@ Aucun compte n’est automatiquement administrateur. Il n’y a pas de règle «
 L’administrateur consulte les comptes (y compris sans résultat), les dates d’inscription, les e-mails et leur état de vérification, puis les résultats paginés de chaque compte, leurs modes, dates, durées et réponses. Aucun mot de passe, hash ni token de session n’est transmis. Les autres membres ne peuvent pas accéder à ces données. Les vues statistiques et la pagination concernent les résultats de test enregistrés, pas les auto-évaluations des flashcards.
 
 Validation : tests de contenu, de sélection, de notation, de contrôle des accès et d’import ; compilation Next.js. La prévisualisation navigateur locale a été bloquée par l’incompatibilité du lanceur de preview avec les arguments Next.js. À vérifier après déploiement : un quiz connecté, une formation après import et la consultation des résultats avec un ID administrateur autorisé.
+
+## Questions des formations internes au 27 novembre 2026
+
+Le catalogue v4 contient 570 questions : les 500 initiales et 70 nouveaux QCM à réponse unique, dix pour chacun des sept supports fournis. Chaque nouvelle question précise `formationId`, `formationPage`, `formationCheckedAt` et `kiwiVerified`. Les questions sont reformulées ; aucun PDF interne complet n’est publié dans le dépôt.
+
+Depuis Formations, les boutons « Quiz sur cette formation » et « Flashcards de cette formation » ouvrent une sélection ciblée. Le mode « Par formation » et les filtres Formation permettent aussi de choisir un support dans les entraînements et les flashcards. Les PDF ajoutés ultérieurement ne génèrent pas automatiquement des questions.
+
+Les repères internes et les pratiques de gestion renvoient au support PDF, sans leur attribuer abusivement une validation Kiwi. Les questions réglementaires sont rapprochées des fiches Kiwi lues au 27/11/2026. Les anciennes règles non retenues comprennent les seuils historiques, les taux, les déclaratifs datés et les raccourcis sur les signatures. Les erreurs d’inégalité de TVA et l’assimilation du résultat aux flux bancaires ont été corrigées. La bibliographie détaillée est dans `docs/formation-question-review.md`.
+
+Le test blanc conserve 30 questions, quinze par domaine. Les questions de formation purement internes ou historiques en sont exclues ; les quiz de formation et les flashcards les proposent. Les données et réponses des 500 questions initiales ne sont pas modifiées par cet ajout.
