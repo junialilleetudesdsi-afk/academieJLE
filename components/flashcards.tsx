@@ -1,12 +1,15 @@
 'use client';
+import type {Question,Article} from '../lib/content-types';
+import {useAcademyContent} from './content-provider';
 import {useEffect,useRef,useState} from 'react';
 import {BookOpen,RotateCcw,Layers} from 'lucide-react';
-import catalog from '../content/catalog.json';
+
 import {shuffle,filterQuestions} from '../lib/training.mjs';
-import formations from '../content/formations.json';
+
 import {QuestionSource} from './question-source';
-type Question=typeof catalog.questions[number];
+
 export default function Flashcards({requested,onConsumed}:{requested:{formationId:string;nonce:number}|null;onConsumed:()=>void}){
+ const {catalog,formations}=useAcademyContent();
  const [track,setTrack]=useState('Tous les thèmes'),[topic,setTopic]=useState(''),[formationId,setFormationId]=useState(''),[size,setSize]=useState(20),[deck,setDeck]=useState<Question[]>([]),[index,setIndex]=useState(0),[flipped,setFlipped]=useState(false),[answers,setAnswers]=useState<Record<string,boolean>>({}),[error,setError]=useState('');
  useEffect(()=>{if(!requested)return;if(deck.length>0&&index<deck.length){setError('Une série est déjà en cours. Terminez-la ou quittez-la pour changer de formation.')}else{setFormationId(requested.formationId);setTrack('Tous les thèmes');setTopic('');setDeck([]);setAnswers({});setError('')}onConsumed()},[requested,onConsumed,deck.length,index]);
  const flipButton=useRef<HTMLButtonElement>(null);

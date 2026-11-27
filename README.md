@@ -20,7 +20,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Sous PowerShell, utiliser `Copy-Item .env.example .env.local`. Sans PostgreSQL configuré, les contenus et les entraînements invités fonctionnent ; les comptes sont désactivés.
+Sous PowerShell, utiliser `Copy-Item .env.example .env.local`. Sans PostgreSQL configuré, seule la page de connexion est accessible ; aucun contenu pédagogique n’est servi.
 
 ## Vercel et Neon déjà configurés
 
@@ -28,7 +28,7 @@ Aucune nouvelle variable d’environnement n’est nécessaire pour cette versio
 
 La table `jle_attempts` est créée automatiquement au premier accès authentifié à l’historique ou à sa sauvegarde, avec `CREATE TABLE IF NOT EXISTS`. Le rôle PostgreSQL utilisé par l’application doit pouvoir créer cette table dans son schéma. Les tables et comptes Better Auth existants ne sont ni effacés ni recréés. Si le rôle est restreint, un administrateur peut appliquer le même schéma défini dans `lib/db.ts` avant le déploiement.
 
-Après déploiement, réaliser un quiz connecté, vérifier le message « Résultat enregistré dans votre compte », puis consulter Ma progression depuis une nouvelle session. Un échec d’enregistrement laisse la correction visible avec un bouton pour réessayer ; aucune réussite de sauvegarde n’est simulée.
+Après déploiement, réaliser un quiz connecté, vérifier le message « Résultat enregistré dans votre compte », puis consulter Mon compte depuis une nouvelle session. Un échec d’enregistrement laisse la correction visible avec un bouton pour réessayer ; aucune réussite de sauvegarde n’est simulée.
 
 Pour une nouvelle installation, appliquer également le schéma Better Auth correspondant à la version installée avant d’ouvrir les comptes. Ne jamais committer `.env.local` ni un secret.
 
@@ -38,7 +38,7 @@ Le catalogue versionné est `content/catalog.json`. Les questions référencent 
 
 La [revue éditoriale](docs/content-review.md) documente les 11 PDF, le support WEFAH 2023 et les critères de vérification. Les 422 ajouts comprennent 110 questions de cours et 312 exercices répartis en 39 familles de cas. Chaque variante comporte une situation ou des données à analyser. La veille Kiwi n’est pas automatisée : les montants annuels et nouveautés doivent être révisés régulièrement.
 
-Les comptes et résultats sont dans PostgreSQL, jamais dans GitHub. Le catalogue est public dans le dépôt et dans le code navigateur. Il ne doit contenir aucune donnée interne ou personnelle. La création de compte reste ouverte : un compte n’atteste pas l’appartenance à JLE. Les invitations, rôles administrateur, récupération de mot de passe et validation d’e-mail ne sont pas ajoutés dans ce lot.
+Les comptes, les affectations et les résultats sont dans PostgreSQL, jamais dans GitHub. Le site exige une session et une inscription dans `jle_members` avant de servir les contenus. La création libre de compte est désactivée. Le catalogue reste versionné dans ce dépôt : sa visibilité et son historique GitHub constituent un accès distinct du site. Aucun mot de passe ni fichier nominatif d’import ne doit être committé. La récupération de mot de passe par e-mail n’est pas configurée.
 
 ## Historique et notation
 
@@ -64,28 +64,30 @@ Les 500 questions alimentent un mode flashcards (domaine/fiche/volume, retournem
 
 `content/formations.json` répertorie les sept formations avec leurs repères et points de vigilance ; elles apparaissent aussi dans Connaissances. Les PDF sont conservés intégralement (toutes les pages) et la formation ProG est optimisée pour le Web. Les formations se consultent uniquement en PDF, avec téléchargement et ouverture dans un nouvel onglet. Les commentaires de vigilance ne sont pas affichés dans le lecteur ; les repères présents dans Connaissances et les liens vers les fiches associées sont conservés ; les supports ne sont pas ajoutés comme questions validées au catalogue.
 
-Les routes `/api/materials/[id]` servent les PDF et les transcriptions depuis la table privée `jle_materials` dans Neon uniquement après contrôle de session, avec interdiction de cache partagé. **Aucun PDF ni transcription intégrale n’est versionné dans GitHub.** Le dépôt ne contient que les descriptifs, les repères et le manifeste des documents. Un compte créé librement ne constitue pas une validation d’appartenance à JLE.
+Les routes `/api/materials/[id]` servent les PDF et les transcriptions depuis la table privée `jle_materials` dans Neon uniquement après contrôle de session, avec interdiction de cache partagé. **Aucun PDF ni transcription intégrale n’est versionné dans GitHub.** Le dépôt ne contient que les descriptifs, les repères et le manifeste des documents. Une session seule ne suffit pas : le compte doit aussi être admis dans `jle_members`.
 
 ### Importer les PDF depuis le site (sans terminal)
 
-Une fois connecté avec un compte présent dans `ADMIN_USER_IDS`, ouvrir **Administration → Formations**.
+Une fois connecté avec un compte administrateur, ouvrir **Administration → Formations**.
 
 - **Supports JLE préparés** : extraire le ZIP `Academie_JLE_Formations_Import_Neon.zip` avec l’explorateur Windows, puis sélectionner les sept `.pdf` en une seule fois. Cliquer sur **Importer les supports**. Chaque document est traité séparément ; les erreurs éventuelles sont indiquées fichier par fichier et les réussites restent enregistrées. Relancer un import ne crée pas de doublons.
 - **Nouvelle formation** : sélectionner un PDF, indiquer son titre, son thème et sa description, puis cliquer sur **Ajouter la formation**. La formation apparaît immédiatement dans Formations et sa présentation dans Connaissances, sans changement GitHub ni redéploiement. La consultation se fait en PDF ; aucun texte ni question n’est inventé à partir du titre.
 
 Limite applicative : **4 000 000 octets par PDF**, pour rester compatible avec les limites Vercel de requête et de réponse du projet. Réduire les fichiers plus volumineux avant l’import ; les sept PDF du ZIP fourni respectent déjà la limite. Les transcriptions historiques sont conservées pour compatibilité avec l’ancien import, mais aucun sélecteur ni lecteur texte n’est proposé sur le site. Les PDF nouveaux sont analysés pour refuser les fichiers illisibles, protégés et de plus de 500 pages. Le lot préparé est reconnu par ses empreintes SHA-256.
 
-L’API d’import vérifie la session et l’identifiant administrateur côté serveur, ainsi que l’origine de la requête avant de lire le document. Les PDF et les transcriptions sont stockés dans Neon, jamais dans GitHub. La colonne JSONB `metadata` est ajoutée automatiquement à `jle_materials`, y compris sur une base déjà initialisée. Le script `npm run formations:import -- "chemin/du/dossier/extrait"` reste disponible en option, pour le lot initial uniquement.
+L’API d’import vérifie la session et le rôle administrateur en base côté serveur, ainsi que l’origine de la requête avant de lire le document. Les PDF et les transcriptions sont stockés dans Neon, jamais dans GitHub. La colonne JSONB `metadata` est ajoutée automatiquement à `jle_materials`, y compris sur une base déjà initialisée. Le script `npm run formations:import -- "chemin/du/dossier/extrait"` reste disponible en option, pour le lot initial uniquement.
 
 Avant l’import, le lecteur indique que le support n’est pas disponible. Aucun compte ni résultat de test n’est modifié par un import. Les importations et la consultation en conditions réelles nécessitent la configuration Neon et un compte autorisé.
 
-### Ajouter manuellement un administrateur
+### Gérer les comptes et les administrateurs
 
-1. Le membre crée son compte, se connecte et copie « Mon identifiant de compte », dans l’onglet **Mon compte** uniquement. Le gestionnaire peut aussi retrouver `id`, `name` et `email` dans la table Better Auth `user` de Neon, en vérifiant l’identité du membre.
-2. Dans Vercel → projet → Settings → Environment Variables, ajouter **`ADMIN_USER_IDS`** avec cet identifiant exact. Pour plusieurs comptes : `identifiant1,identifiant2`. Sélectionner l’environnement Production (et Preview seulement si souhaité).
-3. Redéployer la version courante. Le membre recharge le site ; l’onglet Administration apparaît. Pour retirer un accès, supprimer l’identifiant de la variable et redéployer.
+Les administrateurs initiaux sont amorcés depuis `ADMIN_USER_IDS` vers `jle_members`, sans écraser les rôles déjà enregistrés. Cette variable reste utile à une nouvelle installation ; elle n'est plus le gestionnaire courant des rôles. La table est créée automatiquement au premier contrôle de session. Les tables Better Auth doivent préexister ; aucune donnée existante n'est effacée.
 
-Aucun compte n’est automatiquement administrateur. Il n’y a pas de règle « premier inscrit », pas d’auto-promotion et pas de liste d’e-mails non vérifiés. Les droits sont vérifiés à chaque appel API au moyen de la session serveur ; modifier le navigateur ou un paramètre ne permet pas de devenir administrateur.
+Depuis **Administration → Créer des comptes**, créer un membre ou importer jusqu'à 50 lignes au format `Nom;Email;Pôle;Poste`, puis renseigner le mot de passe initial dans le champ prévu. Les nouveaux comptes sont des membres. Les comptes existants conservent leurs identifiants, leurs mots de passe et leurs résultats ; leur pôle et leur poste sont mis à jour. Un import est transactionnel : une erreur annule tout le lot. Les mots de passe sont hachés au moyen de Better Auth avant l'écriture et ne sont jamais renvoyés dans les listes de comptes.
+
+Depuis **Administration → Comptes → Gérer le compte**, modifier le pôle, le poste ou le rôle, puis enregistrer. L'attribution du rôle administrateur affiche une confirmation. Impossible de retirer son propre rôle ou le dernier accès administrateur. Chaque API contrôle le rôle actuel en base ; les changements ne nécessitent aucun redéploiement. Les membres peuvent changer leur propre mot de passe depuis **Mon compte**.
+
+Les contrôles ne font confiance ni à un rôle envoyé par le navigateur ni à une adresse e-mail non vérifiée. Les comptes sans entrée dans `jle_members` ne peuvent pas consulter les contenus, même avec une ancienne session valide.
 
 L’administrateur consulte les comptes (y compris sans résultat), les dates d’inscription, les e-mails et leur état de vérification, puis les résultats paginés de chaque compte, leurs modes, dates, durées et réponses. Aucun mot de passe, hash ni token de session n’est transmis. Les autres membres ne peuvent pas accéder à ces données. Les vues statistiques et la pagination concernent les résultats de test enregistrés, pas les auto-évaluations des flashcards.
 
@@ -100,3 +102,12 @@ Depuis Formations, les boutons « Quiz sur cette formation » et « Flashcards d
 Les repères internes et les pratiques de gestion renvoient au support PDF, sans leur attribuer abusivement une validation Kiwi. Les questions réglementaires sont rapprochées des fiches Kiwi lues au 27/11/2026. Les anciennes règles non retenues comprennent les seuils historiques, les taux, les déclaratifs datés et les raccourcis sur les signatures. Les erreurs d’inégalité de TVA et l’assimilation du résultat aux flux bancaires ont été corrigées. La bibliographie détaillée est dans `docs/formation-question-review.md`.
 
 Le test blanc conserve 30 questions, quinze par domaine. Les questions de formation purement internes ou historiques en sont exclues ; les quiz de formation et les flashcards les proposent. Les données et réponses des 500 questions initiales ne sont pas modifiées par cet ajout.
+
+
+## Accès fermé et défi des pôles
+
+La page racine est rendue côté serveur à chaque requête et refuse de charger les données d'apprentissage sans membre authentifié. Les composants clients reçoivent le catalogue, les formations et les process depuis ce rendu protégé : aucun de ces JSON n'est importé dans les scripts publics. Les API de contenus, de résultats et d'administration refusent les sessions non admises ; leurs réponses sont privées et sans cache partagé. Le rôle `member` donne accès à tous les contenus pédagogiques.
+
+Le tableau de bord compare les pôles sur 7, 30 ou 90 jours, ou depuis le début, avec un filtre par type de test. L'activité se classe en questions travaillées par membre pour tenir compte des différences d'effectif ; la réussite est la somme des bonnes réponses divisée par la somme des questions. Les participants, les tests, le nombre de questions et les taux sont affichés avec leurs volumes. Les pôles sans résultat affichent un tiret pour la réussite. Les flashcards ne génèrent pas de résultat de test. Les statistiques utilisent toutes les tentatives enregistrées sur la période, et non la limite de 200 de l'historique personnel. Les résultats sont attribués au pôle actuel du membre.
+
+Les membres voient uniquement des agrégats par pôle. Les résultats individuels restent accessibles à leur propriétaire et aux administrateurs. Aucun annuaire nominatif ni mot de passe initial n'est inclus dans le code source.

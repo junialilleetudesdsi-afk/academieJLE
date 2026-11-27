@@ -1,13 +1,15 @@
 'use client';
+import {useAcademyContent} from './content-provider';
 import {useRef,useState} from 'react';
 import {Upload,CheckCircle,FileText} from 'lucide-react';
-import presets from '../content/formations.json';
+
 import type {Formation} from '../lib/formation-types';
 
 type Outcome={name:string;ok:boolean;message:string};
 type Props={formations:Formation[];onImported:()=>Promise<void>};
 const MAX_PDF=4_000_000;
 export default function MaterialImport({formations,onImported}:Props){
+ const {formations:presets}=useAcademyContent();
  const [mode,setMode]=useState('prepared'),[files,setFiles]=useState<File[]>([]),[pdf,setPdf]=useState<File|null>(null),[title,setTitle]=useState(''),[description,setDescription]=useState(''),[track,setTrack]=useState('Organisation'),[busy,setBusy]=useState(false),[outcomes,setOutcomes]=useState<Outcome[]>([]),[progress,setProgress]=useState('');
  const newInput=useRef<HTMLInputElement>(null);
  async function send(file:File,fields:Record<string,string>){

@@ -1,9 +1,11 @@
 'use client';
+import {useAcademyContent} from './content-provider';
 import {useState} from 'react';
 import {Search,ExternalLink} from 'lucide-react';
-import data from '../content/processes.json';
+
 const norm=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 export default function Processes(){
+ const {processes:data}=useAcademyContent();
  const [query,setQuery]=useState(''),[branch,setBranch]=useState('Tous'),[selected,setSelected]=useState(''),[view,setView]=useState('Carte');
  const list=data.processes.filter(p=>(branch==='Tous'||p.branch===branch)&&(!selected||p.group===selected)&&norm(p.title+' '+p.parent+' '+p.group).includes(norm(query)));
  const visibleGroups=data.groups.filter(g=>list.some(p=>p.group===g.id));

@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { auth } from '../../../lib/auth';
+import {currentMember} from '../../../lib/session';
 import { pool, ensureAttempts } from '../../../lib/db';
 import { validateAttempt } from '../../../lib/training.mjs';
 import catalog from '../../../content/catalog.json';
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
 const reply=(data:unknown,status=200)=>NextResponse.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
-async function user(req:NextRequest){ return auth ? (await auth.api.getSession({headers:req.headers}))?.user : null; }
+async function user(req:NextRequest){return currentMember(req.headers)}
 export async function GET(req:NextRequest){
  try {
   const member=await user(req);if(!member)return reply({error:'Connexion nécessaire.'},401);

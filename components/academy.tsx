@@ -1,16 +1,19 @@
 'use client';
+import type {Question,Article} from '../lib/content-types';
+import {useAcademyContent} from './content-provider';
 import {useEffect,useRef,useState} from 'react';
 import {ArrowRight,BookOpen,CheckCircle,Clock,Search,Target,X} from 'lucide-react';
-import catalog from '../content/catalog.json';
-import formationCatalog from '../content/formations.json';
+
+
 import {Source,QuestionSource} from './question-source';
 import type {Formation} from '../lib/formation-types';
 import {grade,selectQuestions} from '../lib/training.mjs';
-type Question=typeof catalog.questions[number];
-type Article=typeof catalog.articles[number];
+
+
 type InternalArticle={id:string;title:string;track:string;summary:string;formationId:string;sections:{title:string;body:string}[]};
 export type Attempt={id:string;mode:string;score:number;total:number;duration:number;createdAt:string;results:{questionId:string;answer:string|null;correct:boolean;track:string}[]};
 export function Knowledge({compact=false,onTrain,onFormation,formations}:{compact?:boolean;onTrain:(id:string)=>void;onFormation:(id:string)=>void;formations:Formation[]}){
+ const {catalog,formations:formationCatalog}=useAcademyContent();
  const internalArticles:InternalArticle[]=formations.map(f=>({id:'formation-'+f.id,title:'Formation JLE · '+f.title,track:f.track,summary:f.description,formationId:f.id,sections:f.sections}));
  const [query,setQuery]=useState(''),[track,setTrack]=useState('Tous les thèmes'),[opened,setOpened]=useState<Article|InternalArticle|null>(null);
  const normalize=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
@@ -21,11 +24,13 @@ export function Knowledge({compact=false,onTrain,onFormation,formations}:{compac
  </section>
 }
 export function Progress({attempts,userId,error,reload,onMistakes,onLogin}:{attempts:Attempt[];userId?:string;error:string;reload:()=>void;onMistakes:()=>void;onLogin:()=>void}){
+ const {catalog,formations:formationCatalog}=useAcademyContent();
  if(!userId)return <section className="library empty"><Clock size={30}/><h2>Votre compte</h2><p>Connectez-vous pour enregistrer vos entraînements et retrouver vos résultats sur tous vos appareils.</p><button className="primary" onClick={onLogin}>Se connecter</button></section>;
  const total=attempts.reduce((a,b)=>a+b.total,0),score=attempts.reduce((a,b)=>a+b.score,0);
  return <><div className="stats">{[['Entraînements',attempts.length],['Réponses travaillées',total],['Réussite globale',total?Math.round(score/total*100)+' %':'—']].map(([t,v])=><div className="stat" key={t}><span>{t}</span><strong>{v}</strong></div>)}</div>{error&&<div role="alert" className="notice">{error} <button className="text-button" onClick={reload}>Réessayer</button></div>}<div className="topic-progress">{['Organisation','Trésorerie'].map(t=>{const answers=attempts.flatMap(a=>a.results).filter(r=>r.track===t);const percent=answers.length?Math.round(answers.filter(r=>r.correct).length/answers.length*100):0;return <div className="library topic" key={t}><strong>{t}</strong><p>{answers.length?`${percent} % de bonnes réponses sur ${answers.length} questions`:'Aucun résultat pour le moment'}</p><progress max={100} value={percent}/></div>})}</div><div className="section-title"><h2>Vos derniers entraînements</h2><button onClick={onMistakes}>Retravailler mes erreurs <ArrowRight size={16}/></button></div><section className="library history">{!attempts.length?<p>Votre premier résultat apparaîtra ici après un entraînement.</p>:attempts.map(a=><details key={a.id}><summary><span><strong>{a.mode}</strong><small>{new Date(a.createdAt).toLocaleString('fr-FR')} · {Math.floor(a.duration/60)} min {a.duration%60} s</small></span><b>{a.score}/{a.total}</b></summary><div className="history-review">{a.results.map(r=>{const q=catalog.questions.find(q=>q.id===r.questionId);return q?<div key={q.id}><strong>{r.correct?'✓':'À revoir'} · {q.prompt}</strong><p>Votre réponse : {q.options.find(o=>o.id===r.answer)?.text??'Non répondue'}<br/>Réponse attendue : {q.options.find(o=>o.id===q.correctAnswer)?.text}</p><p>{q.explanation}</p><QuestionSource question={q}/></div>:<p key={r.questionId}>Question archivée ({r.questionId}).</p>})}</div></details>)}</section></>
 }
 export function Training({userId,attempts,onSaved,requested,onConsumed,onLogin,onPhase}:{userId?:string;attempts:Attempt[];onSaved:()=>void;requested:{mode:string;articleId?:string;formationId?:string;nonce:number}|null;onConsumed:()=>void;onLogin:()=>void;onPhase:(phase:string)=>void}){
+ const {catalog,formations:formationCatalog}=useAcademyContent();
  const [mode,setMode]=useState('Quiz express'),[track,setTrack]=useState('Tous les thèmes'),[articleId,setArticleId]=useState(''),[formationId,setFormationId]=useState('');
  const [questions,setQuestions]=useState<Question[]>([]),[answers,setAnswers]=useState<Record<string,string>>({}),[revealed,setRevealed]=useState<Record<string,boolean>>({}),[index,setIndex]=useState(0),[started,setStarted]=useState(0),[deadline,setDeadline]=useState(0),[remaining,setRemaining]=useState(1800),[result,setResult]=useState<ReturnType<typeof grade>|null>(null),[duration,setDuration]=useState(0),[confirm,setConfirm]=useState(false),[saveStatus,setSaveStatus]=useState(''),[saving,setSaving]=useState(false),[error,setError]=useState('');
  const attemptId=useRef(''),owner=useRef<string|undefined>(undefined),finished=useRef(false),savingRef=useRef(false),userRef=useRef(userId);userRef.current=userId;

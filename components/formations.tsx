@@ -1,11 +1,13 @@
 'use client';
+import {useAcademyContent} from './content-provider';
 import {useEffect,useState} from 'react';
 import {BookOpen,Download,ExternalLink,Search} from 'lucide-react';
 import type {Formation} from '../lib/formation-types';
-import catalog from '../content/catalog.json';
+
 type Props={userId?:string;onLogin:()=>void;initialId?:string};
 const norm=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 export function FormationReader({item,userId,onLogin}:Props&{item:Formation}){
+ const {catalog}=useAcademyContent();
  const [error,setError]=useState(''),[available,setAvailable]=useState(false),[checking,setChecking]=useState(true),[retry,setRetry]=useState(0);
  useEffect(()=>{if(!userId)return;const controller=new AbortController();setAvailable(false);setChecking(true);setError('');fetch('/api/materials/'+item.id+'?format=status',{signal:controller.signal,cache:'no-store'}).then(async r=>{const d=await r.json();if(!r.ok)throw new Error(d.error);if(!controller.signal.aborted)setAvailable(true)}).catch(e=>{if(!controller.signal.aborted)setError(e.message||'Support indisponible.')}).finally(()=>{if(!controller.signal.aborted)setChecking(false)});return()=>controller.abort()},[item.id,userId,retry]);
  if(!userId)return <div className="library empty"><BookOpen size={28}/><h3>Formation interne JLE</h3><p>Connectez-vous pour consulter le support complet.</p><button className="primary" onClick={onLogin}>Se connecter</button></div>;
@@ -14,6 +16,7 @@ export function FormationReader({item,userId,onLogin}:Props&{item:Formation}){
  return <section className="formation-reader"><div className="reader-toolbar"><a href={'/api/materials/'+item.id+'?download=1'} className="secondary">Télécharger <Download size={15}/></a><a href={'/api/materials/'+item.id} target="_blank" rel="noreferrer" className="secondary">Ouvrir le PDF <ExternalLink size={15}/></a></div><object key={item.id} data={'/api/materials/'+item.id+'#view=FitH'} type="application/pdf" className="pdf-viewer" aria-label={'PDF '+item.title}><p>Votre navigateur ne peut pas afficher le PDF intégré. Utilisez « Ouvrir le PDF » ou « Télécharger » pour le consulter.</p></object>{item.related.length>0&&<><h3>Fiches associées</h3><div className="related-links">{item.related.map(id=>{const a=catalog.articles.find(a=>a.id===id);return a?<a key={id} target="_blank" rel="noreferrer" href={a.source.url}>{a.title} <ExternalLink size={13}/></a>:null})}</div></>}</section>
 }
 export default function Formations(props:Props&{formations:Formation[];onTrain:(id:string)=>void;onFlashcards:(id:string)=>void}){
+ const {catalog}=useAcademyContent();
  const formations=props.formations;
  const [query,setQuery]=useState(''),[track,setTrack]=useState('Tous les thèmes'),[selected,setSelected]=useState<Formation|null>(()=>formations.find(f=>f.id===props.initialId)??null);
  useEffect(()=>{if(props.initialId)setSelected(formations.find(f=>f.id===props.initialId)??null)},[props.initialId,formations]);
